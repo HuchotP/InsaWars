@@ -10,4 +10,7 @@ public abstract class Attack{
 
   }
 
+  public abstract void attack(Character c);
+
+
 }

@@ -10,6 +10,10 @@ public class Character{
     private String name;
     private Attack[] attacks = new Attack[4];
 
+    private int x;
+    private int y;
+
+    private static GameManager manager;
 
     public Character(int life, int strength, int intel, int speed, int luck, String name){
 
@@ -22,13 +26,9 @@ public class Character{
 
       attacks[0] = new ZoneAttack();
       System.out.println(attacks[0].getName());
-      attacks[0].name = "lol2";
-      System.out.println(attacks[0].getName());
+
 
     }
-
-
-
 
   	/**
   	* Returns value of life
@@ -84,6 +84,49 @@ public class Character{
   		return name;
   	}
 
+    public int getX(){
 
+      return this.x;
+
+    }
+
+    public void setX(int n){
+
+      this.x = n;
+
+    }
+
+    public int getY(){
+
+      return this.x;
+
+    }
+
+    public void setY(int n){
+
+      this.x = n;
+
+    }
+
+    public void setManager(GameManager m){
+
+      this.manager = m;
+
+    }
+
+    public GameManager getManager(){
+
+      if(this.manager!= null)
+        return this.manager;
+      else
+        System.out.println("Manager not initialized");
+    }
+
+    public void attack(int n){
+
+      attacks[n].attack(this, manager.getCharacter(/**joueur adverse**/);
+
+
+    }
 
 }
