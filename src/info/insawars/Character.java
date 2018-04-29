@@ -1,4 +1,4 @@
-
+package info.insawars;
 
 public class Character{
 
@@ -124,7 +124,7 @@ public class Character{
 
     public void attack(int n){
 
-      attacks[n].attack(this, manager.getCharacter(/**joueur adverse**/);
+      attacks[n].attack(this, manager.getCharacter(/**joueur adverse**/));
 
 
     }

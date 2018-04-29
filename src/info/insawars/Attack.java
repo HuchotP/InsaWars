@@ -1,3 +1,5 @@
+package info.insawars;
+
 public abstract class Attack{
 
   protected String name;
