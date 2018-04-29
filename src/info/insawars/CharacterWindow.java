@@ -4,7 +4,8 @@ import java.awt.*;
 import javax.swing.*;
 import java.awt.Color;
 
-public class CharacterWindow {
+
+public class CharacterWindow extends JFrame {
 
 	private int life;
     private int strength;
@@ -63,16 +64,19 @@ public class CharacterWindow {
 
 	public CharacterWindow() {
 
-		JFrame window = new JFrame("Insawars");
-
-		window.setSize(200,400);
+		this.setSize(300,400);
 		
 		Box globalBox = Box.createVerticalBox();
 		
+		JPanel attributesPanel = new JPanel();
+		GridLayout attributesGrid = new GridLayout(5,5);
+		attributesPanel.setLayout(attributesGrid);
+		
+		
 		JLabel[] attribute = new JLabel[5];
 		String[] attributeStr = {"Vie", "Force", "Intelligence", "Rapidité", "Chance"};
-
 		JProgressBar[] bars = new JProgressBar[6];
+		JButton[][] attributeButtons = new JButton[5][2];
 		
 		JLabel title = new JLabel("INSAWARS");
 		title.setAlignmentX(JComponent.CENTER_ALIGNMENT);
@@ -95,20 +99,28 @@ public class CharacterWindow {
 			
 			attribute[i] = new JLabel(attributeStr[i]);
 			attribute[i].setAlignmentX(JComponent.CENTER_ALIGNMENT);
-			globalBox.add(attribute[i]);
+			attributesPanel.add(attribute[i]);
 			
 			bars[i] = new JProgressBar();
 			bars[i].setMinimum(0);
 			bars[i].setMaximum(100);
 			bars[i].setBackground(new Color(128,0,0));;
-			globalBox.add(bars[i]);
-			//globalBox.add(Box.createVerticalGlue());
+			attributesPanel.add(bars[i]);
+			
+			attributeButtons[i][0] = new JButton("-");
+			attributeButtons[i][1] = new JButton("+");
+			
+			attributesPanel.add(attributeButtons[i][0]);
+			attributesPanel.add(attributeButtons[i][1]);
+			//window.add(Box.createVerticalGlue());
 		}
 
 		
-		window.add(globalBox);
-		window.setVisible(true);
+		//window.add(grid);
+		globalBox.add(attributesPanel);
+		this.add(globalBox);
+		//window.add(attributesPanel);
+		this.setVisible(true);
 	}
-
 
 }

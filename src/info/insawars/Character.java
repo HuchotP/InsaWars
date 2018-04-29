@@ -128,5 +128,9 @@ public class Character{
 
 
     }
+    
+    public void getDamage() {
+    	
+    }
 
 }
