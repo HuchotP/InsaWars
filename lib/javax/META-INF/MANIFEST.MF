@@ -1,0 +1,3597 @@
+Manifest-Version: 1.2
+Name: org/apache/crimson/tree/Doctype$EntityNode.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: plstRXDN2LtfvJrVZeu9DyRAKRE=
+MD5-Digest: AcftWFYRKwsgAz73kOvi1A==
+
+
+Name: com/sun/tools/xjc/dtd/parser/SimpleHashtable$Entry.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: mjOM3o9f/KqLUR0OI4z6Rsjqslg=
+MD5-Digest: NZcq3qUrwbhhs6Xfv6FN6g==
+
+
+Name: com/sun/tools/xjc/xjb/XBAny.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: LRfK243N+yeVeHKoPRwV+U+gEDk=
+MD5-Digest: WprUtsGscmFF2gRZqksPew==
+
+
+Name: com/sun/tools/xjc/xjs/XSAttribute.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: I1GNZmqXlDpkAEyeWHWYweWgKV0=
+MD5-Digest: MMBhGrU+iSkwqzuT4jvttA==
+
+
+Name: javax/xml/bind/Validator$Entry.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: mGoxxDI7ZBQLbU95N+i7IBkEi+g=
+MD5-Digest: GTsK1zoTFFVqQ6BaVtLIow==
+
+
+Name: com/sun/tools/xjc/gen/Op$BinaryOp.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: FZias0CSzJjRB23aKnfckH8OpfA=
+MD5-Digest: Rxnr33JAvnOueNZ4ifqegA==
+
+
+Name: org/xml/sax/helpers/NamespaceSupport.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 0YP8289wkcsnokysJT9p/7j+tO8=
+MD5-Digest: 3a1rSyFFOKG4I7vnWyWGww==
+
+
+Name: com/sun/tools/xjc/dtd/parser/DTDEventListener.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: h2CGNuBu8hS2Ikl9qlfJma4UeOQ=
+MD5-Digest: 4WbuEnifKENBwcZ/wD0OLQ==
+
+
+Name: org/apache/crimson/parser/ContentModel.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: BhdkA7N4i+FAgvKGhHhtVC0KbWw=
+MD5-Digest: W5o1+EOFgRwl2vRu6RQ8tw==
+
+
+Name: javax/xml/bind/ValidationRequiredException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: AX+ZYyO0EtF4Vau/jsL/v5D0vs4=
+MD5-Digest: QDWro7xySBUlCtOPAYcWIw==
+
+
+Name: com/sun/tools/xjc/dtd/parser/AttributeList.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: yuw1rkfmHP1bH4Xnd9UcJYBvNsY=
+MD5-Digest: 6EBGmPU0PUGqKz+D+nD6sw==
+
+
+Name: com/sun/tools/xjc/xjb/XBTopLevelDecl.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 4tFQ3V0aGebvG3Tah58WLxU9PLQ=
+MD5-Digest: IKRzZ9ndZweKNbnZv9LKFg==
+
+
+Name: org/apache/crimson/parser/AttributeDecl.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: VbRjHwuO4JWBUexF/IoJ2FFxCQI=
+MD5-Digest: ZmLTLD5jhJG/J7kmNU/kAw==
+
+
+Name: org/xml/sax/XMLFilter.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 1oUAQBkdrZ6dgJEHwIRSmUrTjFM=
+MD5-Digest: m5Hf0NT+7cCdFXFR1pOubw==
+
+
+Name: javax/xml/bind/InvalidFixedValueException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: WIvlzhgIy9Zy05oxTHMD+4wdOoc=
+MD5-Digest: 4k5K++vH7X8arywbqhuINw==
+
+
+Name: javax/xml/bind/DuplicateAttributeException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: Sd6vgnhSl+Ct9DS5d0J1PGXbCCg=
+MD5-Digest: nRTC2jTyrgE6wEk1c8aqUA==
+
+
+Name: com/sun/tools/xjc/dtd/parser/EntityDecl.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: r5zHOXN7jrDHw9gLjDQykTJqzms=
+MD5-Digest: NzvWYD2Nt2DbvIY/3Z1ihg==
+
+
+Name: org/apache/crimson/parser/ValidatingParser$MixedValidator.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: L02nqwAVcRk4jAFGHB1kZ+4sKSM=
+MD5-Digest: B+mNulvCdG+tukx2e0U0Sw==
+
+
+Name: com/sun/tools/xjc/dtdx/DXAttribute.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: KOvkheSEBiN+b2tYV4VqyRXw/bg=
+MD5-Digest: jPEzyaGgTlB20LMmFSC+xg==
+
+
+Name: org/apache/crimson/tree/ParentNode.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: qRh2Qn6KxF5giXIWxVRdjZakDVQ=
+MD5-Digest: 3e4SdJUA4a0tKKoUZHLoFg==
+
+
+Name: javax/xml/transform/stream/
+Sealed: True
+
+
+Name: javax/xml/bind/StructureValidationException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: NgY4OgdwrjM2VPZYI24RkZsxfNI=
+MD5-Digest: deqT2y6yDoOTx2JiyIMQLQ==
+
+
+Name: com/sun/tools/xjc/gen/NestedClass.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: km3xnW8LHWGjxRWeXXhJuhyon6U=
+MD5-Digest: JAieW2xTbWQrw4jmPtJ5bw==
+
+
+Name: com/sun/tools/xjc/xjs/XSInternalDecl.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 3Rve5wVoZ2lqjwMmqE//80rtJBw=
+MD5-Digest: oBgs3dp1i1EredGyXfWoEg==
+
+
+Name: javax/xml/transform/Transformer.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: dgNZqdsCrcaXUZo2lyrMj5LvAGY=
+MD5-Digest: 0iUClCtLZpJ58c6ce6D/aw==
+
+
+Name: com/sun/tools/xjc/be/Decl.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: RrFATzc+WxQ8NSXHW7caWSHtP4I=
+MD5-Digest: fQiZxTn3k5lVI1YZcjrCcQ==
+
+
+Name: com/sun/tools/xjc/dtd/parser/Resolver.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: cQNNYsu/1zt3X9PD66h1Miz7jKg=
+MD5-Digest: CxAiXZRgyZUYBY/uzNTVbg==
+
+
+Name: com/sun/tools/xjc/xjb/XJB$1.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: NKBQLjo9S+H6VLIziAcdpwiJ7RE=
+MD5-Digest: eNnCLQsAHdnG+Go6oMw33w==
+
+
+Name: com/sun/tools/xjc/xjs/XSContent$1.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: LO1zbIUE/ki1rm2DYaHuECa0qlw=
+MD5-Digest: yfCSpu6soc5iLUv0nPnmWg==
+
+
+Name: org/apache/crimson/tree/XmlDocument$1.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: Vvf+8WPnuSSHTTTlqzcYxjZLQmQ=
+MD5-Digest: Fgx/ABdEMmfvPjPy8mQN+w==
+
+
+Name: com/sun/tools/xjc/dtdx/DXRepeat.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: H3cFQH5lHE5XZctCyEQOhNndjSI=
+MD5-Digest: Ono+ZjQw1wZw3xIoVRqcRA==
+
+
+Name: org/w3c/dom/Notation.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: B5fbsS+JvfP7RaLNZbLM1FmRsq0=
+MD5-Digest: 02VBx+QTF9LbnzRhfS2esA==
+
+
+Name: com/sun/tools/xjc/dtdx/DXElementRef$1.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: QpBaUM3Ta8lCNRdyneow6eydPiI=
+MD5-Digest: JQC2qK1R+1EO+PFGhZ915A==
+
+
+Name: com/sun/tools/xjc/gen/Mods.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: DHL8SIylq+NEgQrt8zMX4Kodi+4=
+MD5-Digest: AyU73DP/l511UQqDp5tWjg==
+
+
+Name: com/sun/tools/xjc/xjb/XBInterface$2.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 9OQo5kjuI3UBwz9DkWN6rmZhJFQ=
+MD5-Digest: 4atLNqVgJUG1BI2X9gmP1Q==
+
+
+Name: com/sun/xml/sp/SimpleHashtable.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: MFFoeRXJhp/CGbWoFGx0JCIQgP0=
+MD5-Digest: 9UdfB75b2eXo7I9ynNX2jA==
+
+
+Name: javax/xml/bind/PredicatedLists$PredicatedCollection.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: QORyfQbMNzh074RZdPLPQNk3kPE=
+MD5-Digest: XJh0jpwpZhbzVgYaEHmD/Q==
+
+
+Name: javax/xml/marshal/EndOfDocumentException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 3bQuHgHpRm06T7VVm8lv+LdN1BA=
+MD5-Digest: W/7QZYo39YXZymkmt3LZRA==
+
+
+Name: com/sun/tools/xjc/dtdx/DXAttribute$Type.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: GUircnusfrz5E3H0TbSETb1xScI=
+MD5-Digest: O7slwcOKUKhJL15ExHG1BA==
+
+
+Name: com/sun/tools/xjc/be/PropertyInfo.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: rNChqlScyxV4Cd3yMDZpffq0koI=
+MD5-Digest: zx4FnZsXYoXU06Rq7W7F+w==
+
+
+Name: com/sun/xml/sp/XmlChars.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: KQhtpshLAK2dyTLUbwZsmJpi+5s=
+MD5-Digest: B06xS+QS40tTjDMw1KDQNQ==
+
+
+Name: org/xml/sax/helpers/
+Sealed: True
+
+
+Name: com/sun/xml/sp/AttributeListEx.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: Czlj8YWCvdV8G16s75DKM13kW8E=
+MD5-Digest: oXXPfTe2FH9YsYeAjjfWjQ==
+
+
+Name: com/sun/tools/xjc/be/Bind.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: gHc2ysON0te2btMWvZBGdwsjDM4=
+MD5-Digest: pcfVvdkmshE57uQVhg/1Cg==
+
+
+Name: com/sun/tools/xjc/gen/Op$UnaryOp.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: cBbFytLUGFWS7XKsSCWai32E/m4=
+MD5-Digest: TuSdGbn6ch30hvxLIYXG5w==
+
+
+Name: javax/xml/transform/TransformerFactoryConfigurationError.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: KvzIH/wzCd4kTVTXWdwhMoxNBnk=
+MD5-Digest: 3hcn22AeQX4zlDfVuGD9BA==
+
+
+Name: org/w3c/dom/DOMImplementation.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: u7KwGuzGfYrwlyz/gZA7UJDLPZw=
+MD5-Digest: 60FIn6xXl/IYBH9d4MC4sg==
+
+
+Name: com/sun/tools/xjc/xjb/XBBindExpr.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: mTHzqX8zfwUWOdVFWvUvDHnliYc=
+MD5-Digest: 8zSrtduwaKA+XKL4SEGF7w==
+
+
+Name: com/sun/tools/xjc/xjb/XBConstructor$1.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: ZAbL/ylym7HFByOIKg18J0YGH9s=
+MD5-Digest: abFfqIOJBHx+zZM9Fn3Jvg==
+
+
+Name: com/sun/tools/xjc/be/AttributeProperty.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 0HoVzlX7lgOBUO3Tae4P2pmBDYk=
+MD5-Digest: j3jwgJIQQVDS6bG9WUBtNg==
+
+
+Name: com/sun/tools/xjc/gen/Var.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: A8IL/i54GVKLwNSCL4le6PGvH2k=
+MD5-Digest: q1aSuT0GeMutIElgdIJc6Q==
+
+
+Name: com/sun/xml/sp/Parser$PIQueue.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: nCw6UbEWqxj4gv0wnzAaYc7Rncs=
+MD5-Digest: CSiXTWZ0WVgE345bbfHJpw==
+
+
+Name: org/apache/crimson/tree/ParentNode$TagList.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: pz8zampLjN9IW2E3pgNCKKbTWgg=
+MD5-Digest: 1ci92kCsMLvbo31oHjvqRQ==
+
+
+Name: org/xml/sax/Parser.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: RowWPEg4zBpEg5fu6IZweYcjfUg=
+MD5-Digest: xnNOhdeYcF/1nIirrZDo6Q==
+
+
+Name: com/sun/tools/xjc/dtdx/DXElement$1.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: VWJUfxVUmSFYmKhMc5hLD+BtW28=
+MD5-Digest: m4QnJ8yatNAejQCJFi8z+A==
+
+
+Name: org/apache/crimson/parser/ExternalEntity.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: QYcfHsU7IORQcpfpEpbenOhQKVk=
+MD5-Digest: jEz7JD76o6/a2lBJ6hBCpw==
+
+
+Name: com/sun/tools/xjc/dtd/parser/Parser$NameCacheEntry.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: E8YcBAMq9epjtX1mKyWuCs0P5eA=
+MD5-Digest: ewEL4lQnwCDyULlW74I49A==
+
+
+Name: com/sun/tools/xjc/dtdx/DXChoice.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: S9jrqN5JZ64Erl8ev9DN8KQu1yo=
+MD5-Digest: m/VrjG590xl+wGOV/Y7pkg==
+
+
+Name: com/sun/tools/xjc/xjb/XBElement.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 851rzmGF7adkTcXu6tYI3tfhI3M=
+MD5-Digest: XqePegziuqCgVd5VIkLuXg==
+
+
+Name: org/apache/crimson/tree/CDataNode.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 9g4h2MlH5li9XnLrJuJJoKu25Fs=
+MD5-Digest: EAtXlLxqF1TdXYNNgZiEFA==
+
+
+Name: org/apache/crimson/parser/ValidatingParser$EmptyValidator.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: Zy8zEtycJ0y6D3YUs+oczx2VGSs=
+MD5-Digest: dfnm5lGeTwO4eUfLzyCuiw==
+
+
+Name: org/w3c/dom/CDATASection.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: xeBMp7FnoA2Cf0CksAv3+YcWwyo=
+MD5-Digest: YU+YrK48ME14o348Tu0WnQ==
+
+
+Name: com/sun/tools/xjc/be/UnexpectedDeclarationException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: AzQX5MACAfrpkgnd+7YQLcg4w/c=
+MD5-Digest: sWy3nRQvY87R9pIKvSBw2Q==
+
+
+Name: javax/xml/bind/Validator.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: /DY0YZIZpGuhfmaEbPlChvow3wg=
+MD5-Digest: Q43m/RgmxbkIcDf+qEKOWw==
+
+
+Name: javax/xml/marshal/StreamScanPosition.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: QC2guwoy3I6WrCyv2uR3DnS6+iM=
+MD5-Digest: h8JHrWXqWIZfDsJBtEYK6Q==
+
+
+Name: com/sun/xml/sp/Parser$StackElement.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: IUZbErMe3IXBql70xHcYY7KMCM4=
+MD5-Digest: 4EaJUcI94Q3fQ67ze8WhAg==
+
+
+Name: org/xml/sax/SAXException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: J8XH9Dhg6j2qoUXyT7d8zzIroWc=
+MD5-Digest: nANR1pxrLjyYa2k5ZNAmkQ==
+
+
+Name: javax/xml/marshal/ScanIOException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: ON1rKfo+oHFlHXgpzLa0PfW3mEs=
+MD5-Digest: 3gXuLwTYkoFQb2sg9nHCSg==
+
+
+Name: com/sun/tools/xjc/xjb/XBExpr.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: B/5idk2BCBdG4bY2Wpc3TVx92Uo=
+MD5-Digest: 4KnlCZcwUFVr/uSZxHDg2Q==
+
+
+Name: com/sun/tools/xjc/dtd/SequenceModel.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: M3pmVhkzAoKzmxTCEB2y3NabCis=
+MD5-Digest: Hpry0Ll2/Cet2TlxAfrLqQ==
+
+
+Name: com/sun/tools/xjc/dtd/parser/ElementValidator.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: gRcitxIwlU35og/m31WqxX4za6M=
+MD5-Digest: 6pJb+D9oo7zNzXxOu33jSA==
+
+
+Name: com/sun/tools/xjc/xjs/XSContentDecl.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: b1xS6uqqEmduqjFG7VuwpG1KyOs=
+MD5-Digest: nv99OYK9ZzhHzcSwJfjwDg==
+
+
+Name: com/sun/tools/xjc/gen/Invocation.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: s92nOo4MSMo8ntvsNYsSzAzeErE=
+MD5-Digest: 4AzjVBnDqhetYGqjh+KY9A==
+
+
+Name: org/apache/crimson/util/
+Sealed: True
+
+
+Name: javax/xml/transform/sax/
+Sealed: True
+
+
+Name: com/sun/tools/xjc/xjb/XBContentExpr.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: m0acWD5CE5K6ifr7eysmZR8K9IM=
+MD5-Digest: 9ERaKOGqY/9Xxched1EyYA==
+
+
+Name: javax/xml/transform/sax/SAXResult.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 553y3nKlNGhZNPTECLjwUHNwkAw=
+MD5-Digest: dIgJkyF/MQO43/eoyc0dyA==
+
+
+Name: org/apache/crimson/parser/
+Sealed: True
+
+
+Name: com/sun/tools/xjc/Patcher.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 0HCgLKfrDP4AweOUZpko0Y5P1Do=
+MD5-Digest: IbTblGBBS7f4SlTvVmv4YQ==
+
+
+Name: com/sun/tools/xjc/be/Conversion.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: vO3SwQWQI9TUGFG1tJ2NcwXRmHI=
+MD5-Digest: 4xiaoyo0+G2FHgjosmm7jw==
+
+
+Name: com/sun/tools/xjc/dtd/StringModelType.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: zUCG2fIEGBawl8SXh7ivfl6gzp8=
+MD5-Digest: Gz8YDkEGxLJMv6IyTZ0SCQ==
+
+
+Name: org/w3c/dom/Entity.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 5WaX/9IKjuC70ZwMAkCVk1i1ucY=
+MD5-Digest: Plc6bu99zPiNJ7CAOTOHyg==
+
+
+Name: com/sun/tools/xjc/gen/Expr$1.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: D53YAUpLRpUfoworMBIB3nwE6Rg=
+MD5-Digest: NqlQK+zrX5VYMj/mySuFuw==
+
+
+Name: org/apache/crimson/tree/ElementNode.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: opk7k3xU+vTl9bgAVEfF30ysvAw=
+MD5-Digest: ykdCE4uDhXmwzvE4bHIi7A==
+
+
+Name: javax/xml/bind/MarshallableObject.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: Ui/qL9S29MJobdL//cpuGKwpGW8=
+MD5-Digest: Ib+tnn7+tJWRm7D1io3LnA==
+
+
+Name: com/sun/tools/xjc/NonEmptyContentModelException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: inafCoURxEjWadKAweKWyhwg0Yg=
+MD5-Digest: NGWvWObtUdCcrcz7mW3fKQ==
+
+
+Name: com/sun/tools/xjc/dtd/DTDHandler.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: s07xEqfhJw5Two0uWG1572BCSZw=
+MD5-Digest: ontEQGvYL+NUPRp+5P7pcQ==
+
+
+Name: org/apache/crimson/tree/DocumentEx.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: bB1hLx1Gsi3KSydGM93UMVHP3mA=
+MD5-Digest: V+5hR4soolgrWytH6ED5oA==
+
+
+Name: com/sun/tools/xjc/dtd/parser/EntityResolver.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: XaqZXD1OmuCP8U6XZXHlSLPr3KA=
+MD5-Digest: yIr/T2G1Z8uqVNgMWCctFw==
+
+
+Name: org/apache/crimson/parser/EndOfInputException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 7Hp0DJoGknbdXc4KCifhwvfqwt4=
+MD5-Digest: sOy3hyETQv11ectVZ2u0Ew==
+
+
+Name: org/w3c/dom/DocumentType.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: d5xdczSqM2xwFxfQ71wSb1wRGZ0=
+MD5-Digest: mg0bLkuE0r5QaFVWTt80sA==
+
+
+Name: org/apache/crimson/tree/ParseContext.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: tY1tpqNf08Q6hnBQgHVZuNj3eus=
+MD5-Digest: yHHmqCjuhYVZYOgCiaSjdg==
+
+
+Name: com/sun/tools/xjc/Version.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: Hjx4n8S3grX7WXwkNrdLkf4BKx4=
+MD5-Digest: WeIToW9WezHe1s67r124eg==
+
+
+Name: com/sun/tools/xjc/gen/FieldRef.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: r2n8okjLNOdltWSJTiYYhVbO3OY=
+MD5-Digest: eX1Wmheo7xpe/yebezPFVg==
+
+
+Name: com/sun/tools/xjc/be/BindExpr.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: Op4w4Qd4cJKEexy9EAFx85b6/zs=
+MD5-Digest: jgSp1kGhOFX+HhI4NOlSzA==
+
+
+Name: org/w3c/dom/DOMException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: hRzqxzqKnLseETqXrhymrkO0zp8=
+MD5-Digest: fjdrtf4h3u40zG+Z9ta75g==
+
+
+Name: com/sun/tools/xjc/gen/Array.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: qz+uiQeGtHBo4+jvQxsqPjIbs1E=
+MD5-Digest: HcBRE9RVg6QMtL2V/Ex6fQ==
+
+
+Name: com/sun/xml/sp/Parser$Catalog.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 6r3ThYmtP0S4lZnE1OCCfIFrXKo=
+MD5-Digest: pe/xuAT5Ge/q1jfl5HnwtQ==
+
+
+Name: javax/xml/bind/InvalidContentException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: oOo7GnN2zitPwwp7ttCYJvOtjlE=
+MD5-Digest: npio1R8iHPBuMk0x7gURJA==
+
+
+Name: org/apache/crimson/tree/Doctype$Nodemap.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: ESdMweW0Rkq3IUQEbdir/I6InlE=
+MD5-Digest: VsgZeYOv8cxryaJ04DCimA==
+
+
+Name: com/sun/tools/xjc/gen/Class.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 1XRrGPwk8QtPSVkb/gILcdApcoY=
+MD5-Digest: xAgxlNxkI+PmKjpDK9+XEA==
+
+
+Name: com/sun/tools/xjc/DTDXtoXJS.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: G8fzmRHddm0qHMPshuXR4D1JYnc=
+MD5-Digest: 2VWrrVVW0D928oU75wKK8Q==
+
+
+Name: javax/xml/bind/InvalidEnumerationValueException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: okl0wo8II8uZQEN5AHKU9avPQ9Y=
+MD5-Digest: DGqGTIydyBYr3sZJ6tRIwQ==
+
+
+Name: com/sun/tools/xjc/gen/Break.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: XSUHZRALCKtyM1NmQrGwbq2eXhk=
+MD5-Digest: t0j2aroe9P99uHZ318LHvQ==
+
+
+Name: javax/xml/bind/MissingAttributeException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: hJMJYVjA2hwaneC9oak1MbQCw8A=
+MD5-Digest: +IkQXZ8jD4qxPZ8SLPpy4g==
+
+
+Name: com/sun/xml/sp/XmlReader$AsciiReader.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 9WUdM4V2yFNw8XiwRN0iNeyYzSk=
+MD5-Digest: dIeWch3cGd9Ym/lCPdtW+Q==
+
+
+Name: org/w3c/dom/Comment.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: BoSHnfxMTqdF5foosogJm4ry6FE=
+MD5-Digest: jxROikfg2gc1ufRrznma/w==
+
+
+Name: com/sun/tools/xjc/dtd/parser/Parser.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: dFBhGb85fpPBMF0rPJfXEV3bZlc=
+MD5-Digest: znqhJikAphZh1iOXB3xpew==
+
+
+Name: com/sun/xml/sp/XmlReader$BaseReader.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: Y2t+xNmuzOLEwhuwdSvirADQ6xQ=
+MD5-Digest: qY3GmGNjrgI6ObbM4qY5Gg==
+
+
+Name: org/xml/sax/SAXNotRecognizedException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: yv/TR6y+FRILwYx1iO24cjmviqk=
+MD5-Digest: VFh/ZQwT5qe1XCibNVMtYw==
+
+
+Name: com/sun/tools/xjc/dtdx/DXElementRef.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: SAOMDts7duH2rYPLXIw+Fk3vMAg=
+MD5-Digest: 2vS4JPecioe81ox4A7TUCQ==
+
+
+Name: com/sun/tools/xjc/be/InternalDecl.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: cfIedmHQ5FbrFJGSljfT4vpt90E=
+MD5-Digest: Lue/KX7ZX2f92gE6ZMtJfg==
+
+
+Name: org/apache/crimson/parser/XMLReaderImpl.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: C6ggXp0xA5J5SEJQp4BjV11NKfE=
+MD5-Digest: 6KJNsnsnoa730xE/+K9b2Q==
+
+
+Name: org/apache/crimson/jaxp/SAXParserFactoryImpl.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: nKXkBeXf07aXbfS6SRdmkayUd5Q=
+MD5-Digest: miMFXHKrL/+bjNscjlHI5w==
+
+
+Name: com/sun/tools/xjc/dtdx/DXSequence$1.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: tenrI7oCxpqw8TlpfUHPK6N8uYI=
+MD5-Digest: hTyGxEbsn64To4wfCNoMqg==
+
+
+Name: org/xml/sax/helpers/LocatorImpl.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: Fn6PcPTnQsrp54p33+TneRkJlUg=
+MD5-Digest: 6E3qNCKVYKHSJQv/PxVDiA==
+
+
+Name: javax/xml/transform/OutputKeys.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: QvjOQWfffvtv4Rmu/F9m63gQ6cc=
+MD5-Digest: YbntyBpA/kOucvEqxu9lNA==
+
+
+Name: org/apache/crimson/parser/Parser2$Catalog.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: JryJ3bZP3fz4onxDat82OWCKLRU=
+MD5-Digest: 4waPSxeu6Nn4Mb3qF5pNYA==
+
+
+Name: com/sun/tools/xjc/xjs/XSContent.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 9lug3vWhrCZUCZS4tlHulBsTITA=
+MD5-Digest: TeRBFw8rWAVj1yJO8PPh3A==
+
+
+Name: org/apache/crimson/tree/XmlWritable.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: OtOn/yHQ2Z71AwW/g5VQBeI5BQI=
+MD5-Digest: 3IBSumJg8n5KBbxHmGkkpQ==
+
+
+Name: org/apache/crimson/parser/AttributesEx.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 5CwqTiAul+DTSGoo5tVhkNW9P6E=
+MD5-Digest: Z7MB1dtzyc9QtP/c+1BZHA==
+
+
+Name: com/sun/tools/xjc/be/Context.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: b6viU8snpgy9BJv5qozW5o2hRik=
+MD5-Digest: 0HIlFijieCxlmpifzkGREw==
+
+
+Name: com/sun/xml/sp/XmlReader$Iso8859_1Reader.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: WAPQLeVmDNp779kgHVzIvMLrgcM=
+MD5-Digest: uVxp2zlglvWrKMAe5sSzXQ==
+
+
+Name: org/apache/crimson/parser/InputEntity.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: NtK6hjEyqApQlqMZb/Rdyhqmzpg=
+MD5-Digest: h0Y7nH3rdf+tgofdODle7Q==
+
+
+Name: org/xml/sax/helpers/XMLFilterImpl.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: BvyPDmvJIv33MTwHtz/sdE8o6qk=
+MD5-Digest: ahm48EcYQAV/LnaT2m3fZA==
+
+
+Name: javax/xml/transform/stream/StreamResult.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: Vv3p8wzT6IljV7YkE03rwv5E0go=
+MD5-Digest: EGPw9qLfI9E0MyFQyRDufA==
+
+
+Name: com/sun/tools/xjc/dtd/parser/EndOfInputException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 3m9zCnABfO6yoxzXpqly5Rl71Cw=
+MD5-Digest: ySwRGaqxswlL703jkcKDqg==
+
+
+Name: javax/xml/bind/Marshaller.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: AZ4JLWwVR3XV+sNkLDgOruZR/vc=
+MD5-Digest: mLKMBr6hyul1InFadEKP+w==
+
+
+Name: com/sun/tools/xjc/gen/Declaration.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: sbGNYaoXHiueKmxbNdDtkzYoVUs=
+MD5-Digest: OuTcZG7wbDyN+/9nsJgBtw==
+
+
+Name: com/sun/tools/xjc/be/Convert.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: VrdQqVKrnxpHAsnlU+dDHn853gE=
+MD5-Digest: TN0CjiNjfTaFiCEcphc/gQ==
+
+
+Name: com/sun/tools/xjc/be/ContentType.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: F9RyqzefoD+zT5Ih2Entc3xjSqY=
+MD5-Digest: mGoc4wpjasoYYUcEMIfoAw==
+
+
+Name: com/sun/tools/xjc/gen/Return.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: X8Hf6Mft2DekqEt11PwXhnywoHo=
+MD5-Digest: G7CDBgzgc5DS8WJiIctXFw==
+
+
+Name: com/sun/xml/sp/StreamingParserFactoryImpl.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: HFwlYljF7rKjSnDJE1y98Ox5d2Y=
+MD5-Digest: imZEoBV+ZyHMgP8bJ/9NUg==
+
+
+Name: com/sun/tools/xjc/dtdx/DTDX.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: NT3qGCAzJ/Z4dpl/mOB7pOPH2Y0=
+MD5-Digest: CFgSj52xfxHZkIrAAwQ5NQ==
+
+
+Name: com/sun/tools/xjc/gen/PackageMemberClass$1.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: B6mmBHk1DdC4lMpzKxQDO+PbvXo=
+MD5-Digest: AUs+h+9NvlGJYrBk+PlPlw==
+
+
+Name: javax/xml/bind/LocalValidationException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: nT0gsCJQk1ExyzRqNB0AFn2NWn0=
+MD5-Digest: erPPvkWtQoWq837GuitPXQ==
+
+
+Name: com/sun/tools/xjc/gen/DoLoop.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: wF00RNFiVgTQyj90GassYmXtzQM=
+MD5-Digest: zWXII9BRxGGyjgFZ6W1dwA==
+
+
+Name: javax/xml/parsers/DocumentBuilderFactory.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: LYrGraFUt88gotez9Qb5BTh+Xo8=
+MD5-Digest: ldZTmkpjMbNftDM4biJPJA==
+
+
+Name: javax/xml/bind/TypeConstraintException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: yvxsKysax15/fSvLgh0MPBIdxXU=
+MD5-Digest: njTmllVzrBPKA1YLB4vASQ==
+
+
+Name: javax/xml/marshal/StreamScanner.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: WPHJVzHJby4A6FNSJrrUH1d0/qM=
+MD5-Digest: DD+JRg9SuGcI6vFqCpV/MA==
+
+
+Name: org/apache/crimson/parser/ValidatingParser.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 75A4llt7px4PAg3dJczMYeIzu+s=
+MD5-Digest: dqQnr6MTB0A3x+10Z6EgZg==
+
+
+Name: com/sun/tools/xjc/gen/CatchBlock.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: /m6rOGhXx6PWke6vkQIE5thn3qA=
+MD5-Digest: 2fdWR+JBCfkG1p5+aZUg5w==
+
+
+Name: javax/xml/transform/Templates.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: wj4T1H+XIjc9FTECfabThUTDTHk=
+MD5-Digest: A11uH63TemgwVFdNaMRVJA==
+
+
+Name: org/apache/crimson/tree/DataNode$NodeListImpl.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: jDrFPVLqqa3ruDu8lDj0uF9WiPc=
+MD5-Digest: jLbHM0cQFUiJeE5jOQqWzg==
+
+
+Name: org/xml/sax/EntityResolver.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: u62/PLx/2mmsv8jKN2GhQgtZbVE=
+MD5-Digest: bcVBBsAnhGzRZmfYFpI+lw==
+
+
+Name: com/sun/tools/xjc/MissingAttributeException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: eLdDknkUpFDqBYurIzhp1ixslro=
+MD5-Digest: T8JEmLguAYqIaV38fTe/BA==
+
+
+Name: javax/xml/bind/InvalidContentObjectException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: qc1rO1XlUz1RviQZJxkvE8RsxeQ=
+MD5-Digest: 8Uo35MVIILiPgPFZ0dNH0A==
+
+
+Name: com/sun/tools/xjc/xjb/XBAttribute$1.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: GAudENKLfZjRdzkPBByNa3i1pbY=
+MD5-Digest: vk0SLSUlUsoUTpOgec4InA==
+
+
+Name: com/sun/tools/xjc/dtd/parser/XmlReader$AsciiReader.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: QHC4Z2ZsP0zgX9TKA8jctMVemk0=
+MD5-Digest: 3PYrKaQ3An4rf96rq9QeMg==
+
+
+Name: com/sun/tools/xjc/UnsynchronizedContentModelException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: auC3IaILmL0f4+98eLEADXls7So=
+MD5-Digest: CBC80FCKjhscAmLAuajdnQ==
+
+
+Name: org/apache/crimson/parser/Parser2$NullHandler.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: sVA1/QXyLM7EgysVykU1cfurED0=
+MD5-Digest: ZewwC0HYC6UJn8QZu+bqew==
+
+
+Name: com/sun/tools/xjc/xjb/XBEnumeration.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: VnZoe8CgQxUCb55VBb0B0rteags=
+MD5-Digest: LeOIwNxMVM6y/hLEQe9Big==
+
+
+Name: org/xml/sax/helpers/AttributesImpl.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: zm9ZGqCT2NmOld1ss1LtoyCE5gU=
+MD5-Digest: DSBBV4hpzZXN/AgSV+Dqmg==
+
+
+Name: com/sun/tools/xjc/UnexpectedTypeException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 16lX0XUoN49fPYcwtBu1hreqAMU=
+MD5-Digest: h9fED56jaazQiraT/idBTQ==
+
+
+Name: javax/xml/bind/IdentifiableElement.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: Woz47J21URnmvtoJ0CUStYCYJQc=
+MD5-Digest: iI0qoDpXbOFJpt78o0t79w==
+
+
+Name: com/sun/tools/xjc/xjb/XBSequence.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: kZ40B2obznU1n0d8NxKrzcyY6+A=
+MD5-Digest: JnakeCXL+sdwMBMILy1wcQ==
+
+
+Name: javax/xml/transform/Source.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: KEUKpSPeP7fXqweLYothnanMoTU=
+MD5-Digest: kCyne8ZxAa/X8e6yxWAOpg==
+
+
+Name: com/sun/tools/xjc/be/InconvertibleTypeException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: pbUAH4GgmCgoBuvuGJE0kiIYkWk=
+MD5-Digest: lavZAzssYgpZF7FWMaihZg==
+
+
+Name: com/sun/tools/xjc/xjb/XBClass.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: VSzh0bAR0Oth92G3AtAKHMmmisI=
+MD5-Digest: jT+WA9yUuSqAsmIurAN6Kw==
+
+
+Name: org/apache/crimson/jaxp/DocumentBuilderFactoryImpl.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: l8Vo5XoexorHhvY/dfiOs7LSUv8=
+MD5-Digest: bBCcyM7n35lcv/QTalS7bg==
+
+
+Name: javax/xml/bind/NoValueException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 4e4MD5HgyXVlAlLV4DpGDKXnm/E=
+MD5-Digest: UWL3d8pRt6pRgqhUFDIvSw==
+
+
+Name: com/sun/tools/xjc/dtdx/
+Sealed: True
+
+
+Name: com/sun/tools/xjc/dtd/DTDParser.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 5qeL2JL4X/hIvQetgxwEALbVG/c=
+MD5-Digest: ghmthCTY983qchhB+tQIDw==
+
+
+Name: com/sun/tools/xjc/dtdx/DXAttribute$Default.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: KQJeewmNtgFfBVEgL/FIFi/2eec=
+MD5-Digest: kV/dG3Vy9wSu6NnYGE7O+Q==
+
+
+Name: com/sun/tools/xjc/xjb/XBAttributeOrBindExpr.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 0pKQk70EjRa+p+uGMaVfLqnIlTI=
+MD5-Digest: zy38I2ucK4I/zwToSOlq6Q==
+
+
+Name: javax/xml/bind/PredicatedLists.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: hAAVG9iDsoPVopYZWAYMDO57Sio=
+MD5-Digest: ZRlWn8+gApZLhOuY6CSc3Q==
+
+
+Name: com/sun/tools/xjc/dtd/parser/XmlChars.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 2Z3pYv6FGmtsMByWd5fy/LPjzZ4=
+MD5-Digest: F2fFRdqXJ56vETU6w1W//A==
+
+
+Name: com/sun/tools/xjc/gen/Op$TightUnaryOp.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: ghUStod7bg1dQDMLxf4C9LJyku4=
+MD5-Digest: yN6rUlOuRxty3htd26z7ZQ==
+
+
+Name: com/sun/tools/xjc/MissingElementException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: rbIic4wF25vnqDzazn0UFnIz1qs=
+MD5-Digest: 96oNshFp76usoSYnXlUbVA==
+
+
+Name: org/xml/sax/helpers/XMLReaderAdapter$AttributesAdapter.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: qLXbJABNig3tPj9U3UXgdO7fZc8=
+MD5-Digest: oShY5A1TH1PMgItBersdxw==
+
+
+Name: org/apache/crimson/parser/Parser2$1.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: lP417ouqkXEqpWXbpNl1O6Lle4Y=
+MD5-Digest: HKkiTk5AYvMx6KhmyqmzTQ==
+
+
+Name: org/apache/crimson/tree/NamespacedNode.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: I6PYbI6KFbsvYO7Qv650j7vjfLo=
+MD5-Digest: w6pajjnN7rIwbwWBr+pCyA==
+
+
+Name: com/sun/tools/xjc/be/Content.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: IKCdnLsNn3zc1XLShoi1O42jnEc=
+MD5-Digest: vp4tw2c1nnWNzZM9sXbrhQ==
+
+
+Name: com/sun/xml/sp/EndOfInputException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: Z8oeHOLiGhhedr5/DGo0V2+vLn0=
+MD5-Digest: TdR/1UDtjrKvROZp/0fiFg==
+
+
+Name: javax/xml/bind/CycleException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: X3oTwrUtGPubwhCd4N3qps1crxk=
+MD5-Digest: 9A0IanrzNMjLk+gRxDfhrA==
+
+
+Name: com/sun/tools/xjc/xjb/XBElementRef$1.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: cbwHwVNfpdTO3bh3HT4y1NA+T2k=
+MD5-Digest: pENSxIpgoHJuS90WaXxBYQ==
+
+
+Name: javax/xml/bind/DuplicateIdentifierException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 5QbLehrdlb4D8tvUmE0sStD5c/8=
+MD5-Digest: JwigOE4cvHhF23xGtA/nMQ==
+
+
+Name: org/apache/crimson/parser/XmlReader$Iso8859_1Reader.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: WULgySV0kDHaSXr8bW2iFeLCKKA=
+MD5-Digest: RAs4XnOfqZ2uuU1dSfeLCw==
+
+
+Name: javax/xml/parsers/FactoryConfigurationError.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: I6WnVNh/85R+8doqOoMqQFuOGTA=
+MD5-Digest: c9bKVD5r9L2WqrrIoCpg+g==
+
+
+Name: com/sun/tools/xjc/gen/TryBlock.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: efZ+/ngTH3tGMn/ngIV27FVgHFk=
+MD5-Digest: q3HgK37ZVG3MmXdli7+23Q==
+
+
+Name: org/xml/sax/AttributeList.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: hj3S/OGvh5HDxc5Kb7cEBCxnByE=
+MD5-Digest: pcIYf936qTcBO9lQNETWCg==
+
+
+Name: org/apache/crimson/tree/ElementFactory.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: qgRUCHgOqe4w1Vu/G8D7NvB6ZiA=
+MD5-Digest: CEUYyIonGAPYK0noVuKJKw==
+
+
+Name: org/apache/crimson/tree/XmlDocument$EntityRefNode.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: e4ploWSwigWqZ8Xu3RbuOZWS6aA=
+MD5-Digest: KjJ9WQbjXtPTOcSeQ0a0BQ==
+
+
+Name: org/apache/crimson/tree/TextNode.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 2gW6hiBkhvgtpv51gn8UT8/v50I=
+MD5-Digest: 49arGg2fYxOpHhkNF0OETA==
+
+
+Name: com/sun/tools/xjc/dtdx/DXChoiceExpr.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: +B5CvA/A5Lpo+NB7XEzNP7/gT/0=
+MD5-Digest: LizZLgCY6iyFDLyQ20sUZg==
+
+
+Name: com/sun/tools/xjc/gen/Expression.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: hSWKCEm171GsgteGnH73bwEaL5Q=
+MD5-Digest: gvh1TQrZMPEruiALcYuNoA==
+
+
+Name: com/sun/tools/xjc/be/UnexpectedTypeException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: uuBXGnu8SwzIcVhiEM9n5A1yUq8=
+MD5-Digest: Dgvzw71qWjqU8rw867JfIg==
+
+
+Name: org/w3c/dom/NamedNodeMap.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 4LPJWK2PhlsNEHPADd4tIHNvMmI=
+MD5-Digest: klBdg0Kl6XYmEsRF2pUckw==
+
+
+Name: org/xml/sax/HandlerBase.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: ycIU1YkQZyKc54p3iAHHXRxhsBs=
+MD5-Digest: 2EekYDVDOXTUzsB7NXOSBQ==
+
+
+Name: com/sun/tools/xjc/Main.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: oCkr8RnGB2hjloy+NcAt9KEujyQ=
+MD5-Digest: VF3vHxc66gbsjApf5PPSMg==
+
+
+Name: org/apache/crimson/tree/XmlDocument$Catalog.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: SJAA+ZVTV+7l0d6syGT5k62YbxM=
+MD5-Digest: lZywGIz1eNRouMAE15r5Xw==
+
+
+Name: org/apache/crimson/tree/AttributeNode.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: yVuK7Rb7s3dIl4nkX2P8h53K/r0=
+MD5-Digest: bM14fxdYy9VReTLwrBEQGg==
+
+
+Name: com/sun/tools/xjc/InvalidContentModelException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: TpgrHkTX5+y4YU9rINyige88+RI=
+MD5-Digest: s5R9Tlp4z9Xzk23BEjlhKQ==
+
+
+Name: com/sun/tools/xjc/be/Class.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: tDtRy6Y1giCM7Ryk5DQehioQkEQ=
+MD5-Digest: aVp+z8qTiN6gehiSXzYORA==
+
+
+Name: com/sun/tools/xjc/be/Constructor.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: e1O+bp573WQjmLR7yAFcQHmMKTA=
+MD5-Digest: 02fAiEsWQc3KJebHFBTg0A==
+
+
+Name: org/apache/crimson/tree/XmlDocumentBuilder.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: B644Q6DriL/6jCv8+LEBDI2VL84=
+MD5-Digest: S7K3gdo296ez2tRcXTYfTg==
+
+
+Name: com/sun/tools/xjc/xjs/XSTopLevelDecl.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 2geNhvCiZGvfyutPHgP8Xgievos=
+MD5-Digest: tK1FdL7xGcPuoGBeStYGHQ==
+
+
+Name: com/sun/xml/sp/NamespaceSupport$Context.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 0AhiejBw5+ZANIFbI55uwATvHak=
+MD5-Digest: 34+63P6rArapK1dkaPj9ag==
+
+
+Name: com/sun/tools/xjc/xjb/XBElementRef$_NameVPatcher.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: FC1pJl0an3bJyoV7HSywRHI/XAY=
+MD5-Digest: XE887ecGsO30THgQ94ka4w==
+
+
+Name: com/sun/tools/xjc/gen/Mod.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: yYg1D1h+9J7d8CIjrpX2VBvyHKo=
+MD5-Digest: rSk7Woyr/f3EIZMj74wwJw==
+
+
+Name: org/xml/sax/XMLReader.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 9d3AX00APqz+RYOtD9jy7Ot+2lk=
+MD5-Digest: EZ6rYjWBmnHqr1QS/9BiVw==
+
+
+Name: org/apache/crimson/parser/SimpleHashtable.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: zZbgLXG+cj3ogne42tjnL5ee4j8=
+MD5-Digest: d63NX/92DzC3qsy52Wifiw==
+
+
+Name: com/sun/tools/xjc/xjs/XSInterface$2.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: q1hnkzvrotDj/ghGNdHd6nsX934=
+MD5-Digest: +FQ4WBGraC1aAatKtWYTVQ==
+
+
+Name: com/sun/tools/xjc/gen/PackageMemberClass.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: BpiTSTCugB9x0dmTIZAc4CS34t8=
+MD5-Digest: 7oxPNNL5JVXUaQSlcp/SEQ==
+
+
+Name: com/sun/tools/xjc/be/Interface.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 6O4q3aFZIMgeVhkSvOll5MPxMFM=
+MD5-Digest: ov3hAPxBAzagz04AQQ+kkQ==
+
+
+Name: com/sun/tools/xjc/be/AttributeOrBindExpr.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: ii4XBT+blcHZoVpm7X2QqrwI+xk=
+MD5-Digest: d0ZPs2ZNmQH4MgsKQJUiBg==
+
+
+Name: com/sun/tools/xjc/dtdx/DXContent.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: GYL4oiKSGWTbh3zsFjy6+Vtq65A=
+MD5-Digest: nvUjhbAXMQrhnBs8xLSXog==
+
+
+Name: javax/xml/bind/Validator$1.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: OiHaoC4JrGThSknNDxcFRYJSs4g=
+MD5-Digest: 9dYERwLcLFJiUw8cBHtBNw==
+
+
+Name: com/sun/tools/xjc/be/SequenceExpr.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: ixTdundsjamrBsha3iRlWzBKQUM=
+MD5-Digest: 1BIqNMJ7uTbDzOOZyPFT5Q==
+
+
+Name: javax/xml/transform/dom/
+Sealed: True
+
+
+Name: org/apache/crimson/parser/Parser2$NameCacheEntry.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: Tsd4rXJPPhQRrZc7WPGmnToxWN8=
+MD5-Digest: Wnm6p8a1h08R4sG0P6wqqA==
+
+
+Name: com/sun/tools/xjc/xjb/XBElement$2.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: dXEBs4x/qCS/H1SpzlkdOIQ/EUM=
+MD5-Digest: xdNoiHWxOYmFT5kKxvqgEQ==
+
+
+Name: javax/xml/parsers/ParserConfigurationException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: DxvjG2uA2OaxYl7gz0Sw0ifYSKs=
+MD5-Digest: 2iIUDJiMqIM1XqWm6IyCXA==
+
+
+Name: com/sun/tools/xjc/xjs/XSConversion$Whitespace.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: hAzh66FaS3hDsR574FPRga1qnww=
+MD5-Digest: HTjZGtzTB7wKuz6kWM42Hw==
+
+
+Name: com/sun/tools/xjc/gen/Op.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: koHz4D63Wo+mLE4daH+idyvqX1A=
+MD5-Digest: HEtiQGQR0Be/RfhbVMJxJA==
+
+
+Name: com/sun/tools/xjc/gen/Package.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: kmd7RnEHrkLDcmejahLwgX7itrE=
+MD5-Digest: 87z4VBTGyn653hHIk8hGQQ==
+
+
+Name: javax/xml/bind/PredicatedLists$Predicate.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: Ege9KkyB+k5QyebGBvhndJhIHWQ=
+MD5-Digest: Ns3F2RNDf3YeqfCcX5yC0Q==
+
+
+Name: org/apache/crimson/parser/ElementDecl.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: YHAV0h/Vf05JC7QeWSub70Fon/M=
+MD5-Digest: 2giYwZZDuXWx7S8nVQvDtw==
+
+
+Name: com/sun/xml/sp/EntityDecl.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 0uzQ2eeEkoLPsp0/8nrj8Q23iXw=
+MD5-Digest: v1LBnNZFClSwTxHP5x64AQ==
+
+
+Name: org/w3c/dom/Document.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: +puJfBxHCFXZi6+pgdwQG0i+mII=
+MD5-Digest: NF8ydtxNY47MAimE5m+wkw==
+
+
+Name: com/sun/tools/xjc/xjb/XBSequenceExpr.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: XnQ40HxrtFXhZbxYQWdBgDCXO74=
+MD5-Digest: 01XZ8loZN9aeoW8Eu/qJQQ==
+
+
+Name: com/sun/tools/xjc/dtd/ElementModel.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: aMhT448vLgpS7fmO3CJoep3TRjM=
+MD5-Digest: FWfrrsjfGyirTk0w0Jj+MA==
+
+
+Name: org/w3c/dom/
+Sealed: True
+
+
+Name: com/sun/tools/xjc/be/Bind$Method.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: ufkVPhm+v2nCnc6jDjI7s366wP8=
+MD5-Digest: mt14yAkXwnIe+OVQU9kN4g==
+
+
+Name: com/sun/xml/sp/StreamingParserFactory.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: pbT3Ylan1x8greWsLyLE8KOecFE=
+MD5-Digest: t2dNjU9Vmt7o/Npyz4cbRA==
+
+
+Name: com/sun/tools/xjc/dtd/
+Sealed: True
+
+
+Name: com/sun/tools/xjc/be/MissingClassException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: W/K3iX0SkjwNGlycLUZ8w9pHfjQ=
+MD5-Digest: AAxBhp+V13FGXkBVJcI/ZA==
+
+
+Name: com/sun/tools/xjc/xjs/XSConstructor$1.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 9CwviJW05rXtkEYEp99Uwe5KSNo=
+MD5-Digest: 1kIH41Vlb6ZHaAE16g4rOw==
+
+
+Name: org/apache/crimson/tree/DOMImplementationImpl.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: rosI/QmegJtvlbw6m0AYwd+/FyQ=
+MD5-Digest: 4yhWWpoisRcpMkcyHo9eEw==
+
+
+Name: com/sun/tools/xjc/xjs/XSElement.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 5/sRXBFiCV9JmjHiWaysbcfP44g=
+MD5-Digest: jcMcU+xw1FlcRCwaZV0KDQ==
+
+
+Name: com/sun/tools/xjc/gen/Type.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 7ztE0OZ8bAp3ulN2XpofCAspR3Q=
+MD5-Digest: clZra5TDcKPwziQxJU45UA==
+
+
+Name: com/sun/tools/xjc/gen/Atom.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: Rxc5aL1QXp2YNgmYJglJA3SlevY=
+MD5-Digest: gsh+3tvdqDeSkiN/ALM3/A==
+
+
+Name: com/sun/tools/xjc/dtd/parser/
+Sealed: True
+
+
+Name: com/sun/xml/sp/Resolver.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: fgbM6q3erb7ROUwgH1mSQ9CNQYU=
+MD5-Digest: OD+Oql2blJx+rdQ3gwdpPA==
+
+
+Name: com/sun/xml/sp/InternalEntity.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: MjdSpqzpHX2N5Nzpxi05JkU6qag=
+MD5-Digest: Zm9Eo3F1wBO0PRgSailySA==
+
+
+Name: com/sun/tools/xjc/gen/Op$TernaryOp.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: tvcMZua0IQIugo4FDdUjTExl524=
+MD5-Digest: wiipXHvdV/5ggxw7b0+RUg==
+
+
+Name: com/sun/tools/xjc/gen/ArrayCompRef.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: amlRvnx32iW2xCERNnqn0DAqOWE=
+MD5-Digest: yxy6dAl73r66To+aC0DtJA==
+
+
+Name: javax/xml/bind/UnrecognizedElementNameException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: /0k8dSkufadcNASjfmiBlNobnfg=
+MD5-Digest: 0/JO/EOJLY5Bt9NmmQWFLA==
+
+
+Name: com/sun/tools/xjc/be/Choice.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: gv7lu1ibVK7kAZxICsmZSH2itac=
+MD5-Digest: 7ZjvfsNOsa7D9pfXcIErZQ==
+
+
+Name: org/apache/crimson/jaxp/DocumentBuilderImpl.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 7X/VWZGbsi01mF36TlBzK25g+tU=
+MD5-Digest: J7PXb2kWQ/vbBLuIb+qAzA==
+
+
+Name: com/sun/tools/xjc/dtdx/DXChoice$1.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: EyOE7M0Qp+y3x+ZjQjpv/I31yvE=
+MD5-Digest: bCcLP7rgSXRir27qMY8czA==
+
+
+Name: com/sun/tools/xjc/be/Enumeration.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: beJDVT5Le19Hl4VoZEh5yNaJhH4=
+MD5-Digest: 8kBeVReHwvyue3sm4OqxsQ==
+
+
+Name: com/sun/tools/xjc/UnexpectedContentException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 9YbEQtc8K/gWCjSE5gfut+d3LbI=
+MD5-Digest: 5LLr+H4y16kNTt9Y5OCxWA==
+
+
+Name: javax/xml/marshal/ScanException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 0gYAKUvmeOjgE57Lde+3WGFqJzk=
+MD5-Digest: bdcocI1dW7QdMu/mVCMQ9g==
+
+
+Name: com/sun/tools/xjc/xjs/XSInterface$1.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: A2Rf+K1vMd4AVXaUmsY00FymPpI=
+MD5-Digest: NYXgEK2JKmUhd7RPe9Ufzw==
+
+
+Name: org/xml/sax/ContentHandler.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: cUXQuOqXQV4j6yDUYyEyEZ5WJIU=
+MD5-Digest: 0ssmewMWLyPQdT/avdF0Jw==
+
+
+Name: org/xml/sax/ext/
+Sealed: True
+
+
+Name: com/sun/tools/xjc/xjb/XBDecl.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: trAY051pYpR9d9+BHHWHRISyiII=
+MD5-Digest: OIycNHpp6l2GHLcNY0lTzA==
+
+
+Name: javax/xml/marshal/ScanPosition.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 77RM/8w8UccDYife7uuWirBs4Lg=
+MD5-Digest: zgWKvF6MdoT4phiheODAqA==
+
+
+Name: org/xml/sax/Attributes.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: E/TrruRN2Z73+3elVBbPK07MS5o=
+MD5-Digest: 7h2ySE3Jg1r/Hk5ilHWiBg==
+
+
+Name: org/apache/crimson/tree/NodeBase.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 5BTXXOwAPlUVWctlsosw4hpEZrg=
+MD5-Digest: 1Jx0r7sSjdtQmKMx4/SkIA==
+
+
+Name: com/sun/tools/xjc/UnexpectedDeclarationException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: vu9uqWi4T5rUGBYo3++261NHf00=
+MD5-Digest: NmQcZkrjYw7V2n8SiOmLVw==
+
+
+Name: org/apache/crimson/jaxp/SAXParserImpl.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 0pvVpk1ybh12lR7EFivbakLOw54=
+MD5-Digest: vOT2z9x8FmD1tI7sKHdY3w==
+
+
+Name: org/apache/crimson/parser/EntityDecl.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: QiLEKUZECBAElEl09qLXyqAU1yc=
+MD5-Digest: O4ZXuTXRCJ7Fw5gYx8y9Xw==
+
+
+Name: com/sun/xml/sp/ParseException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: +muQQOOnElkXU6APBZxsKsoEGkU=
+MD5-Digest: IEJ7gPwZEbuqEgi9Uf2EIA==
+
+
+Name: org/apache/crimson/parser/Parser2$NameCache.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: PfyTN764c7mSNHrC2m/Dg7YWDY0=
+MD5-Digest: BM33fe3eTyr+kCR0Fj+caw==
+
+
+Name: org/apache/crimson/parser/ValidatingParser$1.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: VK9raa4bCpBAHOXw9ROD+ELefRY=
+MD5-Digest: LrDwvsY9X8SpfqrF5EN49g==
+
+
+Name: com/sun/tools/xjc/dtdx/DXContentExpr.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: gfk4DLFpjVEOPsA6UQRsKvs6DQA=
+MD5-Digest: Ue4gllNW2SAHowqHvRcK+Q==
+
+
+Name: com/sun/tools/xjc/gen/CodeWriter.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: yGRnrJtnXBXHV2/jcmhT7EzL6Tc=
+MD5-Digest: qeOXBVoYd/c/Vfh0S51+uw==
+
+
+Name: com/sun/tools/xjc/xjb/XBAttribute$Type.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: x5l3u/jK7xQKr7JCl6tVhCj7rv4=
+MD5-Digest: Jx8hw2QUspaFkCtU8N33Mw==
+
+
+Name: javax/xml/bind/RootElement.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: FghbZAH7Lmm2uqfoH0wiRdBbl0U=
+MD5-Digest: fcEz6V9jkP3ZdTD+NbF2BA==
+
+
+Name: com/sun/tools/xjc/be/Expr.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: zYvGpSkbjCdiQIuBweNqVMAZl1o=
+MD5-Digest: Js/NzuFccMWgB+W4HkmnNA==
+
+
+Name: javax/xml/bind/NullValueException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: lvgA1UIN9sQRLkc0CQCuCoIGIjM=
+MD5-Digest: b5ZY5lDwL5jCUWTtpXbWXA==
+
+
+Name: org/apache/crimson/tree/XmlDocument.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: vugfvs/xzACDNZ70id6Rp1JtIhk=
+MD5-Digest: fVWVLEhpfikkrn9VfQvm3w==
+
+
+Name: org/w3c/dom/DocumentFragment.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: NEiDnd6PbramL0BuSO9EvJ5yLdY=
+MD5-Digest: xkMoUTElTjA/yGJzWWLOIA==
+
+
+Name: com/sun/tools/xjc/be/ContentProperty.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: xmSlw7nJE1z3oVTN3nfp9Q+LwAU=
+MD5-Digest: KViCdvxy5rmBqUyQ3ylVzg==
+
+
+Name: com/sun/tools/xjc/xjb/XBElement$1.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: Gg6RKbH1UA5PCGJezPY11hmFpjo=
+MD5-Digest: xkU1WYyEsN4zllSt4PnqJQ==
+
+
+Name: com/sun/tools/xjc/dtdx/DXAttribute$1.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: t6E/k62YnZuROLj9zdVxu2wm3KU=
+MD5-Digest: ZGip2IzI9pFAO+9RSxejjg==
+
+
+Name: com/sun/tools/xjc/xjb/XBClass$2.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: qyYQoooG37W0O32jNgaxF/59Qbk=
+MD5-Digest: 5ceW2dBGBW9iLEAyDysm1Q==
+
+
+Name: com/sun/tools/xjc/dtd/Attribute.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: O1/8WOTXby8pWYehU3YOM9PGiM4=
+MD5-Digest: Y6je0+K0zI68YWyWjywL/g==
+
+
+Name: com/sun/tools/xjc/gen/Type$1.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: dnjtj7wFDGRCTvXR5pWVqPitgPk=
+MD5-Digest: hZkXJ9LkE1lW+TXYUQxCdw==
+
+
+Name: com/sun/tools/xjc/xjb/XBInterface.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: IFHB5Y4wzmu2Nv+hvZ948fK0CBo=
+MD5-Digest: mpmIskqTJkowSf70RCm+jQ==
+
+
+Name: javax/xml/bind/MarshallableRootElement.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: lHo46YK5BM43TyFRXRPgkwlIsGQ=
+MD5-Digest: hZsL2sj1w5IIfAzJyiVdOw==
+
+
+Name: org/apache/crimson/tree/Doctype.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: YBigyEtjlC4sMG6eMWAw5IpNLDo=
+MD5-Digest: zMnH34PrNkre0MpGhwx2VQ==
+
+
+Name: org/xml/sax/DocumentHandler.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: zl9aj3UjeRkEKQJ5braMIaO7o0M=
+MD5-Digest: CRmThRtZ7MHM+Io/t+9AKQ==
+
+
+Name: org/apache/crimson/tree/Doctype$NotationNode.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: pGpHbD0CMKeQP65BQ/65VhMeZfc=
+MD5-Digest: UG3ZiXHwftH5aYrbFbjfCQ==
+
+
+Name: com/sun/tools/xjc/xjb/XBBind$Collection.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: Dy4fc1Xl6kFiDib5dLRatcaghno=
+MD5-Digest: ByzQA/8/NTySQzBULqf0aw==
+
+
+Name: com/sun/xml/sp/ContentModelState.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: ViXmlsY7Wu+BXflOnSDjAhTZuos=
+MD5-Digest: qnCEtlsRCQSksUMVp4G2Cg==
+
+
+Name: com/sun/tools/xjc/dtd/parser/Parser$NameCache.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: JuBlXXWCb/dG/WEE0vC505TYtkw=
+MD5-Digest: I/gwHSx8QCBTfydt94ntgw==
+
+
+Name: com/sun/tools/xjc/RequiredClassException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 8Cnosqf1ZQIl9Hil+A8KkD5iovA=
+MD5-Digest: nzdpUl0xtZ5D8m0Cn1te0A==
+
+
+Name: com/sun/xml/sp/NamespaceSupport.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: EgTW5GipglQRXPkX17zUd7jVxwk=
+MD5-Digest: NfUIroOTg4zk+HjyC38Zmw==
+
+
+Name: com/sun/xml/sp/
+Sealed: True
+
+
+Name: com/sun/tools/xjc/dtd/parser/XmlNames.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 9QccMLAhhFUs1cHhCCFQBv3jvFc=
+MD5-Digest: 3mxvhqg+3SeEkNugmAv1OA==
+
+
+Name: com/sun/tools/xjc/dtdx/DXSequence.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: YfbCC+aa1SdE48CCdgMDRFZlIgE=
+MD5-Digest: eJMq9gu3YrUH7iFAXBBIcA==
+
+
+Name: com/sun/tools/xjc/xjs/XSAttributeOrInternalDecl.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: s5HknQigKtcUU+nZMZRLIzntomE=
+MD5-Digest: ejopfqRP+iQ0SqjYpiAhTw==
+
+
+Name: com/sun/tools/xjc/dtdx/DXContentParticle.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: LZeWnw3RhsQObJqYRwWbLXvvtmk=
+MD5-Digest: 2t+oB9WP0N4887nr/A0fVQ==
+
+
+Name: com/sun/tools/xjc/dtdx/DXElement$2.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: Na1+Uff1LmVpJHvDE2x3eb3ERXQ=
+MD5-Digest: TG04Cr0kI+X62/bSvNRqxQ==
+
+
+Name: com/sun/tools/xjc/xjs/XSElementRef.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: yzm3qxcNVMrI5vJWfs5ZRWgegfA=
+MD5-Digest: O7ViLfnx86oSC0TcW8LuXQ==
+
+
+Name: com/sun/xml/sp/ContentModel.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: D4JbeFc5KiHNLQ4PkiDdAR/HmQo=
+MD5-Digest: C6oIElyxsyh+V9RlEvRm1g==
+
+
+Name: com/sun/tools/xjc/xjs/XSElement$Type.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: VNg0X80NTpkQrOaRDPDPe0ArkGo=
+MD5-Digest: TI3uuTLeHJ5J37xNjFyTCQ==
+
+
+Name: org/w3c/dom/ProcessingInstruction.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 9tf7xlSZtfUxyzA0zLhWWFgnjsA=
+MD5-Digest: oNNGqRF/jr/3bbTKUTW9VQ==
+
+
+Name: javax/xml/bind/Validator$Color.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: TIRtpKrigIVuuYOq32PBsFTGwfk=
+MD5-Digest: 99XmsFT0hwYRhVFgOHB9Pw==
+
+
+Name: javax/xml/bind/InvalidNameTokenException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: lFq9It/VUutaLd2YPtPf7K8gWOY=
+MD5-Digest: Kt6ikJ8HkJf4qy3LJjz1fw==
+
+
+Name: org/apache/crimson/tree/AttributeSet.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: oQm97pgUPD8HxVPNLOuowseYdMU=
+MD5-Digest: CNqgxgONJH80WHKOpEDgHw==
+
+
+Name: com/sun/tools/xjc/dtd/parser/ExternalEntity.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: S6kpMvNG8nx1dei+1ZMW36vLpTE=
+MD5-Digest: e738S4loveUXFSOEUBBH9A==
+
+
+Name: javax/xml/bind/MissingContentException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: tpksAipUWcdMxDQp//h0TUbMuvM=
+MD5-Digest: X1b8jRWooEchqpkTbCxeOA==
+
+
+Name: javax/xml/transform/TransformerException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: Zv5iJbkE/yRdWfzkGiPCd4udE7Q=
+MD5-Digest: xIT5y+p6/cxkqFS6x0XeZQ==
+
+
+Name: com/sun/tools/xjc/gen/TypeAtom.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: f33jPl00ttqaE2I41pw2xcoKlVs=
+MD5-Digest: Uie/wtGLooDPVDSgkyYJGw==
+
+
+Name: com/sun/tools/xjc/dtd/parser/XmlReader.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: yZI5aT9fmku1VBt7V2cHhxI0CiU=
+MD5-Digest: rd0FwOS1sL8VX8/DudfzIQ==
+
+
+Name: com/sun/tools/xjc/gen/ReferencedClass.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: Qh+OJY9BpXgJ2owf7dF1yoTUSTA=
+MD5-Digest: hwJP5Tf+mE90a2WiZaXPcw==
+
+
+Name: com/sun/tools/xjc/xjb/XBClass$1.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: VSjkMg2alg2NaH7MlZy+eX3OXvU=
+MD5-Digest: ZoKTphpTU9OcsrhgpBWjag==
+
+
+Name: com/sun/tools/xjc/xjs/XSElement$2.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: KFmI/TngiAUfOIquOYBWFoQ/dNg=
+MD5-Digest: ssNrWwtCO1TJrxFK7neGEA==
+
+
+Name: com/sun/tools/xjc/xjb/XBAttribute$Default.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: SiZIpYvkDYc6xksXoDvrdUqJrkc=
+MD5-Digest: 7Q87piO6z6/AoMO14G+8Uw==
+
+
+Name: javax/xml/transform/Result.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: Pc0N6s/vay5x77HmcANGzgjOwCk=
+MD5-Digest: Bga2XgCyxRw5Oy4BhPW4Lw==
+
+
+Name: com/sun/tools/xjc/dtd/parser/XmlReader$BaseReader.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: ZTfk+v/02hds5q2u0gpTIPIJ1Os=
+MD5-Digest: 9cB4fx/GWzksphpYk4NqBg==
+
+
+Name: javax/xml/transform/URIResolver.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: Myj+jPxeTP/xpd3a1aVwEZTCz/c=
+MD5-Digest: a8PcFGHVwP6cvL8xzFnSTw==
+
+
+Name: javax/xml/transform/dom/DOMResult.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: H1uVcrXGCyrjhEkqAOAmtUxDS7E=
+MD5-Digest: 4eS128OcLGpFSAtJz+fmqA==
+
+
+Name: javax/xml/parsers/SAXParser.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: Usi/HQ5ywak3FbD6Aa40/Dus+UU=
+MD5-Digest: TF9BCZ6Vc+TOe57kVR2imQ==
+
+
+Name: com/sun/tools/xjc/xjb/XBContent.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: P+uCbjG5QKKVIlT3aEnUjoWcdhs=
+MD5-Digest: 1GmM9G6rK0LQlDlCnqlU/g==
+
+
+Name: org/apache/crimson/parser/XmlReader$Utf8Reader.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: yfBNkA7n0sku/nacBvUtzerjpzc=
+MD5-Digest: UoXlFrA6gAKAY8cyfI3chQ==
+
+
+Name: com/sun/tools/xjc/xjs/XSSequence.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 5JS/AjVlEtC5DtDVHk38QuHJ8DQ=
+MD5-Digest: K5PN1pleKpsygnHcH/h6WA==
+
+
+Name: com/sun/tools/xjc/xjs/XSRest.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: gqGztanJZ28Cp0PW7UHTuQDKqJs=
+MD5-Digest: +UpOlm2GA5wou/VWQ24CNw==
+
+
+Name: org/w3c/dom/Node.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: NBX+Yr4myIBrxvou3QE4zkj3D+8=
+MD5-Digest: LbA6nuR3lANEJC3N0JBJrA==
+
+
+Name: com/sun/tools/xjc/xjb/XBInternalDecl.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: z/GURS12oyO63Cn1nwBGxrwxcz8=
+MD5-Digest: Ti6dJqAYQ9LaUSt5A+Vu0g==
+
+
+Name: com/sun/tools/xjc/dtd/Repeat.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: Lte0IQljoTVWXRCioMBlABDhvbw=
+MD5-Digest: x0rFJN7TPMdrqZETAFGdqw==
+
+
+Name: com/sun/xml/sp/XmlReader$Utf8Reader.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 6+0vIOhnhFV+jPtMxs0xNYHUZ5o=
+MD5-Digest: eTAO51pkeKpQhvVGlTZ1sg==
+
+
+Name: javax/xml/transform/dom/DOMLocator.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: mAXvhGnQs/G5V/yks7j1u2JazLo=
+MD5-Digest: NkUcIwBEe0YCzspHbKhVBQ==
+
+
+Name: org/apache/crimson/tree/XmlDocument$DocFragNode.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 4NfxA7LWIxEVT5XKs82bi9acywE=
+MD5-Digest: DBtSfzrmH2qdYpsbgi/LUQ==
+
+
+Name: com/sun/tools/xjc/gen/Expr$2.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: miaLJOmfhBCT9g3DuTP9aCK/hGE=
+MD5-Digest: 9k6kv8fyXG0KcsjxmD6hnA==
+
+
+Name: javax/xml/bind/TypeValidationException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: GuGmh59rssAmX7P5L5RS68KLpJg=
+MD5-Digest: J2GxIQ+65xXSS0zX7uDi8A==
+
+
+Name: com/sun/tools/xjc/dtdx/DXElementRef$_NameVPatcher.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: mL4ZT4YmLhzsgiFwR+IJbryJjLc=
+MD5-Digest: OVhYw0cElWUQOPbCDDV4sg==
+
+
+Name: com/sun/xml/sp/AttributeDecl.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: TEeNWRecEdEpSkVxaP7AeSwRdqo=
+MD5-Digest: A3aT48hJK537y3eTZl7HTw==
+
+
+Name: javax/xml/bind/
+Sealed: True
+
+
+Name: org/apache/crimson/parser/ContentModelState.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: Yt/ObzfmnQKj0PiCEsKZc1TnlLM=
+MD5-Digest: bXIXguoZxnEyIfvCCpBrTQ==
+
+
+Name: com/sun/tools/xjc/xjb/XBConversion.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: mwDDrfIozACAJ/3pVPP5g4iicSk=
+MD5-Digest: f7LTyOLCcVrCdqz0GtyaVQ==
+
+
+Name: org/apache/crimson/parser/AttributesExImpl.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: J5d4pFv/c0BZ0jn98oIupK0/C/c=
+MD5-Digest: PS0vIaK7wsXD3ngm87572w==
+
+
+Name: com/sun/tools/xjc/be/PCData.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: IGnP8bFz+SCB/MWbsQQFaXbr7MQ=
+MD5-Digest: ER/RhRO3+yqtFcSwOYZirQ==
+
+
+Name: com/sun/tools/xjc/be/ChoiceExpr.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: li2HNoRiFpPRAblgekowSt0svh8=
+MD5-Digest: JFNBEKRZ8u8R2ayFh8nytQ==
+
+
+Name: com/sun/tools/xjc/xjb/XBContentParticle.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: tmN4LL3yJxiUPdxdhoMC8XEMilA=
+MD5-Digest: PmetwrlKXyiB6osm0254Lw==
+
+
+Name: javax/xml/bind/Dispatcher.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: Qi9wEcn7mvLoiXVZ3QX8UvxKFdM=
+MD5-Digest: q6WRfSMN2qgzskMv5ZHCzw==
+
+
+Name: com/sun/xml/sp/StreamingParser.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: rTwtcce2AUMS7L9j5ZrJGLAo9J4=
+MD5-Digest: CI63t96FS7eAoA3a0Us6sQ==
+
+
+Name: org/w3c/dom/Element.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: luo2ti1MyIM1/Cn9/iW3USDkCvs=
+MD5-Digest: Zydh0ucXG7mehI6xYy900A==
+
+
+Name: org/xml/sax/helpers/NamespaceSupport$Context.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: MvwEZ+9NMfugu2VaEIsEkMUPpAU=
+MD5-Digest: x8U2y4HA87yk7Ep9o1I0sw==
+
+
+Name: org/xml/sax/helpers/ParserFactory.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: XyPzBzmOSWGT2hlImZizyUlz32M=
+MD5-Digest: Aw5g11Sn28Ay6OtPNslovQ==
+
+
+Name: com/sun/tools/xjc/dtd/parser/XmlReader$Utf8Reader.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: eUUbLJQWLIxeLr9kk5Y9WrA6DLs=
+MD5-Digest: Gg3eGLjGYKB3oXIMgZokcA==
+
+
+Name: com/sun/tools/xjc/be/Fragment.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 7PhpyhDNFKGe/HhF0PZtN/pwuVY=
+MD5-Digest: Vro5Pk8onhSWZnptwVoHzg==
+
+
+Name: com/sun/tools/xjc/gen/Method.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 1fk7ynbWFxQRJtHVT3bl8Wgx884=
+MD5-Digest: VJ9dHHViIe5CaiKw3M+3PA==
+
+
+Name: org/apache/crimson/tree/ElementEx.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: Dbfj1xanqIX6EpNsDXahvG2lxr4=
+MD5-Digest: s+WWmvxXNmiF5p2nJAngKQ==
+
+
+Name: com/sun/tools/xjc/xjb/XBClass$3.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 67+6cn9pR8Uk2Bb6Edt7AIDCDvA=
+MD5-Digest: wKzQHv58f2DMbTg4qjTysA==
+
+
+Name: com/sun/tools/xjc/dtd/DTDComponent.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: vzMhbIYHJyRbiW1v/D6zlK2eU9c=
+MD5-Digest: T8KRaj+9YUJQJDUBBtDqow==
+
+
+Name: com/sun/tools/xjc/xjb/XBRepeat.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: su/Xqq+acL/1g4CdgYxmHfWms+A=
+MD5-Digest: XnI/Tq2K+fg+nC7DRxvuxw==
+
+
+Name: org/apache/crimson/parser/InternalEntity.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: BubnTcs4uoob/Rtf3RzPWsU4t34=
+MD5-Digest: ilPuq4TlWdOHWnxDDc0q9Q==
+
+
+Name: javax/xml/transform/TransformerConfigurationException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: JF72Q8xfgHRJxHLimi8xWlzHnkk=
+MD5-Digest: 3QoMOQcm6HYDetfiZwBUZw==
+
+
+Name: org/apache/crimson/parser/XmlReader$AsciiReader.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: wensJNLGNaMICts2mLq5QLKg9jg=
+MD5-Digest: V6oY5tRwZLuwp6CRY8M2eQ==
+
+
+Name: com/sun/tools/xjc/dtd/ChoiceModel.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: a/WEK8iLeEF3JD3J1oiV+aUexkw=
+MD5-Digest: 9xh/VGkDl2PcEapCnbpQhA==
+
+
+Name: com/sun/xml/sp/StreamingParserImpl.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: XiYbqzuGfGLP69lfmT3UvcNeUa4=
+MD5-Digest: NRLuawyymwtbjESnh3YenA==
+
+
+Name: com/sun/tools/xjc/xjb/XBPCData.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: bvBvOY4eqWC5RGmX8epILeCrNbA=
+MD5-Digest: k4dg2jYy9fYQcqNDcWJSKA==
+
+
+Name: com/sun/tools/xjc/xjb/XBChoice$1.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: S96DBYzxEFBnqLPiqwadF+EDgWA=
+MD5-Digest: DjDLJKsgVYFe0jvPrWmQlw==
+
+
+Name: javax/xml/parsers/
+Sealed: True
+
+
+Name: javax/xml/bind/ExternalReferenceException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: /4YbEWOYIwtrXGHJMGEiZs6Dc/Y=
+MD5-Digest: sw5OltzbodSluc9jk93MFQ==
+
+
+Name: com/sun/tools/xjc/xjs/XSEnumeration$1.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: EXX5Zha1vAmuHr5QaGBSVLXsmAE=
+MD5-Digest: LYK62u9ugF2qDCsYKVbKgQ==
+
+
+Name: com/sun/tools/xjc/xjb/XBConstructor.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: I6CCsxQdg8J498Y/3F+D6g3kfOI=
+MD5-Digest: inXW0pFQjkUlOQAwN3/RQg==
+
+
+Name: org/apache/crimson/parser/XmlReader$BaseReader.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: UufWd1X2YySkHpVgC2t5x12Fxjo=
+MD5-Digest: IpoTG78/OLbqFeE3kp+7hQ==
+
+
+Name: com/sun/tools/xjc/gen/
+Sealed: True
+
+
+Name: com/sun/xml/sp/ExternalEntity.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: aWOlwJiNSDGi5l1SDT/fgRN8cEc=
+MD5-Digest: gznD8oxjnLw9eqc1c0s+Gg==
+
+
+Name: com/sun/tools/xjc/xjs/XSElement$1.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: cpt09CdsNGPsJDbWQOXBo2bNnws=
+MD5-Digest: Adr0wwvVOT9rumm4CIiJzA==
+
+
+Name: com/sun/tools/xjc/xjb/XBEnumeration$1.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: PSrr2f1G4KHhXbIDiUKewBXSeRw=
+MD5-Digest: g8DMTse5vyIiLGO92tFaMQ==
+
+
+Name: com/sun/xml/sp/Parser$NameCacheEntry.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: cPImaqAdd3L0zTjlgYhvESOzUec=
+MD5-Digest: ABv9RQyi6q8q/pMLadVR/g==
+
+
+Name: com/sun/tools/xjc/be/Element.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: Ldok0cCoMcHFG8TJp12DhKgByMA=
+MD5-Digest: Wj7cnbIVWLcR5igI0UYmyw==
+
+
+Name: com/sun/tools/xjc/xjb/XBConvert.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: vChxUAjpbw88hIGCAjPsJzymHSg=
+MD5-Digest: v4WrEXFABpYPkSsOKqwUDw==
+
+
+Name: org/apache/crimson/tree/DomEx.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: amfSagW/CjMIKkXCbMjgOXilJcA=
+MD5-Digest: wiSinQNt89Sw3DHwUvWryg==
+
+
+Name: com/sun/tools/xjc/gen/WhileLoop.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: iqUKbBZCJcYzrOURc+j1HxoNnMc=
+MD5-Digest: v9rEpWXzcGJ9DG+KAL12ag==
+
+
+Name: org/xml/sax/ErrorHandler.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: BLoQFQ+RT1CUcPEfCPZSwDwXWgU=
+MD5-Digest: zz0/bGqGCJTCBm2X/yJhew==
+
+
+Name: com/sun/tools/xjc/dtd/parser/DTDParseException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 4HrEeUs2EcGJbFN/DSxg0wbvGTA=
+MD5-Digest: A4AIofV6sb3gQkAtwKf0XA==
+
+
+Name: org/xml/sax/helpers/DefaultHandler.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: fvFMhgYOQrlBwZgeb6+w8ial8fI=
+MD5-Digest: Hzp8MCyHwyQAe2nedAvjvQ==
+
+
+Name: com/sun/tools/xjc/dtd/Patcher.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: sfKpJzB2OM6a0RvSjjfY7iS9uas=
+MD5-Digest: UpwOvKM+8ITWvV2Eqr29lg==
+
+
+Name: com/sun/tools/xjc/gen/Cast.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 1U3PGOOVGQC2VHaXIFUVw1wCKFY=
+MD5-Digest: BrkSXaw5ZgXAex+316wCsw==
+
+
+Name: com/sun/tools/xjc/xjs/XSConstructor.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: NPZgooOhqaZekAt4TjZwieWe/fQ=
+MD5-Digest: VP8OZMqQWvlLzMwk1hRNxw==
+
+
+Name: com/sun/tools/xjc/dtd/Element.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: +ty58/VMhTe3iNwl37+kP2pj9OA=
+MD5-Digest: eeiIYthxXF+VxLZRqAAfKA==
+
+
+Name: com/sun/tools/xjc/dtd/parser/XmlReader$Iso8859_1Reader.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: ZUuOn5vPGFJiA+BkkQTiv4xCh5c=
+MD5-Digest: E6FL6BrDgVvk+ouqH5Jcqw==
+
+
+Name: com/sun/tools/xjc/gen/Statement.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: K5Qxfdi6fP4deocByUtVojyRL2Q=
+MD5-Digest: lkn+Ai+eA9187ZV65D5E3A==
+
+
+Name: com/sun/tools/xjc/be/Property.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: x1sZjwTOS1FctEMNAq39bWsqP4A=
+MD5-Digest: U1v0+6I7HPqcikpDlEI4Bg==
+
+
+Name: javax/xml/bind/PCData.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: Vo+mFa1GllDgfBmY82ayXvr6m2U=
+MD5-Digest: 7IGOrJTd5OvlPEe0/sLZ8g==
+
+
+Name: org/xml/sax/SAXParseException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: ovw3wHC8rNVNmNEPpB2T55mBUmg=
+MD5-Digest: 2zzsv+5e+1vIUyEn+PQNqw==
+
+
+Name: com/sun/tools/xjc/gen/ForLoop.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: +zg3mAj3nJDE+bfF569ApSA9Wr0=
+MD5-Digest: i7rouY2BQWQzvxWdtz/H+g==
+
+
+Name: javax/xml/bind/ConversionException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: YpJ9yN/2wQOE3ZyPiUr/GGt0WNA=
+MD5-Digest: wy69k2nw/r2oD6CEeE649g==
+
+
+Name: com/sun/tools/xjc/XJStoXJB.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: N2sPMwZWod8NjxMU2cKmpTJNF8M=
+MD5-Digest: nV3VKUQiPJsar9AtRV6gtg==
+
+
+Name: org/apache/crimson/tree/XmlDocument$ExtWriteContext.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: vw7eoMdp+wYzmhHVJfuo/sSlGxM=
+MD5-Digest: Ngvht2nkIj7dBsux2Z6USw==
+
+
+Name: javax/xml/parsers/SAXParserFactory.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: T4o91A1Zu0FPPA8ShBN6Y721YtM=
+MD5-Digest: Qeeh8irzXe9vgsHz2Ihlpw==
+
+
+Name: com/sun/tools/xjc/dtdx/DXSequenceExpr.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 6GGlsaPdGDfeipc5TbrJXbS0QoY=
+MD5-Digest: 0fKxT28j9qgBiEzJkGfnrg==
+
+
+Name: com/sun/tools/xjc/xjb/XBOptions.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: dr7shTxtziXJOc4gaUO5uhVrFyY=
+MD5-Digest: Luvlaa4TQmpedZEMRn9QSg==
+
+
+Name: org/apache/crimson/parser/SimpleHashtable$Entry.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 5MWpn/tz6viRLnbra6KUkPegF9A=
+MD5-Digest: vzeVxQjnF1sYh2sPtx99Fw==
+
+
+Name: org/apache/crimson/tree/CommentNode.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: dkw56KgCOodAQWQkztlRslNUtF0=
+MD5-Digest: PffMOb8OsyDou3UfbNyC8w==
+
+
+Name: com/sun/xml/sp/MessageCatalog.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: XdJmsQJEUVF6Xh1o57ys1B0UTY0=
+MD5-Digest: UqClNUo8+HlSnEWird4CtA==
+
+
+Name: com/sun/tools/xjc/be/UnexpectedKindException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: nr3O0ykvcAjcNsi5uiU4yq+VDuA=
+MD5-Digest: o4Y0dW7+Q/W6mDcg9w1hGA==
+
+
+Name: com/sun/tools/xjc/xjb/XBBind.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: Y0QwJ07Q0G0F0cPNoJnttL2NoeE=
+MD5-Digest: xj1fZw9XEgvRoqxu4pqPlg==
+
+
+Name: com/sun/tools/xjc/NoRootElementException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: Cw4e6PtdXwazP44doTaDbjKnj7o=
+MD5-Digest: /cix8FNabgTtjLFhvg5JrA==
+
+
+Name: javax/xml/bind/ValidatableObject.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: huPNgX2CxO4yx7RtHo0d3opeqzo=
+MD5-Digest: RkHP/fvWGvtMcN1ySLeG8w==
+
+
+Name: org/xml/sax/ext/DeclHandler.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 6AhkT4m2Nze/8dk0elWVaPwR8MI=
+MD5-Digest: 6whIU1ztYG4/Ly3eV5WzAw==
+
+
+Name: com/sun/tools/xjc/be/
+Sealed: True
+
+
+Name: org/w3c/dom/NodeList.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: Zfq2fM7e+94lepUTPuO6jbX4NT4=
+MD5-Digest: tuZOL+GWd+JTgAhhOEujZg==
+
+
+Name: org/w3c/dom/Attr.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: +A265daxDXT0SY3JdoXbO+MVSvo=
+MD5-Digest: u1+kXnypHeBi1G2jJTUz+w==
+
+
+Name: com/sun/tools/xjc/gen/Throw.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: zzzVS/IwAstyzKL22HouUqr4EoU=
+MD5-Digest: 9cKBeI6SZmv3npsuKF92pA==
+
+
+Name: com/sun/tools/xjc/
+Sealed: True
+
+
+Name: com/sun/tools/xjc/gen/Block.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: M+0Px69tqTrxQZeamb1piq21CK4=
+MD5-Digest: k7PB2BkEB4vbHNB/TMdX6w==
+
+
+Name: org/apache/crimson/tree/SimpleElementFactory.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: QLqPwRgf0aXDtuyUu7WNWaXIgt0=
+MD5-Digest: XthXThdax1JXWrPq2hTlcg==
+
+
+Name: com/sun/tools/xjc/dtd/ContentModel.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: +ocT8+6wx6QeVF15c151a/Nuvjg=
+MD5-Digest: It/U8Ft4A7y/3x1phfe84A==
+
+
+Name: com/sun/tools/xjc/dtd/parser/DTDHandlerBase.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: XYSrrsdtXnrJvJIAGRGqSYElEHs=
+MD5-Digest: aj55F3wMDYCzSD7/gV1HkQ==
+
+
+Name: javax/xml/bind/UnmarshalException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: t3NWcxT5cSNyFAa9SSRfxJvJc2o=
+MD5-Digest: RtnHPLxtM8dIBmAu4P4rlQ==
+
+
+Name: javax/xml/bind/MissingIdentifierException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: ehx4XaJUqUcPSK0ni60trBjD+TI=
+MD5-Digest: NkW1aS6txuamsVp9Wp74mg==
+
+
+Name: com/sun/tools/xjc/dtdx/DXAny.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: ehSYmz1dlfm45VoGctS1H0FYYtI=
+MD5-Digest: Mcs7a3cFnV1+HTyGkwPiZw==
+
+
+Name: com/sun/tools/xjc/dtd/parser/SimpleHashtable.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: yCXQHwLrJ/K1toJosUkNeTQnPFE=
+MD5-Digest: TFAv2n5MNQBWxSjhxh06hw==
+
+
+Name: javax/xml/bind/Unmarshaller.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 0nAwkl38nBAxOj/R2kWxSdVRBOw=
+MD5-Digest: 1Iy0TKmSxx3HZ14+EJzsBg==
+
+
+Name: javax/xml/marshal/XMLScanner.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 6EFuSYsBi75S06YDerlLv1XHg7A=
+MD5-Digest: 07zYOSly/T/PlzSGRI9a2w==
+
+
+Name: org/apache/crimson/jaxp/DefaultValidationErrorHandler.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: e4JJo97k5feGKRQeOD8Yx9qorxc=
+MD5-Digest: cpEUCn20+FRvkHZoX4GjLA==
+
+
+Name: com/sun/tools/xjc/xjb/XBElementRef.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: iE2a3TzQOrNooPRqmtpnTGRTCxo=
+MD5-Digest: OpJruqVc8p017cEjtQBr3w==
+
+
+Name: com/sun/xml/sp/Parser$DocLocator.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: AakR3Va5z9xEXPYIqO8Som4YLYA=
+MD5-Digest: eGQqHlabM1dJmcI5h0EA3A==
+
+
+Name: com/sun/tools/xjc/dtd/Notation.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: VfQw7pn9f5dV5ssovG/jqxbIh3A=
+MD5-Digest: wEED8A4Q5vxWZcTQwFZYoA==
+
+
+Name: com/sun/tools/xjc/xjb/XBAttribute.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: tMLRZ9AN+1xZwShdO8jdXD3iyI8=
+MD5-Digest: Xz5ODVF9drwtm878uMUcMQ==
+
+
+Name: org/apache/crimson/parser/XmlReader.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: MXnxoq/p9aOdQqxMwgHS2SVwsLw=
+MD5-Digest: nPPGl8oj4/HHJJ26aWrL7g==
+
+
+Name: com/sun/tools/xjc/xjs/XJS.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: h0/NqZkWmNIzMWOtMlZoe55QZfk=
+MD5-Digest: C6JtrQR0QDdlMHOoEe7M0A==
+
+
+Name: javax/xml/bind/ElementNameRegisteredException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 9iawNUgUpYB+hPb4hbxzoaicSSA=
+MD5-Digest: cPBSnJMi4MWoQTqlbJWb+g==
+
+
+Name: com/sun/tools/xjc/xjs/XSEnumeration.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: QuzkSiyB3Sl+5xIo2DMoihfaQbY=
+MD5-Digest: hsWkli34UtGS4FVoUhWM0A==
+
+
+Name: com/sun/tools/xjc/gen/Generable.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: tYuZ0Ag21vStNU+/1P4KTG0ZAvM=
+MD5-Digest: qo0GEb3DPjpbvazWqu+h/A==
+
+
+Name: com/sun/tools/xjc/xjs/XSChoice.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 2EM1eXCYZY4w7d9dgLf1pwTmEB0=
+MD5-Digest: kVPCjNGIQ3wvVSJ7XcpgcA==
+
+
+Name: org/xml/sax/DTDHandler.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: F+NP99LkfhHWdrCiKCl/m3BwBlY=
+MD5-Digest: 6LGoU6T/Di9uOIxGduQKBQ==
+
+
+Name: javax/xml/bind/ConversionFailureException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: MJOojIXN+HI3M9qdIPseObl0j6w=
+MD5-Digest: e0PDcmpRYkU7UXvwWpI0zA==
+
+
+Name: javax/xml/bind/FixedValueException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 7DgFxLGzOUP7/dtiTHqfP5YXYyI=
+MD5-Digest: KI8KQXIBlvOjgTLaBjTDcw==
+
+
+Name: com/sun/tools/xjc/gen/Type$ArrayType.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: quf/4Lpz3uLFhpojDzkbORtCCrw=
+MD5-Digest: cNUw1OzcKgxFWJ03KGTP4A==
+
+
+Name: org/xml/sax/helpers/ParserAdapter.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: wwBClCSZ0ILml4v34rJ1LK58P9A=
+MD5-Digest: uQ/6U+VR40ygmTbY8kkaZA==
+
+
+Name: javax/xml/marshal/XMLWriter.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: V/JLNl2ZvgbfxMP1CCbPjy/sFqo=
+MD5-Digest: GJD0q63GH+LZNiy9EZX3WQ==
+
+
+Name: com/sun/xml/sp/Parser$NameCache.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: nxXwdbp6cw0jaSM7BmKdUtKWwJI=
+MD5-Digest: Kqk49daOBkR+CDLgEYhM6Q==
+
+
+Name: com/sun/tools/xjc/xjs/XSOptions.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: EnNpqvgDRx9/OfNI2jL6BT/tXBA=
+MD5-Digest: 2fa3u0J428TnS8u1eKO/uA==
+
+
+Name: org/xml/sax/helpers/ParserAdapter$AttributeListAdapter.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: RHa1a37USMp82g+dj9qUs7HoWgM=
+MD5-Digest: ge/pDXT6PeznIWa107+/PQ==
+
+
+Name: javax/xml/bind/EmptyAttributeException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: Sl586ASOTCJcF3sQz4ftMEx+8Ds=
+MD5-Digest: yfkBVxkxrKbOSspcnZ91iQ==
+
+
+Name: javax/xml/bind/InvalidAttributeException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 6OEp+HKWiQwtGOj6Y9RjP7YvZSo=
+MD5-Digest: OSPjtVXRWquo5x6GYjSd0Q==
+
+
+Name: com/sun/tools/xjc/be/Sequence.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: miBv6AhQIu9vk2rY1k6FdkcVvgw=
+MD5-Digest: 59rYOxaCyfS0khfDGAo2RQ==
+
+
+Name: javax/xml/bind/Validator$Patcher.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: AbrtGbn5xjZ2hhNiBJGwVRNSwR8=
+MD5-Digest: +OCyui8jNvQcPnihrqiAhg==
+
+
+Name: javax/xml/transform/
+Sealed: True
+
+
+Name: org/xml/sax/helpers/AttributeListImpl.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: y2EgDICkXOulFZBduxo/TiZ29t8=
+MD5-Digest: mSKrhisudVZyIDeLgnda9A==
+
+
+Name: com/sun/tools/xjc/be/UnexpectedModeException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: Qjm5YIUNJpb2ZemBIMIyGbgG1IA=
+MD5-Digest: C4i29fPJHJsXfAmF090RwA==
+
+
+Name: javax/xml/transform/sax/TemplatesHandler.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: RC05h9PpvOnD76ILSZuFLfdzP3c=
+MD5-Digest: kmbLf+sqW1B0FKDrKjVfDw==
+
+
+Name: org/w3c/dom/CharacterData.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: x6zuzWmOIp2rLfT50jTAUYEkptc=
+MD5-Digest: HqEzo3UOPP0GimhF63p0UQ==
+
+
+Name: javax/xml/bind/NonInitialObjectException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: ePuXwL2FtONVRmqq4rWeApGOHFg=
+MD5-Digest: fC8qF2ZSy+0zJMtETU3QJw==
+
+
+Name: javax/xml/bind/ValidationException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: ZUHbWatFYgvQ8pgKTucuCmU8A2E=
+MD5-Digest: pymmH39LTWPtO8QX+84q9Q==
+
+
+Name: javax/xml/transform/sax/TransformerHandler.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: f3K7DOUT/Ce2vIvtYCWK8a48Wok=
+MD5-Digest: Ekt/OMk21sq5SVMVNAbYpA==
+
+
+Name: org/apache/crimson/util/XmlChars.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: z+4AM9AL57wWV937ObAqk3tc7KI=
+MD5-Digest: KPrm0S/1gkouWB528xVcmQ==
+
+
+Name: javax/xml/bind/IllegalEnumerationValueException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: WEQ1bANsr2lca9Hy604qb2HtA2U=
+MD5-Digest: NCEPFdLtHKMNsXlcyynLYg==
+
+
+Name: org/xml/sax/ext/LexicalHandler.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: B3jDL/oG+0KeQ5jCjFsTY2L2/ck=
+MD5-Digest: 8fuVfoBECeI4O7f7Fykm0A==
+
+
+Name: org/xml/sax/Locator.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: zZB02gPNncWMsZE530QfkgF6Wzo=
+MD5-Digest: MdwO+z3HXn0rSgt1AwI//Q==
+
+
+Name: org/apache/crimson/util/XmlNames.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: ABvotn2Pi29EWv9wTAby/Gcmc5U=
+MD5-Digest: y8LYl1p+2gftj5nCtQJj1A==
+
+
+Name: javax/xml/bind/UndefinedIdentifierException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: RsW+GkXvIpFuQRFPn9gONDKPe8U=
+MD5-Digest: 4Nd1RgR+1RU7DiLZyg4WDg==
+
+
+Name: com/sun/tools/xjc/xjs/XSCollection.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: TDyh+dFjtNtiYignATUM/l6s9VQ=
+MD5-Digest: WTyIlhpVMybYn7ltHmfXNg==
+
+
+Name: com/sun/tools/xjc/xjs/XSInterface.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: fCX38ZDI0kqhG87O4ENBHKF5Wz8=
+MD5-Digest: w2OS7P5JvSq/rJ/lDKQj8w==
+
+
+Name: javax/xml/bind/PredicatedLists$PredicatedList.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: RfKM4MpCVU+g4cTFpCjphz2Rj2E=
+MD5-Digest: dlPQZF9RuQjXTLLZu6om+g==
+
+
+Name: com/sun/tools/xjc/gen/Assignment.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: T42Imp0wd2USyR/VNlBTvUVEfNY=
+MD5-Digest: 3MoA/m9or7zUHziBPfB2Yg==
+
+
+Name: com/sun/tools/xjc/gen/Expr.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: HHFUPpQX9zdCSDcNk9DEd3HUaSU=
+MD5-Digest: Jmxc7Cu/rYFTw9DDa52/xg==
+
+
+Name: javax/xml/parsers/DocumentBuilder.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: np+mODOurTZuZVOxLRftAMRbboc=
+MD5-Digest: JjARoUpJyIj8/kNp7yqh9A==
+
+
+Name: org/xml/sax/helpers/XMLReaderFactory.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: +EsPEk0RSDPwnGQ8pBL56W4gqxw=
+MD5-Digest: ZKfp42+CDuPX+PHmTFzBpA==
+
+
+Name: com/sun/tools/xjc/gen/JavaName.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: tvhE+rNvOE4gohUEXCTtZUrHHo4=
+MD5-Digest: bJ+wFtEsFqtReZVCxBGg8w==
+
+
+Name: com/sun/xml/sp/Parser$FastStack.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: egqmugbGnoz0fk0q986x4m6kL74=
+MD5-Digest: CHMGy1nVpw7fI+pZcDHssw==
+
+
+Name: javax/xml/bind/GlobalValidationException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: A8kw8zGNXKc9LvMJKDQGMkvwkSc=
+MD5-Digest: ldGGzkCHPh1gXK0Trx7kpA==
+
+
+Name: com/sun/tools/xjc/xjb/XBChoiceExpr.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: IqP1xjkjvC8wW2JUjmypok+i/GE=
+MD5-Digest: 4hjO/OS55cGbUU8O+Ti/Jg==
+
+
+Name: com/sun/tools/xjc/xjb/XJB.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: rBujihMTClBHXXWH6LYf6m5CdwA=
+MD5-Digest: u0l3/E7F98KatkpTK5tf7w==
+
+
+Name: com/sun/tools/xjc/gen/Continue.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: /kPJ0zS7DEE4LliAHHe5W8kXfRw=
+MD5-Digest: WLJQpAzO6In68DOK1odtjA==
+
+
+Name: org/xml/sax/
+Sealed: True
+
+
+Name: com/sun/tools/xjc/dtd/parser/InputSource.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: UJCI4QZT8UWmivbxtAhK0bUxZsQ=
+MD5-Digest: A/5FVj/kcQ4Gl5SE2Nsetg==
+
+
+Name: javax/xml/transform/dom/DOMSource.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 3+ZMltrM8/OgzPXMXJpnnsaJ/wU=
+MD5-Digest: 5S1dMX0TxO7fkOsC8axL2w==
+
+
+Name: com/sun/tools/xjc/UserErrorException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: e2sZIQXE7k1u3UsE1uRzEThrKAA=
+MD5-Digest: a/2BbBdwMgN0ktjLpAri/w==
+
+
+Name: org/apache/crimson/parser/Parser2$DocLocator.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: uXtxn7q9Znrr+/L5ZZd144fpS3Q=
+MD5-Digest: TLo7NTTvtr5ZF7YXowB1oQ==
+
+
+Name: org/xml/sax/InputSource.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: FgLFoTr9nbUFtdBfChD2yeaA8xc=
+MD5-Digest: caPpBT6Ti/HERlK9filpIQ==
+
+
+Name: com/sun/tools/xjc/xjs/
+Sealed: True
+
+
+Name: org/apache/crimson/util/MessageCatalog.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 7ZYeKUQqkKAp1ay8jFeXtQchFyY=
+MD5-Digest: eHdFw59uJ9YjSZeK2NdAnA==
+
+
+Name: com/sun/tools/xjc/xjb/XBMode.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: zS4Paxzn6LUCJWuNNmndCpNRyVE=
+MD5-Digest: Rrgh5n/ssdLHtmbE8wSFIA==
+
+
+Name: javax/xml/marshal/DocumentScanPosition.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: xaXBeX/i3BsyVpv25iTtrIyWViU=
+MD5-Digest: VqvJJG/Edd7ExvEN51TVZw==
+
+
+Name: org/apache/crimson/tree/TreeWalker.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: NArQU0NQYWCXW5w5bjvwfSZjZkg=
+MD5-Digest: pmWewnwTzvur9V4QbjTwoQ==
+
+
+Name: org/apache/crimson/parser/Parser2.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: ldUb0AcMOsAGI/fNBgqy39hCeQQ=
+MD5-Digest: yAEhpvsJhQ9n5ykE7XHxpQ==
+
+
+Name: com/sun/tools/xjc/dtd/RepeatableContent.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: grLiT6X/luzgr/Y4EhA1rWbSFsM=
+MD5-Digest: HvLKAbS0fUrSpAhTg9YUQQ==
+
+
+Name: javax/xml/transform/ErrorListener.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: aDwTJ64WY8Mj7SAMM5ThOgAF40o=
+MD5-Digest: vQCuUKdYWJTzyYjxajCWvA==
+
+
+Name: org/apache/crimson/jaxp/
+Sealed: True
+
+
+Name: com/sun/tools/xjc/dtdx/DTDX$1.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: hZ3tSB0zOZvuhwc00H3Arlwtg18=
+MD5-Digest: t/UaUMhkdPiOUUf38BZ9VQ==
+
+
+Name: com/sun/tools/xjc/gen/DefinedClass.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: mAlQy0R6vDy+60UIKqmEMq2UO1o=
+MD5-Digest: VKEd7fvtgrvOOkCYehTvRg==
+
+
+Name: org/apache/crimson/parser/Resolver.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: Pryrwt/kZ9PpZZaxpYPFaIYfWII=
+MD5-Digest: IT5B7NLtPWK9wuThb67zpA==
+
+
+Name: com/sun/tools/xjc/dtd/parser/MessageCatalog.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: khg12CbfrSnu6EkgaDysDlMytKQ=
+MD5-Digest: RB3tTUlkkaXWoJZYExV2DQ==
+
+
+Name: com/sun/tools/xjc/dtd/parser/InternalEntity.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: NoRQ5GYoejX+mjAaagn1VhPN7vc=
+MD5-Digest: 2pPEcXeFNUxz0R15Q6BI9g==
+
+
+Name: com/sun/tools/xjc/xjb/
+Sealed: True
+
+
+Name: com/sun/tools/xjc/dtd/parser/InputEntity.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: I5QGM812CltJ4wfWiIGdW11cRWo=
+MD5-Digest: 0Tz27Ra+wJ+Nvm6ch7nkQQ==
+
+
+Name: javax/xml/transform/TransformerFactory.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: eqd8OtYtmT9iqc5wX+UqSYtVu88=
+MD5-Digest: jZwlN6S/HouEX4kem1Fe/A==
+
+
+Name: com/sun/xml/sp/Parser.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: Ri1NUCJYu+3qNosKvcUH9cUUq0c=
+MD5-Digest: R2WRKrNSXq2Wj0AXtsAeIw==
+
+
+Name: org/apache/crimson/tree/ParentNode$TagListNS.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: DokY69pvmpYt1BkKKDsWjcrQHpY=
+MD5-Digest: 4U+ecRC1EbBq5GBCsBCF5A==
+
+
+Name: org/apache/crimson/tree/DataNode.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: CpIIJ9z0BzfvEzJaDJd2yd6GGrg=
+MD5-Digest: TnDxOsAOYQm0VILmj+4dFA==
+
+
+Name: com/sun/tools/xjc/gen/Conditional.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: NndHlBS/XciA9Uxo5G25lgV914M=
+MD5-Digest: W8Vwo5kDgcYvW3modI+s5w==
+
+
+Name: com/sun/tools/xjc/be/Any.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: j4uHuyjpoC7RV8fYXTjH1xh1NMg=
+MD5-Digest: Nu56nMBocC1IA9oegM5zaQ==
+
+
+Name: com/sun/tools/xjc/be/Gen.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: UCHfpRJvsDBJcc4mMOYD5g+BW6Q=
+MD5-Digest: jF0NfaRv39VB4wJlw8MXiw==
+
+
+Name: org/w3c/dom/Text.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: DFdD+vx78gKPO7qU+Bo8ryVtw6Y=
+MD5-Digest: X30i+LcMU77WmBR3/VpJLA==
+
+
+Name: org/apache/crimson/parser/ValidatingParser$ChildrenValidator.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: vBzJXchLhZYAbGfjdh5SkmS1ZGQ=
+MD5-Digest: 7tEVjUAQKmhAa18Z37ps4g==
+
+
+Name: com/sun/xml/sp/ElementDecl.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: KUUCe9zFWzHSI6s+lMU0mw4zYMc=
+MD5-Digest: AjcDcO+WdVj/BbfSLRs7Ew==
+
+
+Name: com/sun/tools/xjc/xjs/XJS$1.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: TfIkicPcq7HA54r11AcYzXy/rEo=
+MD5-Digest: vXgpYYvRZWM+0FbIiXAbwA==
+
+
+Name: com/sun/xml/sp/SimpleHashtable$Entry.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: kiggVF8ND7S3atq1Uar/dRIgFtE=
+MD5-Digest: nB7SO6Np/0Xk1U4tFmJqjQ==
+
+
+Name: com/sun/tools/xjc/be/ContentExpr.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: ZL7aDD/ZtVU5/+kTtn+XHPON3kI=
+MD5-Digest: NFlEYZEk/pTZxoNoRVRr+A==
+
+
+Name: javax/xml/marshal/
+Sealed: True
+
+
+Name: javax/xml/transform/stream/StreamSource.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: ULrS1w6LghYr513bvcinYnTlyIU=
+MD5-Digest: hqEsF3Jlv1DCYs8lRGGWhA==
+
+
+Name: com/sun/tools/xjc/be/Attribute.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: B4D1l3qYG3LrsUN60ekMkjteSRY=
+MD5-Digest: x0lxOOXVAxciU+5qDnThKA==
+
+
+Name: org/xml/sax/SAXNotSupportedException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: bMHL3uaxhJHNcXsOyMdcfzzl2EA=
+MD5-Digest: OHmNfcwzisXKEm/RCxfhTQ==
+
+
+Name: javax/xml/transform/sax/SAXTransformerFactory.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: Rf8EfWWbLFXFYIH9uUN7CX9A/hg=
+MD5-Digest: eVUhnPugAkb+/LXajw7+Kw==
+
+
+Name: com/sun/tools/xjc/dtdx/DXElement.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: qWRPXQs7mLEz0kWh10ZHvzKuC00=
+MD5-Digest: Yf6kIuysXRqSuZziGw3Q7A==
+
+
+Name: com/sun/xml/sp/InputEntity.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: B1jgQqy5kQIAnVywpqjsCym55N8=
+MD5-Digest: ajg5OqSY7EgH9LJ+H7HZmg==
+
+
+Name: com/sun/tools/xjc/xjb/XBInterface$1.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: MZpf/T1tU7cVI6bPxcv9fTF89RM=
+MD5-Digest: o8DZuFXSfAPutTWSr3V3iQ==
+
+
+Name: com/sun/tools/xjc/be/ContentParticle.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: VcAk8Q87IzOzL5GzZKIR7X0p7Sw=
+MD5-Digest: /JP1Hndm/RnwprwgdmHdBA==
+
+
+Name: com/sun/tools/xjc/dtd/parser/Parser$Catalog.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: vi3N9UEPKpbAC3A5j06pVHjdsis=
+MD5-Digest: rlto5aDg3Hiwb03sIyLkAQ==
+
+
+Name: com/sun/tools/xjc/dtdx/DXPCData.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: KGzuxli6uwxrUnw0mWBo5LaXFXw=
+MD5-Digest: eyWX+xk2x3JjPsce3dbDig==
+
+
+Name: org/xml/sax/helpers/XMLReaderAdapter.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: gaMhQv14buN2uellpxtyamUXFSQ=
+MD5-Digest: N1lZHz3RoqLxJDOhnUh7xg==
+
+
+Name: com/sun/tools/xjc/be/ElementRef.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: JvbTlFlOeYdHkhdXh6xAtruyHR8=
+MD5-Digest: eW/8MrCbpesXAvugS52YKQ==
+
+
+Name: com/sun/tools/xjc/xjb/XBChoice.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: Jl6HiWrLpzKc9IZ2Bf3BL1yEUck=
+MD5-Digest: Ov4qF+5ue5aFZH3Q/ynA0Q==
+
+
+Name: javax/xml/transform/sax/SAXSource.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 9fmgzt3AlHwZhjghNYjYKwkrVl8=
+MD5-Digest: YhHWZdDpLmhTJohceSG6mw==
+
+
+Name: org/apache/crimson/tree/PINode.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 12Jkkj0ty6vnzcmUD+E/8KQFW4A=
+MD5-Digest: hCriq3Tdx7SFitlYnCthiw==
+
+
+Name: javax/xml/transform/SourceLocator.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: hIJKO5azg3MyapGf+Z/4StDakKo=
+MD5-Digest: ffejuxjvX/99RdPfFjCPdw==
+
+
+Name: com/sun/tools/xjc/xjs/XSConversion.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: yZ8Vd18yp4tvC7b/m2Z75vcoKsI=
+MD5-Digest: 46sZ5zxvB3SLu8XaWIhLdQ==
+
+
+Name: org/w3c/dom/EntityReference.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: yILSunwj4+ptMEpPeEUWygY9px8=
+MD5-Digest: vzV/d4jRWAY1g6PJNgjz+A==
+
+
+Name: com/sun/xml/sp/AttributeListImpl.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: r4Zd03P/buC6YlTUSoVhgONczfI=
+MD5-Digest: t7TNBPZb6l2tgNxASCdigg==
+
+
+Name: com/sun/tools/xjc/xjb/XBSequence$1.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: Z9O/yttyQzIPWIFR+LsWRMO0knE=
+MD5-Digest: LMXaRBEISfWKNsTVRvmyXA==
+
+
+Name: com/sun/xml/sp/XmlReader.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: YQrDRSajfnBJTgdDwqj7OOKuyh8=
+MD5-Digest: i5CjsZBq5uYBZ59HUeGa4g==
+
+
+Name: com/sun/tools/xjc/gen/Formatter.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: sjvfJjM0wjE4fz63/RUT7RThHx4=
+MD5-Digest: 5ofCXyxFwOp12sZ/xTBfNQ==
+
+
+Name: javax/xml/bind/PredicatedLists$1.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: g/hZpWY/ZUOKe10Ghsj3CEk1Z80=
+MD5-Digest: 9H60kzzUVRVylDxZPVFtcQ==
+
+
+Name: javax/xml/bind/InvalidNameException.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: Zv5hXou+vx7o6XgduiiMQzh8JdU=
+MD5-Digest: VMm7pn+ItFns8bN5IzoRoA==
+
+
+Name: org/apache/crimson/tree/
+Sealed: True
+
+
+Name: org/apache/crimson/tree/NodeEx.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 7Q61UmC5on4oZ67cBxreJWmi3hw=
+MD5-Digest: 77qQErIbcnrfXQ51lKOMNQ==
+
+
+Name: com/sun/tools/xjc/gen/AssignmentTarget.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 6bZ34H3WkLiVQTZssYjQWqQRXpU=
+MD5-Digest: yhGgI+ToxxJK9YhthTSGLg==
+
+
+Name: org/apache/crimson/tree/XmlWriteContext.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: vPkYOptoxfXV+/5Qjd6KlFIX5/0=
+MD5-Digest: whvnzJ/YtxVSyn38uKx9Lg==
+
+
+Name: com/sun/tools/xjc/dtd/DTD.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: HgCPEellBMtbv96zb3eQCgQ58So=
+MD5-Digest: rn4DTspHWooQKjV+BKCI0A==
+
+
+Name: javax/xml/bind/Element.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: sSM2b7WTt8IM1xtTU9UIlQQjYAY=
+MD5-Digest: 0HYZTjeEStbNkyPZXR2IDg==
+
+
+Name: org/apache/crimson/parser/ElementValidator.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: ovszqH29ow4r3JqxSU/UcDPrafM=
+MD5-Digest: HkMctDuCba0g2MrxJ0NDsA==
+
+
+Name: com/sun/tools/xjc/be/ClassPropertyKey.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: 6OQdNmC+dpnwAxEq5049TrswXc4=
+MD5-Digest: 9K6HSjeF2vlDYG35Vq3JHg==
+
+
+Name: com/sun/tools/xjc/dtd/StringModel.class
+Java-Bean: False
+Digest-Algorithms: SHA MD5
+SHA-Digest: fYU8cyGEZZEfqtw0z+gbPMr2+0E=
+MD5-Digest: WxBrjk5yRPIa/rmCM8J5xg==
+
+
