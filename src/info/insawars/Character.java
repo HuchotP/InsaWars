@@ -27,7 +27,7 @@ public class Character{
       attacks[0] = new ZoneAttack();
       System.out.println(attacks[0].getName());
 
- //test
+
     }
 
   	/**
