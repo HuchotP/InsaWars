@@ -8,14 +8,18 @@ public class GameManager {
 
   private int turn = 0; //0 = player 1, 1 = player 2
 
+  private static GameManager manager;
+
   public GameManager(Character c1, Character c2){
 
-    chara[0] = c1;
-    chara[1] = c2;
+    if(manager == null){
 
-    chara[0].setManager(this);
-    chara[1].setManager(this);
+      manager = this;
 
+      chara[0] = c1;
+      chara[1] = c2;
+
+    }
   }
 
   public Character getCharacter(int n){
@@ -25,7 +29,7 @@ public class GameManager {
   }
   public GameManager getManager(){
 
-    return this;
+    return manager;
 
     }
 
@@ -40,5 +44,8 @@ public class GameManager {
 
   }
 
+  public int getOppositeTurn(){
 
+    return (turn-1)%2;
+  }
 }

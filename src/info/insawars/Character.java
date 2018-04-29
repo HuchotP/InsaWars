@@ -98,33 +98,31 @@ public class Character{
 
     public int getY(){
 
-      return this.x;
+      return this.y;
 
     }
 
     public void setY(int n){
 
-      this.x = n;
+      this.y = n;
 
-    }
-
-    public void setManager(GameManager m){
-
-      this.manager = m;
-
-    }
-
-    public GameManager getManager(){
-
-      if(this.manager!= null)
-        return this.manager;
-      else
-        System.out.println("Manager not initialized");
     }
 
     public void attack(int n){
 
+      attacks[n].attack(this, manager.getCharacter(/**joueur adverse**/);
+
+
+    }
+    public void takeDamge(int damage, int dodgerate){
+
+<<<<<<< HEAD:src/Character.java
+        if(luck * dodgerate)
+=======
+    public void attack(int n){
+
       attacks[n].attack(this, manager.getCharacter(/**joueur adverse**/));
+>>>>>>> 30355eb163017e36eb374bf756787f904cab94a1:src/info/insawars/Character.java
 
 
     }
