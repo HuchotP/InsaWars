@@ -115,14 +115,12 @@ public class Character{
 
     }
     public void takeDamge(int damage, int dodgerate){
-
-<<<<<<< HEAD:src/Character.java
         if(luck * dodgerate)
-=======
+        	
+    }
     public void attack(int n){
 
       attacks[n].attack(this, manager.getCharacter(/**joueur adverse**/));
->>>>>>> 30355eb163017e36eb374bf756787f904cab94a1:src/info/insawars/Character.java
 
 
     }
