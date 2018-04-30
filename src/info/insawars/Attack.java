@@ -12,7 +12,7 @@ public abstract class Attack{
 
   }
 
-  public abstract void attack(Character c);
+  public abstract void attack();
 
 
 }
