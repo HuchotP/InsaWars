@@ -16,6 +16,7 @@ public class CharacterWindow extends JFrame {
     private int luck;
     
     private String name;
+    private JTextField nameField;
     private JLabel[] attribute;
     private String[] attributeStr = {"Vie", "Force", "Intelligence", "Rapidité", "Chance"};
     private int[] vals;
@@ -63,17 +64,21 @@ public class CharacterWindow extends JFrame {
 		this.luck = luck;
 	}
 
+	@Override
 	public String getName() {
 		return name;
 	}
-
+	
+	@Override
 	public void setName(String name) {
 		this.name = name;
 	}
 
-	public CharacterWindow() {
+	public CharacterWindow(String windowName) {
 
 		this.setSize(300,400);
+		this.setTitle(windowName);
+		this.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
 		
 		Box globalBox = Box.createVerticalBox();
 		
@@ -103,7 +108,7 @@ public class CharacterWindow extends JFrame {
 		
 		globalBox.add(Box.createVerticalGlue());
 		
-		JTextField nameField = new JTextField(1);
+		nameField = new JTextField(1);
 		nameField.setAlignmentX(JComponent.CENTER_ALIGNMENT);
 		nameField.setHorizontalAlignment(JLabel.CENTER);
 		globalBox.add(nameField);
@@ -161,16 +166,16 @@ public class CharacterWindow extends JFrame {
 		globalBox.add(attributesPanel);
 		
 		JButton createButton = new JButton("Valider");
+		createButton.setAlignmentX(JComponent.CENTER_ALIGNMENT);
+
 		createButton.addActionListener(new ActionListener() {
 
 		    public void actionPerformed(ActionEvent e) {
-		    	
-		    	for(JProgressBar bar : bars) {
-		    		
-		    	}
-		    	
+		    	close();
 		    }
 		});
+		globalBox.add(Box.createVerticalStrut(50));
+		globalBox.add(createButton);
 		this.add(globalBox);
 		this.setVisible(true);
 	}
@@ -192,5 +197,15 @@ public class CharacterWindow extends JFrame {
 		vals[i] = bars[i].getValue();
 		valLabels[i].setText(Integer.toString(vals[i]));
 		
+	}
+	
+	private void close() {
+		
+		this.strength = this.bars[1].getValue();
+		this.intel = this.bars[2].getValue();
+		this.speed = this.bars[3].getValue();
+		this.luck = this.bars[4].getValue();
+		this.name = this.nameField.getText();
+		this.setVisible(false);
 	}
 }
