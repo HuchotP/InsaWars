@@ -15,6 +15,8 @@ public class CharacterWindow extends JFrame {
 
 	private String name;
 	private JTextField nameField;
+	private int credits = 30;
+	private JLabel credsLabel;
 	private JLabel[] attribute;
 	private String[] attributeStr = {"Vie", "Force", "Intelligence", "Rapidité", "Chance"};
 	private int[] vals;
@@ -112,6 +114,10 @@ public class CharacterWindow extends JFrame {
 		globalBox.add(nameField);
 		globalBox.add(Box.createVerticalGlue());
 
+		credsLabel = new JLabel("Crédits : " + Integer.toString(credits));
+		credsLabel.setAlignmentX(JComponent.CENTER_ALIGNMENT);
+		globalBox.add(credsLabel);
+
 
 		for(int i = 0; i < attribute.length; i++) {
 
@@ -147,7 +153,6 @@ public class CharacterWindow extends JFrame {
 			attributeButtons[i][1] = new JButton("+");
 			attributeButtons[i][1].setBackground(new Color(255,255,255));
 			attributeButtons[i][1].putClientProperty("index", i);
-			System.out.println();
 			attributeButtons[i][1].addActionListener(new ActionListener() {
 
 				public void actionPerformed(ActionEvent e) {
@@ -180,13 +185,18 @@ public class CharacterWindow extends JFrame {
 
 	private void modifyBar(int i, boolean signe) {
 		int increment = 0;
+
 		if(signe) {
 			increment = 1;
 		} else {
 			increment = -1;
 		}
 
-		bars[i].setValue(bars[i].getValue() + increment);
+		if(updateCredits(increment, bars[i])) {
+			bars[i].setValue(bars[i].getValue() + increment);
+
+		}
+
 
 	}
 
@@ -194,6 +204,19 @@ public class CharacterWindow extends JFrame {
 
 		vals[i] = bars[i].getValue();
 		valLabels[i].setText(Integer.toString(vals[i]));
+
+	}
+
+	public boolean updateCredits(int i, JProgressBar bar) {
+
+		if((this.credits > 0) && (bar.getValue() > bar.getMinimum() && i == -1) || (bar.getValue() < bar.getMaximum() && i == 1)) {
+			this.credits -= i;
+			this.credsLabel.setText("Crédits : " + this.credits);
+			return true;
+
+		}
+
+		return false;
 
 	}
 
@@ -207,7 +230,7 @@ public class CharacterWindow extends JFrame {
 		this.setVisible(false);
 	}
 
-	public Character getCharacter() {
+	/*public Character getCharacter() {
 		return new Character(this.getLife(), this.getStrength(), this.getIntel(), this.getSpeed(), this.getLuck(), this.getName());
-	}
+	}*/
 }
