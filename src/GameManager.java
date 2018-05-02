@@ -1,5 +1,3 @@
-package info.insawars;
-
 public class GameManager {
 
   private Character[] chara = new Character[2];

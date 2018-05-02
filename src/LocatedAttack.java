@@ -1,5 +1,3 @@
-package info.insawars;
-
 import java.lang.Math;
 
 public class LocatedAttack extends Attack{

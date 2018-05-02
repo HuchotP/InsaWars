@@ -1,5 +1,3 @@
-package info.insawars;
-
 import java.lang.Math;
 
 public class Move{

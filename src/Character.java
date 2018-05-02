@@ -1,5 +1,3 @@
-
-
 public class Character{
 
     private int credits;
@@ -132,12 +130,12 @@ public class Character{
     }*/
     public void takeDamge(int damage, int dodgerate){
         if(luck * dodgerate)
-        	
+
     }
     public void attack(int n){
 
       attacks[n].attack(this, manager.getCharacter(/**joueur adverse**/));
-      
+
     }
 
 
