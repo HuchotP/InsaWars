@@ -6,7 +6,7 @@ public class LocatedAttack extends Attack{
 
   GameManager manager = new GameManager().getManager();
 
-  public LocatedAttack(){
+  public LocatedAttack(Character c){
 
     this.name= " Attaque ciblée";
     this.damage= 20+20*c.getStrength();

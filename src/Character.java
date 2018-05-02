@@ -24,10 +24,10 @@ public class Character{
       this.luck = luck;
       this.name = name;
 
-      attacks[0] = new ZoneAttack();
-      attacks[1] = new FireBallAttack();
-      attacks[2] = new LocatedAttack();
-      attacks[3] = new Heal();
+      attacks[0] = new ZoneAttack(this);
+      attacks[1] = new FireBall(this);
+      attacks[2] = new LocatedAttack(this);
+      attacks[3] = new Heal(this);
 
 
     }
@@ -44,9 +44,6 @@ public class Character{
       return credits;
     }
 
-    public void modifyCredits(int value){
-      this.credits= this.credits- value;
-    }
 
   	/**
   	* Returns value of strength
@@ -129,22 +126,28 @@ public class Character{
       attacks[n].attack();
     }*/
     public void takeDamge(int damage, int dodgerate){
-        if(luck * dodgerate) {
-          
+        if(this.luck * dodgerate < 150) {  /** random values **/
+
         }
 
     }
     public void attack(int n){
 
-      attacks[n].attack(this, manager.getCharacter(/**joueur adverse**/));
+      attacks[n].attack();
 
     }
 
 
 
-    public int healCharacter( int healing ){
+    public void healCharacter( int healing ){
       this.life= this.life+ healing;
-      return this.life;
+      
+    }
+
+    public void resetCredits(){
+
+      this.credits = (int) (10 + 0.5 * this.speed);
+
     }
 
 }

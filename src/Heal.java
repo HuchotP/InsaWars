@@ -6,7 +6,7 @@ public class Heal extends Attack{
 
   GameManager manager = new GameManager().getManager();
 
-  public Heal(Character c ){
+  public Heal(Character c){
 
     this.name= " Sort de soins";
     this.damage= 20+ 4*c.getIntel();
@@ -15,9 +15,9 @@ public class Heal extends Attack{
   }
 
   public void attack(){
-      Character c1 = manager.getPlayer(manager.getTurn());
+      Character c1 = manager.getCharacter(manager.getTurn());
       if ( c1.getCredits()>this.creditsRequired){
-        healCharacter (int this.damage );
+        c1.healCharacter(this.damage );
 
       }
     }
