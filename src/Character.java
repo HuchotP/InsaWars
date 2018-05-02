@@ -24,10 +24,10 @@ public class Character{
       this.luck = luck;
       this.name = name;
 
-      attacks[0] = new ZoneAttack(this);
-      attacks[1] = new FireBallAttack(this);
-      attacks[2] = new LocatedAttack(this);
-      attacks[3] = new Heal(this);
+      attacks[0] = new ZoneAttack();
+      attacks[1] = new FireBallAttack();
+      attacks[2] = new LocatedAttack();
+      attacks[3] = new Heal();
 
 
     }
@@ -129,7 +129,9 @@ public class Character{
       attacks[n].attack();
     }*/
     public void takeDamge(int damage, int dodgerate){
-        if(luck * dodgerate)
+        if(luck * dodgerate) {
+          
+        }
 
     }
     public void attack(int n){

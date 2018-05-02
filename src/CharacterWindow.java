@@ -8,19 +8,19 @@ import java.awt.event.ActionListener;
 public class CharacterWindow extends JFrame {
 
 	private int life;
-    private int strength;
-    private int intel;
-    private int speed;
-    private int luck;
+	private int strength;
+	private int intel;
+	private int speed;
+	private int luck;
 
-    private String name;
-    private JTextField nameField;
-    private JLabel[] attribute;
-    private String[] attributeStr = {"Vie", "Force", "Intelligence", "Rapidité", "Chance"};
-    private int[] vals;
-    private JLabel[] valLabels;
-    private JProgressBar[] bars;
-    private JButton[][] attributeButtons;
+	private String name;
+	private JTextField nameField;
+	private JLabel[] attribute;
+	private String[] attributeStr = {"Vie", "Force", "Intelligence", "Rapidité", "Chance"};
+	private int[] vals;
+	private JLabel[] valLabels;
+	private JProgressBar[] bars;
+	private JButton[][] attributeButtons;
 
 	public int getLife() {
 		return life;
@@ -136,12 +136,12 @@ public class CharacterWindow extends JFrame {
 			attributeButtons[i][0].putClientProperty("index", i);
 			attributeButtons[i][0].addActionListener(new ActionListener() {
 
-			    public void actionPerformed(ActionEvent e) {
-			    	int i = (Integer)((JButton)e.getSource()).getClientProperty("index");
-			    	modifyBar(i,false);
-			    	updateLabel(i);
+				public void actionPerformed(ActionEvent e) {
+					int i = (Integer)((JButton)e.getSource()).getClientProperty("index");
+					modifyBar(i,false);
+					updateLabel(i);
 
-			    }
+				}
 			});
 
 			attributeButtons[i][1] = new JButton("+");
@@ -150,11 +150,11 @@ public class CharacterWindow extends JFrame {
 			System.out.println();
 			attributeButtons[i][1].addActionListener(new ActionListener() {
 
-			    public void actionPerformed(ActionEvent e) {
-			    	int i = (Integer)((JButton)e.getSource()).getClientProperty("index");
-			    	modifyBar(i, true);
-			    	updateLabel(i);
-			    }
+				public void actionPerformed(ActionEvent e) {
+					int i = (Integer)((JButton)e.getSource()).getClientProperty("index");
+					modifyBar(i, true);
+					updateLabel(i);
+				}
 			});
 
 			attributesPanel.add(attributeButtons[i][0]);
@@ -168,9 +168,9 @@ public class CharacterWindow extends JFrame {
 
 		createButton.addActionListener(new ActionListener() {
 
-		    public void actionPerformed(ActionEvent e) {
-		    	close();
-		    }
+			public void actionPerformed(ActionEvent e) {
+				close();
+			}
 		});
 		globalBox.add(Box.createVerticalStrut(50));
 		globalBox.add(createButton);

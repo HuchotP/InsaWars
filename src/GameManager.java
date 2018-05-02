@@ -1,3 +1,5 @@
+
+
 public class GameManager {
 
   private Character[] chara = new Character[2];
@@ -18,8 +20,13 @@ public class GameManager {
       chara[1] = c2;
 
     }
-  }
 
+
+  }
+  public GameManager(){
+
+
+  }
   public Character getCharacter(int n){
 
     return chara[n];
@@ -31,9 +38,16 @@ public class GameManager {
 
     }
 
+  public void resetCredits(Character c){
+      c.credits=10+2*c.speed;
+  }
+
   public void nextTurn(){
 
     turn = (turn-1)%2;
+    resetCredits(c1);
+    resetCredits(c2);
+
 
   }
   public int getTurn(){
