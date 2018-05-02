@@ -208,4 +208,8 @@ public class CharacterWindow extends JFrame {
 		this.name = this.nameField.getText();
 		this.setVisible(false);
 	}
+	
+	public Character getCharacter() {
+		return new Character(this.getLife(), this.getStrength(), this.getIntel(), this.getSpeed(), this.getLuck(), this.getName());
+	}
 }

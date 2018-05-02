@@ -1,7 +1,8 @@
-package info.insawars;
+
 
 public class Character{
 
+    private int credits;
     private int life;
     private int strength;
     private int intel;
@@ -17,6 +18,7 @@ public class Character{
 
     public Character(int life, int strength, int intel, int speed, int luck, String name){
 
+      this.credits= 10 +2*this.speed;
       this.life = life;
       this.strength = strength;
       this.intel = intel;
@@ -24,8 +26,10 @@ public class Character{
       this.luck = luck;
       this.name = name;
 
-      attacks[0] = new ZoneAttack();
-      System.out.println(attacks[0].getName());
+      attacks[0] = new ZoneAttack(this);
+      attacks[1] = new FireBallAttack(this);
+      attacks[2] = new LocatedAttack(this);
+      attacks[3] = new Heal(this);
 
 
     }
@@ -38,7 +42,13 @@ public class Character{
   		return life;
   	}
 
+    public int getCredits(){
+      return credits;
+    }
 
+    public void modifyCredits(int value){
+      this.credits= this.credits- value;
+    }
 
   	/**
   	* Returns value of strength
@@ -108,12 +118,18 @@ public class Character{
 
     }
 
-    public void attack(int n){
-
-      attacks[n].attack(this, manager.getCharacter(/**joueur adverse**/);
 
 
-    }
+    public void takeDamage(int damage, int dodgerate){
+        if(luck * dodgerate< 150){
+          this.life= this.life- damage;
+        }
+      }
+
+    /*public void attack(int n){
+
+      attacks[n].attack();
+    }*/
     public void takeDamge(int damage, int dodgerate){
         if(luck * dodgerate)
         	
@@ -121,12 +137,14 @@ public class Character{
     public void attack(int n){
 
       attacks[n].attack(this, manager.getCharacter(/**joueur adverse**/));
-
-
+      
     }
 
-    public void getDamage() {
 
+
+    public int healCharacter( int healing ){
+      this.life= this.life+ healing;
+      return this.life;
     }
 
 }
