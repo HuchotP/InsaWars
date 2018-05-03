@@ -23,6 +23,7 @@ public class CharacterWindow extends JFrame {
 	private JLabel[] valLabels;
 	private JProgressBar[] bars;
 	private JButton[][] attributeButtons;
+	private JButton createButton;
 
 	public int getLife() {
 		return life;
@@ -169,7 +170,8 @@ public class CharacterWindow extends JFrame {
 
 		globalBox.add(attributesPanel);
 
-		JButton createButton = new JButton("Valider");
+		createButton = new JButton("Valider");
+		createButton.setEnabled(this.credits == 0);
 		createButton.setAlignmentX(JComponent.CENTER_ALIGNMENT);
 
 		createButton.addActionListener(new ActionListener() {
@@ -213,6 +215,13 @@ public class CharacterWindow extends JFrame {
 		if((this.credits > 0) && ((bar.getValue() > bar.getMinimum() && i == -1) || (bar.getValue() < bar.getMaximum() && i == 1)) || (this.credits == 0 && i == -1)) {
 			this.credits -= i;
 			this.credsLabel.setText("Crédits : " + this.credits);
+
+			if(this.credits == 0) {
+				this.createButton.setEnabled(true);
+			} else {
+				this.createButton.setEnabled(false);
+			}
+
 			return true;
 
 		}
@@ -231,7 +240,7 @@ public class CharacterWindow extends JFrame {
 		this.setVisible(false);
 	}
 
-	/*public Character getCharacter() {
+	public Character getCharacter() {
 		return new Character(this.getLife(), this.getStrength(), this.getIntel(), this.getSpeed(), this.getLuck(), this.getName());
-	}*/
+	}
 }

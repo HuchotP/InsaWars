@@ -2,16 +2,16 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		int ch1 = createCharacter(1);
+		Character ch1 = createCharacter(1);
 
-		//System.out.println(ch1.getName());
+		System.out.println(ch1.getName());
 
-		int ch2 = createCharacter(2);
+		Character ch2 = createCharacter(2);
 
 		//test
 	}
 
-	public static int createCharacter(int n) {
+	public static Character createCharacter(int n) {
 
 
 		CharacterWindow window = new CharacterWindow("Joueur " + n);
@@ -24,7 +24,7 @@ public class Main {
 			}
 		} while(window.isVisible());
 
-		return 1;
+		return window.getCharacter();
 
 	}
 
