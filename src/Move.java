@@ -1,4 +1,3 @@
-package info.insawars;
 
 import java.lang.Math;
 
