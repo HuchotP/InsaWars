@@ -76,7 +76,8 @@ public class CharacterWindow extends JFrame {
 
 	public CharacterWindow(String windowName) {
 
-		this.setSize(300,400);
+		this.setSize(300,320);
+		this.setResizable(false);
 		this.setTitle(windowName);
 		this.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
 
@@ -209,7 +210,7 @@ public class CharacterWindow extends JFrame {
 
 	public boolean updateCredits(int i, JProgressBar bar) {
 
-		if((this.credits > 0) && (bar.getValue() > bar.getMinimum() && i == -1) || (bar.getValue() < bar.getMaximum() && i == 1)) {
+		if((this.credits > 0) && ((bar.getValue() > bar.getMinimum() && i == -1) || (bar.getValue() < bar.getMaximum() && i == 1)) || (this.credits == 0 && i == -1)) {
 			this.credits -= i;
 			this.credsLabel.setText("Crédits : " + this.credits);
 			return true;
