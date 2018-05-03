@@ -8,6 +8,8 @@ public class Main {
 
 		Character ch2 = createCharacter(2);
 
+		GameManager manager = new GameManager(ch1,ch2).getManager();
+
 		//test
 	}
 
