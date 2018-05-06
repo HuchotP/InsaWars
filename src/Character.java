@@ -141,7 +141,7 @@ public class Character{
 
     public void healCharacter( int healing ){
       this.life= this.life+ healing;
-      
+
     }
 
     public void resetCredits(){
@@ -149,5 +149,8 @@ public class Character{
       this.credits = (int) (10 + 0.5 * this.speed);
 
     }
+    public void move(int x, int y){
 
+
+    }
 }

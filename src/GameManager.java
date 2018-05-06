@@ -17,6 +17,12 @@ public class GameManager {
       chara[0] = c1;
       chara[1] = c2;
 
+      chara[0].setX(0);
+      chara[0].setY(0);
+
+      chara[1].setX(0);
+      chara[1].setY(0);
+
     }
 
 

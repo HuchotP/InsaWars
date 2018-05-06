@@ -5,15 +5,25 @@ import java.awt.event.*;
 
 public class GameWindow extends JFrame{
 
-  //private GameManager manager = new GameManager().getManager();
+  private GameManager manager = new GameManager().getManager();
 
-  private JLabel[][] world;
+  private Case[][] world;
   private int currentX;
   private int currentY;
   private int mouseX;
   private int mouseY;
 
-  public JLabel[][] getWorld() {
+  public static final int STATE_SELECT_MOVING =0;
+  public static final int STATE_ATTACK1 = 1;
+  public static final int STATE_ATTACK2 = 2;
+  public static final int STATE_ATTACK3 = 0;
+  public static final int STATE_ATTACK4 = 4;
+  public static final int STATE_NOTHING = -1;
+
+  private int currentState = STATE_SELECT_MOVING; //phase de test
+
+
+  public Case[][] getWorld() {
     return world;
   }
 
@@ -21,7 +31,7 @@ public class GameWindow extends JFrame{
 
     this.setSize(640,900);
 
-    world = new JLabel[10][10];
+    world = new Case[10][10];
 
     Box globalBox = Box.createVerticalBox();
 
@@ -37,91 +47,7 @@ public class GameWindow extends JFrame{
 
       for(int k = 0; k < world[0].length; k++){
 
-        world[i][k] = new JLabel(icon);
-        world[i][k].putClientProperty("x", i);
-        world[i][k].putClientProperty("y", k);
-
-        world[i][k].addMouseListener(new MouseAdapter() {
-
-          public void mouseEntered(MouseEvent arg0) {
-
-            JLabel current = (JLabel)arg0.getSource();
-            int x = (Integer) current.getClientProperty("x");
-
-            for(int i = currentX ; i <= (Integer) current.getClientProperty("x") ; i++) {
-              world[i][currentY].setIcon(new ImageIcon("MouseCase.png"));
-            }
-            for(int i = currentY ; i <= (Integer) current.getClientProperty("y") ; i++) {
-              world[x][i].setIcon(new ImageIcon("MouseCase.png"));
-            }
-            for(int i = currentX ; i >= (Integer) current.getClientProperty("x") ; i--) {
-              world[i][currentY].setIcon(new ImageIcon("MouseCase.png"));
-            }
-            for(int i = currentY ; i >= (Integer) current.getClientProperty("y") ; i--) {
-              world[x][i].setIcon(new ImageIcon("MouseCase.png"));
-            }
-
-            /*JLabel current = (JLabel)arg0.getSource();
-            current.setIcon(new ImageIcon("MouseCase.png"));
-            int x = (Integer) current.getClientProperty("x");
-            int y = (Integer) current.getClientProperty("y");
-            System.out.println("Label " + x + " , " + y + " hovered");*/
-
-          }
-
-          public void mouseExited(MouseEvent arg0) {
-
-            JLabel current = (JLabel)arg0.getSource();
-            int x = (Integer) current.getClientProperty("x");
-            int y = (Integer) current.getClientProperty("y");
-
-            for(int i = currentX ; i <= (Integer) current.getClientProperty("x") ; i++) {
-              world[i][currentY].setIcon(new ImageIcon("DefaultCase.png"));
-            }
-            for(int i = currentY ; i <= (Integer) current.getClientProperty("y") ; i++) {
-              world[x][i].setIcon(new ImageIcon("DefaultCase.png"));
-            }
-            for(int i = currentX ; i >= (Integer) current.getClientProperty("x") ; i--) {
-              world[i][currentY].setIcon(new ImageIcon("DefaultCase.png"));
-            }
-            for(int i = currentY ; i >= (Integer) current.getClientProperty("y") ; i--) {
-              world[x][i].setIcon(new ImageIcon("DefaultCase.png"));
-            }
-
-            /*JLabel current = (JLabel)arg0.getSource();
-            current.setIcon(new ImageIcon("DefaultCase.png"));
-            int x = (Integer) current.getClientProperty("x");*/
-          }
-
-          public void mouseClicked(MouseEvent arg0) {
-
-            JLabel current = (JLabel)arg0.getSource();
-            world[currentX][currentY].setIcon(new ImageIcon("DefaultCase.png"));
-
-            System.out.println(currentX + " " + currentY);
-
-            for(int i = currentX ; i <= (Integer) current.getClientProperty("x") ; i++) {
-              world[i][currentY].setIcon(new ImageIcon("DefaultCase.png"));
-            }
-            for(int i = currentY ; i <= (Integer) current.getClientProperty("y") ; i++) {
-              world[(Integer) current.getClientProperty("x")][i].setIcon(new ImageIcon("DefaultCase.png"));
-            }
-
-            for(int i = currentX ; i >= (Integer) current.getClientProperty("x") ; i--) {
-              world[i][currentY].setIcon(new ImageIcon("DefaultCase.png"));
-            }
-            for(int i = currentY ; i >= (Integer) current.getClientProperty("y") ; i--) {
-              world[(Integer) current.getClientProperty("x")][i].setIcon(new ImageIcon("DefaultCase.png"));
-            }
-
-            currentX = (Integer) current.getClientProperty("x");
-            currentY = (Integer) current.getClientProperty("y");
-            world[currentX][currentY].setIcon(new ImageIcon("MouseCase.png"));
-
-          }
-        });
-
-
+        world[i][k] = new Case(this, i, k);
 
         worldContainer.add(world[i][k]);
 
@@ -141,6 +67,12 @@ public class GameWindow extends JFrame{
     this.add(globalBox);
     this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     this.setVisible(true);
+
+  }
+
+  public int getState(){
+
+    return this.currentState;
 
   }
 
