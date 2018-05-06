@@ -1,3 +1,5 @@
+import java.lang.Math;
+
 public class Character{
 
     private int credits;
@@ -149,8 +151,14 @@ public class Character{
       this.credits = (int) (10 + 0.5 * this.speed);
 
     }
-    public void move(int x, int y){
+    public boolean move(int newX, int newY){
+        if ( Math.abs(( this.getX() -newX)) + Math.abs((this.getY()- newY))< 10 ){
+          this.setX(newX);
+          this.setY(newY);
+          return true;
+       }else{
+         return false;
+       }
+       }
 
-
-    }
-}
+      }
