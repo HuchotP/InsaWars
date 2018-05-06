@@ -1,6 +1,7 @@
 import java.awt.*;
 import javax.swing.*;
 import java.awt.Color;
+import java.awt.event.*;
 
 public class GameWindow extends JFrame{
 
@@ -25,6 +26,22 @@ public class GameWindow extends JFrame{
       for(int k = 0; k < world[0].length; k++){
 
         world[i][k] = new JLabel(icon);
+        world[i][k].putClientProperty("x", i);
+        world[i][k].putClientProperty("y", k);
+
+        world[i][k].addMouseListener(new MouseAdapter() {
+
+          public void mouseEntered(MouseEvent arg0) {
+            
+            int x = (Integer)((JLabel)arg0.getSource()).getClientProperty("x");
+            int y = (Integer)((JLabel)arg0.getSource()).getClientProperty("y");
+            System.out.println("Label " + x + " , " + y + " hovered");
+
+          }
+        });
+
+
+
         worldContainer.add(world[i][k]);
 
       }

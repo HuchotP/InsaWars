@@ -10,6 +10,8 @@ public class Main {
 
 		GameManager manager = new GameManager(ch1,ch2).getManager();
 
+		GameWindow game = new GameWindow();
+
 		//test
 	}
 
