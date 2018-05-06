@@ -77,8 +77,8 @@ public class CharacterWindow extends JFrame {
 
 	public CharacterWindow(String windowName) {
 
-		this.setSize(300,320);
-		this.setResizable(false);
+		this.setSize(470,320);
+		this.setResizable(true);
 		this.setTitle(windowName);
 		this.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
 
@@ -87,6 +87,7 @@ public class CharacterWindow extends JFrame {
 		JPanel attributesPanel = new JPanel();
 		GridLayout attributesGrid = new GridLayout(5,6);
 		attributesPanel.setLayout(attributesGrid);
+		//attributesGrid[0].setPreferredSize(50);
 
 
 		attribute = new JLabel[5];
