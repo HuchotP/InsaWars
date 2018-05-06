@@ -8,7 +8,6 @@ public class Case extends JLabel{
   private ImageIcon defaultCase = new ImageIcon("DefaultCase.png");
   private ImageIcon blueCase = new ImageIcon("MouseCase.png");
   private GameWindow gw;
-  private GameManager manager = new GameManager().getManager();
 
   public Case(GameWindow gw, int x, int y){
 
@@ -24,10 +23,11 @@ public class Case extends JLabel{
 
       public void mouseEntered(MouseEvent arg0) {
 
+        GameManager manager = new GameManager().getManager();
         Case current = (Case)arg0.getSource();
 
-        int chx = 0;
-        int chy = 0;
+        int chx = manager.getCharacter(manager.getTurn()).getX();
+        int chy = manager.getCharacter(manager.getTurn()).getY();
         Case[][] world = gw.getWorld();
 
         if(gw.getState() == GameWindow.STATE_SELECT_MOVING){
@@ -71,10 +71,11 @@ public class Case extends JLabel{
 
         public void mouseExited(MouseEvent arg0) {
 
+          GameManager manager = new GameManager().getManager();
           Case current = (Case)arg0.getSource();
 
-          int chx = 0;
-          int chy = 0;
+          int chx = manager.getCharacter(manager.getTurn()).getX();
+          int chy = manager.getCharacter(manager.getTurn()).getY();
           Case[][] world = gw.getWorld();
 
           if(gw.getState() == GameWindow.STATE_SELECT_MOVING){
@@ -112,6 +113,7 @@ public class Case extends JLabel{
 
       public void mouseClicked(MouseEvent arg0) {
 
+        GameManager manager = new GameManager().getManager();
         Case current = (Case)arg0.getSource();
 
         if(gw.getState() == GameWindow.STATE_SELECT_MOVING){
