@@ -149,7 +149,7 @@ public class CharacterWindow extends JFrame {
 					int i = (Integer)((JButton)e.getSource()).getClientProperty("index");
 					modifyBar(i,false);
 					updateLabel(i);
-					
+
 				}
 			});
 
@@ -232,7 +232,7 @@ public class CharacterWindow extends JFrame {
 	}
 
 	private void close() {
-
+		this.life = this.bars[0].getValue();
 		this.strength = this.bars[1].getValue();
 		this.intel = this.bars[2].getValue();
 		this.speed = this.bars[3].getValue();

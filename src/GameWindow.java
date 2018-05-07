@@ -13,6 +13,9 @@ public class GameWindow extends JFrame{
   private int mouseX;
   private int mouseY;
 
+  private ActiveInterface active1;
+  private ActiveInterface active2;
+
   public static final int STATE_SELECT_MOVING =0;
   public static final int STATE_ATTACK1 = 1;
   public static final int STATE_ATTACK2 = 2;
@@ -20,7 +23,7 @@ public class GameWindow extends JFrame{
   public static final int STATE_ATTACK4 = 4;
   public static final int STATE_NOTHING = -1;
 
-  private int currentState = STATE_ATTACK1; //phase de test
+  private int currentState = STATE_SELECT_MOVING; //phase de test
 
 
   public Case[][] getWorld() {
@@ -62,6 +65,16 @@ public class GameWindow extends JFrame{
     JPanel charaUI = new JPanel();
     charaUI.setMinimumSize(new Dimension(600,300));
     charaUI.setMaximumSize(new Dimension(600,300));
+
+    GridLayout charaGrid = new GridLayout(1,2);
+    charaUI.setLayout(charaGrid);
+
+    active1 = new ActiveInterface(manager.getCharacter(0));
+    active2 = new ActiveInterface(manager.getCharacter(1));
+
+    charaUI.add(active1);
+    charaUI.add(active2);
+
     globalBox.add(charaUI);
 
     this.add(globalBox);
