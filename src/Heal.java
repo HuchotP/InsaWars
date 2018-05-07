@@ -14,11 +14,13 @@ public class Heal extends Attack{
 
   }
 
-  public void attack(){
+  public boolean attack(){
       Character c1 = manager.getCharacter(manager.getTurn());
       if ( c1.getCredits()>this.creditsRequired){
         c1.healCharacter(this.damage );
-
+        return true;
+      } else{
+        return false;
       }
     }
 }

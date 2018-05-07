@@ -31,7 +31,7 @@ public class Character{
       attacks[2] = new LocatedAttack(this);
       attacks[3] = new Heal(this);
 
-
+      manager= manager.getManager();
     }
 
   	/**
@@ -127,12 +127,8 @@ public class Character{
 
       attacks[n].attack();
     }*/
-    public void takeDamge(int damage, int dodgerate){
-        if(this.luck * dodgerate < 150) {  /** random values **/
 
-        }
 
-    }
     public void attack(int n){
 
       attacks[n].attack();
@@ -152,13 +148,18 @@ public class Character{
 
     }
     public boolean move(int newX, int newY){
+
+      Character ennemy = manager.getCharacter(manager.getOppositeTurn());
         if ( Math.abs(( this.getX() -newX)) + Math.abs((this.getY()- newY))< 10 ){
+          if( this.credits>10 && newX!= ennemy.getX() && newY!= ennemy.getY() ){
           this.setX(newX);
           this.setY(newY);
           return true;
        }else{
          return false;
        }
+     }else {
+         return false;
        }
-
-      }
+       }
+       }
