@@ -8,6 +8,7 @@ public class Case extends JLabel{
   private ImageIcon defaultCase = new ImageIcon("DefaultCase.png");
   private ImageIcon blueCase = new ImageIcon("MouseCase.png");
   private GameWindow gw;
+  public GameManager manager = new GameManager().getManager();
 
   public Case(GameWindow gw, int x, int y){
 
@@ -23,7 +24,7 @@ public class Case extends JLabel{
 
       public void mouseEntered(MouseEvent arg0) {
 
-        GameManager manager = new GameManager().getManager();
+        manager = new GameManager().getManager();
         Case current = (Case)arg0.getSource();
 
         int chx = manager.getCharacter(manager.getTurn()).getX();

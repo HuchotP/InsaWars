@@ -29,9 +29,8 @@ public class GameManager {
   }
   public GameManager(){
 
-    if(manager == null)
-      this.manager = this;
   }
+
   public Character getCharacter(int n){
 
     return chara[n];
