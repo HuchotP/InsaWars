@@ -1,8 +1,7 @@
 import java.awt.*;
 import javax.swing.*;
 import java.awt.Color;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.event.*;
 
 public class ActiveInterface extends JPanel {
 
@@ -24,12 +23,12 @@ public class ActiveInterface extends JPanel {
 
     lifeBar = new JProgressBar();
 
-    lifeBar.setMaximum(ch.getLife());
-    lifeBar.setValue(ch.getLife());
+    lifeBar.setMaximum((int) Math.ceil(ch.getLife()));
+    lifeBar.setValue((int) Math.ceil(ch.getMaxLife()));
     lifeBar.setForeground(new Color(0,255,0));
     lifePanel.add(lifeBar);
 
-    lifeValue = new JLabel(Integer.toString(ch.getLife()));
+    lifeValue = new JLabel(Double.toString(ch.getLife()));
     lifePanel.add(lifeValue);
 
     lifePanel.setAlignmentX(JComponent.CENTER_ALIGNMENT);
@@ -47,6 +46,14 @@ public class ActiveInterface extends JPanel {
       attackButtons[i].putClientProperty("index", i);
       attackPanel.add(attackButtons[i]);
     }
+
+    attackButtons[0].addMouseListener(new MouseAdapter() {
+
+      public void mouseEntered(MouseEvent arg0) {
+        System.out.println("Attaque de zone");
+      }
+
+    });
 
     this.add(attackPanel);
 

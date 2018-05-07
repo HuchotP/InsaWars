@@ -4,8 +4,8 @@ public abstract class Attack{
 
   protected String name;
   protected int type;
-  protected int damage;
-  protected int dodgerate;
+  protected double damage;
+  protected double dodgerate;
   protected int creditsRequired;
 
   public String getName(){
@@ -25,7 +25,7 @@ public abstract class Attack{
   }
 
 
-  public int getDamage() {
+  public double getDamage() {
 
     return this.damage;
 

@@ -49,7 +49,7 @@ public class GameManager {
 
     return manager;
 
-    }
+  }
 
 
 
@@ -59,18 +59,19 @@ public class GameManager {
     chara[0].resetCredits();
     chara[1].resetCredits();
 
-    if(chara[0].getLife() == 0 || chara[1].getLife()){
+    if(chara[0].getLife() == 0 || chara[1].getLife() == 0){
 
       this.gameFinished = true;
 
     }
+  }
     public boolean isFinished(){
 
       return this.gameFinished;
 
     }
 
-  }
+
   public int getTurn(){
 
     return this.turn;

@@ -8,9 +8,9 @@ public class LocatedAttack extends Attack{
 
   public LocatedAttack(Character c){
 
-    this.name= " Attaque ciblée";
+    this.name= "Attaque ciblée";
     this.damage= 3*c.getStrength();
-    this.dodgerate= 1/8;
+    this.dodgerate= 1.0/8;
     this.creditsRequired=3;
 
   }
@@ -27,7 +27,7 @@ public class LocatedAttack extends Attack{
         return false;
       }
     }else{
-      return false
+      return false;
     }
 
   }

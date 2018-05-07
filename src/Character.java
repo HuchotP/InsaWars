@@ -4,8 +4,8 @@ public class Character{
 
     private int credits;
     private int maxcredits;
-    private int life;
-    private int maxlife;
+    private double life;
+    private double maxlife;
     private int strength;
     private int intel;
     private int speed;
@@ -22,7 +22,7 @@ public class Character{
 
     private static GameManager manager;
 
-    public Character(int life, int strength, int intel, int speed, int luck, String name){
+    public Character(double life, int strength, int intel, int speed, int luck, String name){
 
       this.maxcredits= 10 +2*this.speed;
       this.credits = this.maxcredits;
@@ -39,14 +39,14 @@ public class Character{
       attacks[2] = new LocatedAttack(this);
       attacks[3] = new Heal(this);
 
-      manager= manager.getManager();
+      manager = manager.getManager();
     }
 
   	/**
   	* Returns value of life
   	* @return
   	*/
-  	public int getLife() {
+  	public double getLife() {
   		return life;
   	}
 
@@ -54,7 +54,7 @@ public class Character{
       return credits;
     }
 
-    public int getMaxLife() {
+    public double getMaxLife() {
   		return maxlife;
   	}
 
@@ -133,9 +133,9 @@ public class Character{
 
 
 
-    public void takeDamage(int damage, int dodgerate){
+    public void takeDamage(double damage, double dodgerate){
         if((int)(Math.random()*100) < this.luck*dodgerate){
-          this.life= this.life- damage;
+          this.life= this.life - damage;
         }
       }
 
@@ -157,7 +157,7 @@ public class Character{
 
 
 
-    public void healCharacter( int healing ){
+    public void healCharacter( double healing ){
       this.life= this.life+ healing;
 
     }
