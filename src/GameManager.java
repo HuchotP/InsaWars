@@ -8,26 +8,33 @@ public class GameManager {
 
   public static GameManager manager;
 
-  public GameManager(Character c1, Character c2){
+  public GameManager(){
 
     if(manager == null){
 
+      chara[0] = null;
+      chara[1] = null;
+
       manager = this;
-
-      chara[0] = c1;
-      chara[1] = c2;
-
-      chara[0].setX(0);
-      chara[0].setY(0);
-
-      chara[1].setX(0);
-      chara[1].setY(0);
-
     }
 
 
   }
-  public GameManager(){
+
+  public void setCh1(Character ch1) {
+    this.chara[0] = ch1;
+
+    chara[0].setX(0);
+    chara[0].setY(0);
+
+
+  }
+
+  public void setCh2(Character ch2) {
+    this.chara[1] = ch2;
+
+    chara[1].setX(0);
+    chara[1].setY(0);
 
   }
 
@@ -46,7 +53,7 @@ public class GameManager {
 
   public void nextTurn(){
 
-    turn = (turn-1)%2;
+    turn = (turn+1)%2;
     chara[0].resetCredits();
     chara[1].resetCredits();
 
@@ -60,6 +67,6 @@ public class GameManager {
 
   public int getOppositeTurn(){
 
-    return (turn-1)%2;
+    return (turn+1)%2;
   }
 }

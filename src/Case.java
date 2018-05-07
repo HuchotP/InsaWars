@@ -27,6 +27,9 @@ public class Case extends JLabel{
         manager = new GameManager().getManager();
         Case current = (Case)arg0.getSource();
 
+        int x = (Integer) current.getClientProperty("x");
+        int y = (Integer) current.getClientProperty("y");
+
         int chx = manager.getCharacter(manager.getTurn()).getX();
         int chy = manager.getCharacter(manager.getTurn()).getY();
         Case[][] world = gw.getWorld();
@@ -34,17 +37,17 @@ public class Case extends JLabel{
         if(gw.getState() == GameWindow.STATE_SELECT_MOVING){
 
 
-          for(int i = chx ; i <= (Integer) current.getClientProperty("x") ; i++) {
+          for(int i = chx ; i <= x ; i++) {
             world[i][chy].setIcon(blueCase);
           }
-          for(int i = chy ; i <= (Integer) current.getClientProperty("y") ; i++) {
-            world[(Integer) current.getClientProperty("x")][i].setIcon(blueCase);
+          for(int i = chy ; i <= y ; i++) {
+            world[x][i].setIcon(blueCase);
           }
-          for(int i = chx ; i >= (Integer) current.getClientProperty("x") ; i--) {
+          for(int i = chx ; i >= x ; i--) {
             world[i][chy].setIcon(blueCase);
           }
-          for(int i = chy ; i >= (Integer) current.getClientProperty("y") ; i--) {
-            world[(Integer) current.getClientProperty("x")][i].setIcon(blueCase);
+          for(int i = chy ; i >= y ; i--) {
+            world[x][i].setIcon(blueCase);
           }
         }
 
@@ -54,7 +57,11 @@ public class Case extends JLabel{
 
             for(int k = chx -4; k <= chx + 4; k ++)
 
+            try {
               world[i][k].setIcon(blueCase);
+            } catch(ArrayIndexOutOfBoundsException e) {
+
+            }
 
           }
 
@@ -63,49 +70,58 @@ public class Case extends JLabel{
 
       }
 
-          /*JLabel current = (JLabel)arg0.getSource();
-          current.setIcon(new ImageIcon("MouseCase.png"));
-          int x = (Integer) current.getClientProperty("x");
-          int y = (Integer) current.getClientProperty("y");
-          System.out.println("Label " + x + " , " + y + " hovered");*/
+      /*JLabel current = (JLabel)arg0.getSource();
+      current.setIcon(new ImageIcon("MouseCase.png"));
+      int x = (Integer) current.getClientProperty("x");
+      int y = (Integer) current.getClientProperty("y");
+      System.out.println("Label " + x + " , " + y + " hovered");*/
 
 
-        public void mouseExited(MouseEvent arg0) {
+      public void mouseExited(MouseEvent arg0) {
 
-          GameManager manager = new GameManager().getManager();
-          Case current = (Case)arg0.getSource();
+        GameManager manager = new GameManager().getManager();
+        Case current = (Case)arg0.getSource();
 
-          int chx = manager.getCharacter(manager.getTurn()).getX();
-          int chy = manager.getCharacter(manager.getTurn()).getY();
-          Case[][] world = gw.getWorld();
+        int x = (Integer) current.getClientProperty("x");
+        int y = (Integer) current.getClientProperty("y");
 
-          if(gw.getState() == GameWindow.STATE_SELECT_MOVING){
+        int chx = manager.getCharacter(manager.getTurn()).getX();
+        int chy = manager.getCharacter(manager.getTurn()).getY();
 
+        Case[][] world = gw.getWorld();
 
-            for(int i = chx ; i <= (Integer) current.getClientProperty("x") ; i++) {
-              world[i][chy].setIcon(defaultCase);
-            }
-            for(int i = chy ; i <= (Integer) current.getClientProperty("y") ; i++) {
-              world[(Integer) current.getClientProperty("x")][i].setIcon(defaultCase);
-            }
-            for(int i = chx ; i >= (Integer) current.getClientProperty("x") ; i--) {
-              world[i][chy].setIcon(defaultCase);
-            }
-            for(int i = chy ; i >= (Integer) current.getClientProperty("y") ; i--) {
-              world[(Integer) current.getClientProperty("x")][i].setIcon(defaultCase);
-            }
+        if(gw.getState() == GameWindow.STATE_ATTACK1){
 
-            if(gw.getState() == GameWindow.STATE_ATTACK1){
+          for(int i = chx -4; i <= chx + 4; i ++){
 
-              for(int i = chx -4; i <= chx + 4; i ++){
+            for(int k = chx -4; k <= chx + 4; k ++)
 
-                for(int k = chx -4; k <= chx + 4; k ++)
-
-                  world[i][k].setIcon(defaultCase);
-
-              }
+            try {
+              world[i][k].setIcon(defaultCase);
+            } catch(ArrayIndexOutOfBoundsException e) {
 
             }
+
+          }
+
+        }
+
+        if(gw.getState() == GameWindow.STATE_SELECT_MOVING){
+
+
+          for(int i = chx ; i <= x ; i++) {
+            world[i][chy].setIcon(defaultCase);
+          }
+          for(int i = chy ; i <= y ; i++) {
+            world[x][i].setIcon(defaultCase);
+          }
+          for(int i = chx ; i >= x ; i--) {
+            world[i][chy].setIcon(defaultCase);
+          }
+          for(int i = chy ; i >= y ; i--) {
+            world[x][i].setIcon(defaultCase);
+          }
+
         }
         /*JLabel current = (JLabel)arg0.getSource();
         current.setIcon(new ImageIcon("DefaultCase.png"));
@@ -117,9 +133,29 @@ public class Case extends JLabel{
         GameManager manager = new GameManager().getManager();
         Case current = (Case)arg0.getSource();
 
+        int x = (Integer) current.getClientProperty("x");
+        int y = (Integer) current.getClientProperty("y");
+
+        int chx = manager.getCharacter(manager.getTurn()).getX();
+        int chy = manager.getCharacter(manager.getTurn()).getY();
+        Case[][] world = gw.getWorld();
+
+        for(int i = chx ; i <= x ; i++) {
+          world[i][chy].setIcon(defaultCase);
+        }
+        for(int i = chy ; i <= y ; i++) {
+          world[x][i].setIcon(defaultCase);
+        }
+        for(int i = chx ; i >= x ; i--) {
+          world[i][chy].setIcon(defaultCase);
+        }
+        for(int i = chy ; i >= y ; i--) {
+          world[x][i].setIcon(defaultCase);
+        }
+
         if(gw.getState() == GameWindow.STATE_SELECT_MOVING){
 
-          manager.getCharacter(manager.getTurn()).move( (Integer) current.getClientProperty("x"), (Integer) current.getClientProperty("y"));
+          manager.getCharacter(manager.getTurn()).move((Integer) current.getClientProperty("x"), (Integer) current.getClientProperty("y"));
 
         }
 
@@ -128,11 +164,13 @@ public class Case extends JLabel{
           manager.getCharacter(manager.getTurn()).attack(0);
 
         }
+
       }
+
     });
 
 
-}
+  }
 
 
 }

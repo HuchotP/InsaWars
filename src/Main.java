@@ -2,13 +2,17 @@ public class Main {
 
 	public static void main(String[] args) {
 
+		GameManager manager = new GameManager();
+
 		Character ch1 = createCharacter(1);
 
 		System.out.println(ch1.getName());
 
 		Character ch2 = createCharacter(2);
 
-		GameManager manager = new GameManager(ch1,ch2);
+		manager.setCh1(ch1);
+		manager.setCh2(ch2);
+
 
 		GameWindow game = new GameWindow();
 

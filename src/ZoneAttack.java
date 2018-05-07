@@ -1,9 +1,8 @@
-
 import java.lang.Math;
 
 public class ZoneAttack extends Attack{
 
-  GameManager manager = new GameManager().getManager();
+  public GameManager manager = new GameManager().getManager();
 
   public ZoneAttack(Character c){
 

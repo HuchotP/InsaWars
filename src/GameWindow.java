@@ -16,11 +16,11 @@ public class GameWindow extends JFrame{
   public static final int STATE_SELECT_MOVING =0;
   public static final int STATE_ATTACK1 = 1;
   public static final int STATE_ATTACK2 = 2;
-  public static final int STATE_ATTACK3 = 0;
+  public static final int STATE_ATTACK3 = 3;
   public static final int STATE_ATTACK4 = 4;
   public static final int STATE_NOTHING = -1;
 
-  private int currentState = STATE_SELECT_MOVING; //phase de test
+  private int currentState = STATE_ATTACK1; //phase de test
 
 
   public Case[][] getWorld() {
