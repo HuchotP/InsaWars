@@ -3,7 +3,9 @@ import java.lang.Math;
 public class Character{
 
     private int credits;
+    private int maxcredits;
     private int life;
+    private int maxlife;
     private int strength;
     private int intel;
     private int speed;
@@ -14,12 +16,18 @@ public class Character{
     private int x;
     private int y;
 
+    private boolean hasAttacked = false;
+    private boolean canAttack = true;
+    private boolean hasMoved = false;
+
     private static GameManager manager;
 
     public Character(int life, int strength, int intel, int speed, int luck, String name){
 
-      this.credits= 10 +2*this.speed;
-      this.life = life;
+      this.maxcredits= 10 +2*this.speed;
+      this.credits = this.maxcredits;
+      this.maxlife = life;
+      this.life = this.maxlife;
       this.strength = strength;
       this.intel = intel;
       this.speed = speed;
@@ -31,7 +39,7 @@ public class Character{
       attacks[2] = new LocatedAttack(this);
       attacks[3] = new Heal(this);
 
-
+      manager= manager.getManager();
     }
 
   	/**
@@ -44,6 +52,14 @@ public class Character{
 
     public int getCredits(){
       return credits;
+    }
+
+    public int getMaxLife() {
+  		return maxlife;
+  	}
+
+    public int getMaxCredits(){
+      return maxcredits;
     }
 
 
@@ -118,7 +134,7 @@ public class Character{
 
 
     public void takeDamage(int damage, int dodgerate){
-        if(luck * dodgerate< 150){
+        if((int)(Math.random()*100) < this.luck/dodgerate){
           this.life= this.life- damage;
         }
       }
@@ -127,16 +143,17 @@ public class Character{
 
       attacks[n].attack();
     }*/
-    public void takeDamge(int damage, int dodgerate){
-        if(this.luck * dodgerate < 150) {  /** random values **/
 
-        }
 
-    }
-    public void attack(int n){
+    public boolean attack(int n){
 
-      attacks[n].attack();
+      if(this.canAttack == true){
+        if(attacks[n].attack()== true)
+          this.hasAttacked = true;
+          return  true;
+      }
 
+      return false;
     }
 
 
@@ -148,17 +165,30 @@ public class Character{
 
     public void resetCredits(){
 
-      this.credits = (int) (10 + 0.5 * this.speed);
+      this.credits = this.maxcredits;
+      this.hasMoved = false;
+      this.hasAttacked = false;
+      this.canAttack = true;
 
     }
     public boolean move(int newX, int newY){
+
+      Character ennemy = manager.getCharacter(manager.getOppositeTurn());
+
         if ( Math.abs(( this.getX() -newX)) + Math.abs((this.getY()- newY))< 10 ){
-          this.setX(newX);
-          this.setY(newY);
-          return true;
+
+          if( this.credits>10 && newX!= ennemy.getX() && newY!= ennemy.getY() && this.hasMoved == false ){
+            this.setX(newX);
+            this.setY(newY);
+            this.hasMoved = true;
+            if(this.hasAttacked == true)
+              this.canAttack = false;
+            return true;
        }else{
          return false;
        }
+     }else {
+         return false;
        }
-
-      }
+    }
+}

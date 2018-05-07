@@ -14,7 +14,7 @@ public abstract class Attack{
 
   }
 
-  public abstract void attack();
+  public abstract boolean attack();
 
 
 
