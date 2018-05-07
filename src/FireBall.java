@@ -9,8 +9,8 @@ public class FireBall extends Attack{
   public FireBall (Character c){
 
     this.name= " Boule de feu ";
-    this.damage= 20+ 4*c.getIntel()+ 2*c.getStrength();
-    this.dodgerate= 15;
+    this.damage= 1,5*c.getStrength();
+    this.dodgerate= 1/3;
     this.creditsRequired= 3;
 
   }

@@ -8,9 +8,9 @@ public class ZoneAttack extends Attack{
   public ZoneAttack(Character c){
 
     this.name = "Attaque de zone";
-    this.damage = 20 + 4* c.getStrength() + 2* c.getIntel();
-    this.dodgerate= 5;
-    this.creditsRequired= 10;
+    this.damage = 1*c.getStrength() + 1*c.getIntel();
+    this.dodgerate= 1/15;
+    this.creditsRequired= 4;
 
   }
 

@@ -134,7 +134,7 @@ public class Character{
 
 
     public void takeDamage(int damage, int dodgerate){
-        if((int)(Math.random()*100) < this.luck/dodgerate){
+        if((int)(Math.random()*100) < this.luck*dodgerate){
           this.life= this.life- damage;
         }
       }
@@ -152,7 +152,6 @@ public class Character{
           this.hasAttacked = true;
           return  true;
       }
-
       return false;
     }
 
