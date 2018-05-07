@@ -8,6 +8,8 @@ public class GameManager {
 
   public static GameManager manager;
 
+  private boolean gameFinished = false;
+
   public GameManager(){
 
     if(manager == null){
@@ -57,6 +59,16 @@ public class GameManager {
     chara[0].resetCredits();
     chara[1].resetCredits();
 
+    if(chara[0].getLife() == 0 || chara[1].getLife()){
+
+      this.gameFinished = true;
+
+    }
+    public boolean isFinished(){
+
+      return this.gameFinished;
+
+    }
 
   }
   public int getTurn(){
