@@ -9,8 +9,12 @@ public class ActiveInterface extends JPanel {
   private JProgressBar lifeBar;
   private JLabel lifeValue;
   private JButton[] attackButtons;
+  private GameWindow gw;
+  public GameManager manager = new GameManager().getManager();
 
-  public ActiveInterface(Character ch) {
+  public ActiveInterface(Character ch, GameWindow gw) {
+
+    this.gw = gw;
 
     nameLabel = new JLabel(ch.getName()+"\n");
     nameLabel.setAlignmentX(JComponent.CENTER_ALIGNMENT);
@@ -47,15 +51,29 @@ public class ActiveInterface extends JPanel {
 
       attackButtons[i].addMouseListener(new MouseAdapter() {
 
-        public void mouseEntered(MouseEvent arg0) {
+        public void mouseExited(MouseEvent arg0) {
 
-          JButton current = (JButton)arg0.getSource();
-          System.out.println(ch.getAttack((Integer)current.getClientProperty("index")).getName());
+          Case[][] world = gw.getWorld();
+          int x = (manager.getCharacter(0)).getX();
+          int y = (manager.getCharacter(0)).getY();
+          world[x][y].rePaintWorld();
         }
 
       });
+
     }
 
+    attackButtons[0].addMouseListener(new MouseAdapter() {
+
+      public void mouseEntered(MouseEvent arg0) {
+
+        Case[][] world = gw.getWorld();
+        int x = (manager.getCharacter(0)).getX();
+        int y = (manager.getCharacter(0)).getY();
+        world[x][y].paintZone();
+      }
+
+    });
 
     this.add(attackPanel);
 

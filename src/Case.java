@@ -9,6 +9,7 @@ public class Case extends JLabel{
   private ImageIcon blueCase = new ImageIcon("MouseCase.png");
   private ImageIcon player1 = new ImageIcon("Player1.png");
   private ImageIcon player2 = new ImageIcon("Player2.png");
+  private ImageIcon momo = new ImageIcon("Momo.png");
   private GameWindow gw;
   public GameManager manager = new GameManager().getManager();
 
@@ -110,113 +111,148 @@ public class Case extends JLabel{
         if(gw.getState() == GameWindow.STATE_SELECT_MOVING){
 
 
-         /**for(int i = chx ; i <= x ; i++) {
-            world[i][chy].setIcon(defaultCase);
-          }
-          for(int i = chy ; i <= y ; i++) {
-            world[x][i].setIcon(defaultCase);
-          }
-          for(int i = chx ; i >= x ; i--) {
-            world[i][chy].setIcon(defaultCase);
-          }
-          for(int i = chy ; i >= y ; i--) {
-            world[x][i].setIcon(defaultCase);
-          }**/
-
-
-          rePaintWorld();
+          /**for(int i = chx ; i <= x ; i++) {
+          world[i][chy].setIcon(defaultCase);
         }
-        /*JLabel current = (JLabel)arg0.getSource();
-        current.setIcon(new ImageIcon("DefaultCase.png"));
-        int x = (Integer) current.getClientProperty("x");*/
+        for(int i = chy ; i <= y ; i++) {
+        world[x][i].setIcon(defaultCase);
       }
-
-      public void mouseClicked(MouseEvent arg0) {
-
-        GameManager manager = new GameManager().getManager();
-        Case current = (Case)arg0.getSource();
-
-        int x = (Integer) current.getClientProperty("x");
-        int y = (Integer) current.getClientProperty("y");
-
-        int chx = manager.getCharacter(manager.getTurn()).getX();
-        int chy = manager.getCharacter(manager.getTurn()).getY();
-        Case[][] world = gw.getWorld();
+      for(int i = chx ; i >= x ; i--) {
+      world[i][chy].setIcon(defaultCase);
+    }
+    for(int i = chy ; i >= y ; i--) {
+    world[x][i].setIcon(defaultCase);
+  }**/
 
 
+  rePaintWorld();
+}
+/*JLabel current = (JLabel)arg0.getSource();
+current.setIcon(new ImageIcon("DefaultCase.png"));
+int x = (Integer) current.getClientProperty("x");*/
+}
 
-        if(gw.getState() == GameWindow.STATE_SELECT_MOVING){
+public void mouseClicked(MouseEvent arg0) {
 
-          if(manager.getCharacter(manager.getTurn()).move(x,y) == true){
+  GameManager manager = new GameManager().getManager();
+  Case current = (Case)arg0.getSource();
 
-            /**for(int i = chx ; i <= x ; i++) {
-              world[i][chy].setIcon(defaultCase);
-            }
-            for(int i = chy ; i <= y ; i++) {
-              world[x][i].setIcon(defaultCase);
-            }
-            for(int i = chx ; i >= x ; i--) {
-              world[i][chy].setIcon(defaultCase);
-            }
-            for(int i = chy ; i >= y ; i--) {
-              world[x][i].setIcon(defaultCase);
-            }**/
+  int x = (Integer) current.getClientProperty("x");
+  int y = (Integer) current.getClientProperty("y");
 
-            rePaintWorld();
-            System.out.println(manager.getCharacter(manager.getTurn()).getX() + " " + manager.getCharacter(manager.getTurn()).getY());
-          }else{
-
-              System.out.println("Vous ne pouvez pas bouger : pas asssez de crédits ou pas sur un ennemi");
-
-          }
-
-        }
-
-        if(gw.getState() == GameWindow.STATE_ATTACK1){
-
-          if(manager.getCharacter(manager.getTurn()).attack(0) == true){
+  int chx = manager.getCharacter(manager.getTurn()).getX();
+  int chy = manager.getCharacter(manager.getTurn()).getY();
+  Case[][] world = gw.getWorld();
 
 
 
-          }
+  if(gw.getState() == GameWindow.STATE_SELECT_MOVING){
 
-        }
+    if(manager.getCharacter(manager.getTurn()).move(x,y) == true){
 
-      }
+      /**for(int i = chx ; i <= x ; i++) {
+      world[i][chy].setIcon(defaultCase);
+    }
+    for(int i = chy ; i <= y ; i++) {
+    world[x][i].setIcon(defaultCase);
+  }
+  for(int i = chx ; i >= x ; i--) {
+  world[i][chy].setIcon(defaultCase);
+}
+for(int i = chy ; i >= y ; i--) {
+world[x][i].setIcon(defaultCase);
+}**/
 
-    });
+rePaintWorld();
+System.out.println(manager.getCharacter(manager.getTurn()).getX() + " " + manager.getCharacter(manager.getTurn()).getY());
+}else{
+
+  System.out.println("Vous ne pouvez pas bouger : pas asssez de crédits ou pas sur un ennemi");
+
+}
+
+}
+
+if(gw.getState() == GameWindow.STATE_ATTACK1){
+
+  if(manager.getCharacter(manager.getTurn()).attack(0) == true){
+
 
 
   }
 
-  public void rePaintWorld(){
+}
 
-      Case[][] world = gw.getWorld();
-      int[][] world1 = manager.getWorld();
-      System.out.println("debug");
+}
 
-      for(int i = 0; i<world1.length; i++){
+});
 
-          for(int k = 0; k < world1[0].length; k++){
 
-            System.out.println(world1[i][k]);
-            switch(world1[i][k]){
-              case 0:
-                world[i][k].setIcon(defaultCase);
-                break;
-              case 1:
-                world[i][k].setIcon(player1);
-                break;
-              case 2:
-                world[i][k].setIcon(player2);
-                break;
+}
 
-            }
+public void rePaintWorld(){
 
-          }
+  Case[][] world = gw.getWorld();
+  int[][] world1 = manager.getWorld();
+  //System.out.println("debug");
+
+  for(int i = 0; i<world1.length; i++){
+
+    for(int k = 0; k < world1[0].length; k++){
+
+      switch(world1[i][k]){
+        case 0:
+        world[i][k].setIcon(defaultCase);
+        break;
+        case 1:
+        world[i][k].setIcon(player1);
+        break;
+        case 2:
+        world[i][k].setIcon(player2);
+        break;
 
       }
 
+    }
+
   }
+
+}
+
+public void paintZone() {
+
+  Case[][] world = gw.getWorld();
+  int[][] world1 = manager.getWorld();
+  int x = (Integer) this.getClientProperty("x");
+  int y = (Integer) this.getClientProperty("y");
+  //System.out.println("debug");
+
+  for(int i = -2; i<= 2; i++){
+
+    for(int k = -2 ; k <= 2; k++){
+
+      try {
+        switch(world1[x+i][y+k]){
+          case 0:
+          world[x+i][y+k].setIcon(blueCase);
+          break;
+          case 1:
+          world[x+i][y+k].setIcon(player1);
+          break;
+          case 2:
+          world[x+i][y+k].setIcon(player2);
+          break;
+
+        }
+      } catch(ArrayIndexOutOfBoundsException e) {
+
+      }
+
+
+    }
+
+  }
+
+}
 
 }

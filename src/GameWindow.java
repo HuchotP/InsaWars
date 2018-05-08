@@ -59,7 +59,7 @@ public class GameWindow extends JFrame{
     }
 
     world[0][0].rePaintWorld();
-    
+
     worldContainer.setMinimumSize(new Dimension(600,600));
     worldContainer.setMaximumSize(new Dimension(600,600));
     globalBox.add(worldContainer);
@@ -71,8 +71,8 @@ public class GameWindow extends JFrame{
     GridLayout charaGrid = new GridLayout(1,2);
     charaUI.setLayout(charaGrid);
 
-    active1 = new ActiveInterface(manager.getCharacter(0));
-    active2 = new ActiveInterface(manager.getCharacter(1));
+    active1 = new ActiveInterface(manager.getCharacter(0), this);
+    active2 = new ActiveInterface(manager.getCharacter(1), this);
 
     charaUI.add(active1);
     charaUI.add(active2);
