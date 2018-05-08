@@ -8,7 +8,7 @@ public class Heal extends Attack{
 
   public Heal(Character c){
 
-    this.name= " Sort de soins";
+    this.name= "Soins";
     this.damage= 2*c.getIntel();
     this.creditsRequired=4;
     this.dodgerate=0;

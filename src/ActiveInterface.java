@@ -9,7 +9,6 @@ public class ActiveInterface extends JPanel {
   private JProgressBar lifeBar;
   private JLabel lifeValue;
   private JButton[] attackButtons;
-  private String[] attacks = {"Zone", "Boule de feu", "Directive", "Soin"};
 
   public ActiveInterface(Character ch) {
 
@@ -42,18 +41,21 @@ public class ActiveInterface extends JPanel {
     attackPanel.setLayout(attackGrid);
 
     for(int i = 0 ; i < attackButtons.length ; i++) {
-      attackButtons[i] = new JButton(attacks[i]);
+      attackButtons[i] = new JButton(ch.getAttack(i).getName());
       attackButtons[i].putClientProperty("index", i);
       attackPanel.add(attackButtons[i]);
+
+      attackButtons[i].addMouseListener(new MouseAdapter() {
+
+        public void mouseEntered(MouseEvent arg0) {
+
+          JButton current = (JButton)arg0.getSource();
+          System.out.println(ch.getAttack((Integer)current.getClientProperty("index")).getName());
+        }
+
+      });
     }
 
-    attackButtons[0].addMouseListener(new MouseAdapter() {
-
-      public void mouseEntered(MouseEvent arg0) {
-        System.out.println("Attaque de zone");
-      }
-
-    });
 
     this.add(attackPanel);
 

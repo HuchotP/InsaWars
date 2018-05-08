@@ -155,7 +155,7 @@ public class Case extends JLabel{
 
         if(gw.getState() == GameWindow.STATE_SELECT_MOVING){
 
-          manager.getCharacter(manager.getTurn()).move((Integer) current.getClientProperty("x"), (Integer) current.getClientProperty("y"));
+          System.out.println(manager.getCharacter(manager.getTurn()).move(x,y));
 
         }
 
