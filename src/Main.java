@@ -15,7 +15,7 @@ public class Main {
 		manager.setCh1(ch1);
 		manager.setCh2(ch2);
 
-		System.out.println(manager.getCharacter(0).getName());
+		System.out.println(manager.getCharacter(1).getName());
 
 
 		GameWindow game = new GameWindow();

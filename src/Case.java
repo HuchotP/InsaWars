@@ -7,6 +7,8 @@ public class Case extends JLabel{
 
   private ImageIcon defaultCase = new ImageIcon("DefaultCase.png");
   private ImageIcon blueCase = new ImageIcon("MouseCase.png");
+  private ImageIcon player1 = new ImageIcon("Player1.png");
+  private ImageIcon player2 = new ImageIcon("Player2.png");
   private GameWindow gw;
   public GameManager manager = new GameManager().getManager();
 
@@ -24,7 +26,6 @@ public class Case extends JLabel{
 
       public void mouseEntered(MouseEvent arg0) {
 
-        manager = new GameManager().getManager();
         Case current = (Case)arg0.getSource();
 
         int x = (Integer) current.getClientProperty("x");
@@ -37,16 +38,16 @@ public class Case extends JLabel{
         if(gw.getState() == GameWindow.STATE_SELECT_MOVING){
 
 
-          for(int i = chx ; i <= x ; i++) {
+          for(int i = chx+1 ; i <= x ; i++) {
             world[i][chy].setIcon(blueCase);
           }
-          for(int i = chy ; i <= y ; i++) {
+          for(int i = chy+1 ; i <= y ; i++) {
             world[x][i].setIcon(blueCase);
           }
-          for(int i = chx ; i >= x ; i--) {
+          for(int i = chx-1 ; i >= x ; i--) {
             world[i][chy].setIcon(blueCase);
           }
-          for(int i = chy ; i >= y ; i--) {
+          for(int i = chy-1 ; i >= y ; i--) {
             world[x][i].setIcon(blueCase);
           }
         }
@@ -109,7 +110,7 @@ public class Case extends JLabel{
         if(gw.getState() == GameWindow.STATE_SELECT_MOVING){
 
 
-          for(int i = chx ; i <= x ; i++) {
+         /**for(int i = chx ; i <= x ; i++) {
             world[i][chy].setIcon(defaultCase);
           }
           for(int i = chy ; i <= y ; i++) {
@@ -120,8 +121,10 @@ public class Case extends JLabel{
           }
           for(int i = chy ; i >= y ; i--) {
             world[x][i].setIcon(defaultCase);
-          }
+          }**/
 
+
+          rePaintWorld();
         }
         /*JLabel current = (JLabel)arg0.getSource();
         current.setIcon(new ImageIcon("DefaultCase.png"));
@@ -140,28 +143,42 @@ public class Case extends JLabel{
         int chy = manager.getCharacter(manager.getTurn()).getY();
         Case[][] world = gw.getWorld();
 
-        for(int i = chx ; i <= x ; i++) {
-          world[i][chy].setIcon(defaultCase);
-        }
-        for(int i = chy ; i <= y ; i++) {
-          world[x][i].setIcon(defaultCase);
-        }
-        for(int i = chx ; i >= x ; i--) {
-          world[i][chy].setIcon(defaultCase);
-        }
-        for(int i = chy ; i >= y ; i--) {
-          world[x][i].setIcon(defaultCase);
-        }
+
 
         if(gw.getState() == GameWindow.STATE_SELECT_MOVING){
 
-          System.out.println(manager.getCharacter(manager.getTurn()).move(x,y));
+          if(manager.getCharacter(manager.getTurn()).move(x,y) == true){
+
+            /**for(int i = chx ; i <= x ; i++) {
+              world[i][chy].setIcon(defaultCase);
+            }
+            for(int i = chy ; i <= y ; i++) {
+              world[x][i].setIcon(defaultCase);
+            }
+            for(int i = chx ; i >= x ; i--) {
+              world[i][chy].setIcon(defaultCase);
+            }
+            for(int i = chy ; i >= y ; i--) {
+              world[x][i].setIcon(defaultCase);
+            }**/
+
+            rePaintWorld();
+            System.out.println(manager.getCharacter(manager.getTurn()).getX() + " " + manager.getCharacter(manager.getTurn()).getY());
+          }else{
+
+              System.out.println("Vous ne pouvez pas bouger : pas asssez de crédits ou pas sur un ennemi");
+
+          }
 
         }
 
         if(gw.getState() == GameWindow.STATE_ATTACK1){
 
-          manager.getCharacter(manager.getTurn()).attack(0);
+          if(manager.getCharacter(manager.getTurn()).attack(0) == true){
+
+
+
+          }
 
         }
 
@@ -172,5 +189,34 @@ public class Case extends JLabel{
 
   }
 
+  public void rePaintWorld(){
+
+      Case[][] world = gw.getWorld();
+      int[][] world1 = manager.getWorld();
+      System.out.println("debug");
+
+      for(int i = 0; i<world1.length; i++){
+
+          for(int k = 0; k < world1[0].length; k++){
+
+            System.out.println(world1[i][k]);
+            switch(world1[i][k]){
+              case 0:
+                world[i][k].setIcon(defaultCase);
+                break;
+              case 1:
+                world[i][k].setIcon(player1);
+                break;
+              case 2:
+                world[i][k].setIcon(player2);
+                break;
+
+            }
+
+          }
+
+      }
+
+  }
 
 }

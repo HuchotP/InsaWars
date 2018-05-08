@@ -24,7 +24,7 @@ public class Character{
 
   public Character(double life, int strength, int intel, int speed, int luck, String name){
 
-    this.maxcredits= 10 +2*this.speed;
+    this.maxcredits= this.speed*2;
     this.credits = this.maxcredits;
     this.maxlife = life;
     this.life = this.maxlife;
@@ -180,6 +180,7 @@ public boolean move(int newX, int newY){
   if ( Math.abs(this.getX() - newX) + Math.abs((this.getY()- newY))< 20 ){
 
     if( this.credits>10 && newX!= ennemy.getX() && newY!= ennemy.getY() && this.hasMoved == false ){
+      manager.changeWorld(newX, newY);
       this.setX(newX);
       this.setY(newY);
       this.hasMoved = true;
@@ -188,6 +189,7 @@ public boolean move(int newX, int newY){
       return true;
     }else{
       // A ENLEVER --- TEST
+      manager.changeWorld(newX, newY);
       this.setX(newX);
       this.setY(newY);
       // A ENLEVER --- TEST
@@ -195,6 +197,7 @@ public boolean move(int newX, int newY){
     }
   }else {
     // A ENLEVER --- TEST
+    manager.changeWorld(newX, newY);
     this.setX(newX);
     this.setY(newY);
     // A ENLEVER --- TEST

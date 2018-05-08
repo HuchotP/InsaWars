@@ -2,7 +2,7 @@ public class GameManager {
 
   private Character[] chara = new Character[2];
 
-  private int[][] world = new int[15][15]; /** the world is represented by a 2D array of int, 0 = no player, 1 = player 1, 2 = player 2. Position is calculated in the same way of graphical interface**/
+  private int[][] world = new int[10][10]; /** the world is represented by a 2D array of int, 0 = no player, 1 = player 1, 2 = player 2. Position is calculated in the same way of graphical interface**/
 
   private int turn = 0; //0 = player 1, 1 = player 2
 
@@ -82,4 +82,20 @@ public class GameManager {
 
     return (turn+1)%2;
   }
+
+  public int[][] getWorld(){
+
+    return this.world;
+
+  }
+
+  public void changeWorld(int x, int y){
+
+    int cx = getCharacter(getTurn()).getX();
+    int cy = getCharacter(getTurn()).getY();
+    this.world[x][y] = getTurn()+1;
+    this.world[cx][cy] = 0;
+
+  }
+
 }

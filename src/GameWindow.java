@@ -38,7 +38,7 @@ public class GameWindow extends JFrame{
 
     Box globalBox = Box.createVerticalBox();
 
-    ImageIcon icon = new ImageIcon("DefaultCase.png");
+
 
     JPanel worldContainer = new JPanel();
     GridLayout worldGrid = new GridLayout(10,10);
@@ -58,6 +58,8 @@ public class GameWindow extends JFrame{
 
     }
 
+    world[0][0].rePaintWorld();
+    
     worldContainer.setMinimumSize(new Dimension(600,600));
     worldContainer.setMaximumSize(new Dimension(600,600));
     globalBox.add(worldContainer);
