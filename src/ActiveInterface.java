@@ -75,6 +75,20 @@ public class ActiveInterface extends JPanel {
 
     });
 
+    attackButtons[1].addMouseListener(new MouseAdapter() {
+
+      public void mouseEntered(MouseEvent arg0) {
+
+        Case[][] world = gw.getWorld();
+        int x = (manager.getCharacter(0)).getX();
+        int y = (manager.getCharacter(0)).getY();
+        world[x][y].paintFireball();
+      }
+
+    });
+
+
+
     this.add(attackPanel);
 
 

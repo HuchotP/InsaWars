@@ -26,17 +26,32 @@ public class GameManager {
   public void setCh1(Character ch1) {
     this.chara[0] = ch1;
 
-    chara[0].setX(0);
-    chara[0].setY(0);
+    chara[0].setX(5);
+    chara[0].setY(1);
 
+  /*for(int i = 0 ; i < world.length ; i++) {
+    switch(world1[x][i]){
+      case 0:
+        world[x][i].setIcon(blueCase);
+        break;
+      case 1:
+        world[x][i].setIcon(player1);
+        break;
+      case 2:
+        world[x][i].setIcon(player2);
+        break;
+
+    }
+
+  }*/
 
   }
 
   public void setCh2(Character ch2) {
     this.chara[1] = ch2;
 
-    chara[1].setX(0);
-    chara[1].setY(0);
+    chara[1].setX(5);
+    chara[1].setY(8);
 
   }
 
@@ -84,6 +99,28 @@ public class GameManager {
   }
 
   public int[][] getWorld(){
+
+    int x1 = getCharacter(0).getX();
+    int y1 = getCharacter(0).getY();
+    int x2 = getCharacter(1).getX();
+    int y2 = getCharacter(1).getY();
+
+    for(int i = 0; i < world.length; i++) {
+      
+      for(int j = 0; j < world[0].length; j++){
+
+        if(i == x1 && j == y1) {
+          world[i][j] = 1;
+        }
+        else if(i == x2 && j == y2) {
+          world[i][j] = 2;
+        }
+        else {
+          world[i][j] = 0;
+        }
+
+      }
+    }
 
     return this.world;
 

@@ -51,6 +51,8 @@ public class Case extends JLabel{
           for(int i = chy-1 ; i >= y ; i--) {
             world[x][i].setIcon(blueCase);
           }
+
+          world[manager.getCharacter(manager.getOppositeTurn()).getX()][manager.getCharacter(manager.getOppositeTurn()).getY()].setIcon(getOppositeIcon());
         }
 
         if(gw.getState() == GameWindow.STATE_ATTACK1){
@@ -253,6 +255,74 @@ public void paintZone() {
 
   }
 
+}
+
+public void paintFireball() {
+
+  Case[][] world = gw.getWorld();
+  int[][] world1 = manager.getWorld();
+  printInt2DArray(world1);
+  int x = (Integer) this.getClientProperty("x");
+  int y = (Integer) this.getClientProperty("y");
+
+  for(int i = 0 ; i < world.length ; i++) {
+    switch(world1[x][i]){
+      case 0:
+        world[x][i].setIcon(blueCase);
+        break;
+      case 1:
+        world[x][i].setIcon(player1);
+        break;
+      case 2:
+        world[x][i].setIcon(player2);
+        break;
+
+    }
+
+  }
+
+  for(int i = 0 ; i < world[0].length ; i++) {
+    switch(world1[i][y]){
+      case 0:
+        world[i][y].setIcon(blueCase);
+        break;
+      case 1:
+        world[i][y].setIcon(player1);
+        break;
+      case 2:
+        world[i][y].setIcon(player2);
+        break;
+
+    }
+
+  }
+
+
+}
+
+
+
+private void printInt2DArray(int[][] t) {
+
+  for(int i = 0; i < t.length; i++){
+
+    for(int k = 0; k < t[0].length; k++){
+
+      System.out.print(t[i][k] + " ");
+
+    }
+    System.out.println();
+  }
+  System.out.println();
+
+}
+
+private ImageIcon getOppositeIcon() {
+  if(this.manager.getOppositeTurn() == 1) {
+    return this.player2;
+  } else {
+    return this.player1;
+  }
 }
 
 }
