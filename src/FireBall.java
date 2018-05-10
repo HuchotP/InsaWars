@@ -14,7 +14,7 @@ public class FireBall extends Attack{
     this.creditsRequired= 3;
 
   }
-
+  @Override
   public boolean attack(){
 
     Character c1= manager.getCharacter(manager.getTurn());
@@ -27,5 +27,10 @@ public class FireBall extends Attack{
     }
 
     return false;
+  }
+
+  @Override
+  public void paint(GameWindow gw, int x, int y) {
+    gw.getWorld()[x][y].paintFireball();
   }
 }

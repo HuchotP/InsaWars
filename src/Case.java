@@ -74,13 +74,6 @@ public class Case extends JLabel{
 
       }
 
-      /*JLabel current = (JLabel)arg0.getSource();
-      current.setIcon(new ImageIcon("MouseCase.png"));
-      int x = (Integer) current.getClientProperty("x");
-      int y = (Integer) current.getClientProperty("y");
-      System.out.println("Label " + x + " , " + y + " hovered");*/
-
-
       public void mouseExited(MouseEvent arg0) {
 
         GameManager manager = new GameManager().getManager();
@@ -239,10 +232,10 @@ public void paintZone() {
           world[x+i][y+k].setIcon(blueCase);
           break;
           case 1:
-          world[x+i][y+k].setIcon(player1);
+          world[x+i][y+k].setIcon(player1); // PIERRE : ici
           break;
           case 2:
-          world[x+i][y+k].setIcon(player2);
+          world[x+i][y+k].setIcon(player2); // PIERRE : ici
           break;
 
         }
@@ -261,46 +254,129 @@ public void paintFireball() {
 
   Case[][] world = gw.getWorld();
   int[][] world1 = manager.getWorld();
-  printInt2DArray(world1);
   int x = (Integer) this.getClientProperty("x");
   int y = (Integer) this.getClientProperty("y");
 
-  for(int i = 0 ; i < world.length ; i++) {
-    switch(world1[x][i]){
-      case 0:
+  for(int i = y-7 ; i <= y+7 ; i++) {
+
+    try {
+
+      switch(world1[x][i]){
+        case 0:
         world[x][i].setIcon(blueCase);
         break;
-      case 1:
-        world[x][i].setIcon(player1);
+        case 1:
+        world[x][i].setIcon(player1); // PIERRE : ici
         break;
-      case 2:
-        world[x][i].setIcon(player2);
+        case 2:
+        world[x][i].setIcon(player2); // PIERRE : ici
         break;
 
+      }
+
+    } catch(ArrayIndexOutOfBoundsException e) {
+
     }
+
 
   }
 
-  for(int i = 0 ; i < world[0].length ; i++) {
-    switch(world1[i][y]){
-      case 0:
+  for(int i = x-7 ; i <= x+7 ; i++) {
+
+    try {
+
+      switch(world1[i][y]){
+        case 0:
         world[i][y].setIcon(blueCase);
         break;
-      case 1:
-        world[i][y].setIcon(player1);
+        case 1:
+        world[i][y].setIcon(player1); // PIERRE : ici
         break;
-      case 2:
-        world[i][y].setIcon(player2);
+        case 2:
+        world[i][y].setIcon(player2); // PIERRE : ici
         break;
 
+      }
+
+
+    } catch(ArrayIndexOutOfBoundsException e) {
+
     }
+
 
   }
 
 
 }
 
+public void paintLocated() {
 
+  Case[][] world = gw.getWorld();
+  int[][] world1 = manager.getWorld();
+  int x = (Integer) this.getClientProperty("x");
+  int y = (Integer) this.getClientProperty("y");
+
+  for(int i = y-1 ; i <= y+1 ; i++) {
+
+    try {
+
+      switch(world1[x][i]){
+        case 0:
+        world[x][i].setIcon(blueCase);
+        break;
+        case 1:
+        world[x][i].setIcon(player1); // PIERRE : ici
+        break;
+        case 2:
+        world[x][i].setIcon(player2); // PIERRE : ici
+        break;
+
+      }
+
+    } catch(ArrayIndexOutOfBoundsException e) {
+
+    }
+
+
+  }
+
+  for(int i = x-1 ; i <= x+1 ; i++) {
+
+    try {
+
+      switch(world1[i][y]){
+        case 0:
+        world[i][y].setIcon(blueCase);
+        break;
+        case 1:
+        world[i][y].setIcon(player1); // PIERRE : ici
+        break;
+        case 2:
+        world[i][y].setIcon(player2); // PIERRE : ici
+        break;
+
+      }
+
+
+    } catch(ArrayIndexOutOfBoundsException e) {
+
+    }
+
+
+  }
+
+
+}
+
+public void paintHeal() {
+
+  Case[][] world = gw.getWorld();
+  int[][] world1 = manager.getWorld();
+  int x = (Integer) this.getClientProperty("x");
+  int y = (Integer) this.getClientProperty("y");
+
+  world[x][y].setIcon(momo); // PIERRE : icône modifié pour soin
+}
 
 private void printInt2DArray(int[][] t) {
 

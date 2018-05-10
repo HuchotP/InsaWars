@@ -91,4 +91,9 @@ public class GameWindow extends JFrame{
 
   }
 
+  public void updateLife() {
+    active1.updateLife();
+    active2.updateLife();
+  }
+
 }

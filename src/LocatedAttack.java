@@ -15,12 +15,13 @@ public class LocatedAttack extends Attack{
 
   }
 
+  @Override
   public boolean attack(){
 
     Character c1= manager.getCharacter(manager.getTurn());
     Character c2= manager.getCharacter(manager.getOppositeTurn());
     if ( c1.getCredits()>this.creditsRequired){
-      if ( Math.abs(c1.getX()- c2.getX())<1 || Math.abs(c1.getY()- c2.getY())<1){
+      if (( Math.abs(c1.getX()- c2.getX())==1 || Math.abs(c1.getY()- c2.getY())==1) && Math.abs(c1.getX()- c2.getX()) !=  Math.abs(c1.getY()- c2.getY())){
         c2.takeDamage(this.damage, this.dodgerate);
         return true;
       } else{
@@ -30,6 +31,11 @@ public class LocatedAttack extends Attack{
       return false;
     }
 
+  }
+
+  @Override
+  public void paint(GameWindow gw, int x, int y) {
+    gw.getWorld()[x][y].paintLocated();
   }
 
 }

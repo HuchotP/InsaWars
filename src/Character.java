@@ -3,7 +3,7 @@ import java.lang.Math;
 public class Character{
 
   private int credits;
-  private int maxcredits;
+  private int maxcredits = 999; //test
   private double life;
   private double maxlife;
   private int strength;
@@ -25,7 +25,7 @@ public class Character{
   public Character(double life, int strength, int intel, int speed, int luck, String name){
 
     this.maxcredits= this.speed*2;
-    this.credits = this.maxcredits;
+    this.credits = 999;
     this.maxlife = life;
     this.life = this.maxlife;
     this.strength = strength;
@@ -51,6 +51,7 @@ public class Character{
   }
 
   public int getCredits(){
+    System.out.println(credits);
     return credits;
   }
 
@@ -139,7 +140,10 @@ public class Character{
   public void takeDamage(double damage, double dodgerate){
     if((int)(Math.random()*100) < this.luck*dodgerate){
       this.life= this.life - damage;
+      System.out.println("Dommages pris");
     }
+
+    this.life= this.life - damage;
   }
 
   /*public void attack(int n){
@@ -151,8 +155,9 @@ public class Character{
 public boolean attack(int n){
 
   if(this.canAttack == true){
-    if(attacks[n].attack()== true)
+    if(attacks[n].attack() == true)
     this.hasAttacked = true;
+    this.credits -= attacks[n].getCreditsRequired();
     return  true;
   }
   return false;

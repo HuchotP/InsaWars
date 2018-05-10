@@ -16,7 +16,7 @@ public abstract class Attack{
 
   public abstract boolean attack();
 
-
+  public abstract void paint(GameWindow gw, int x, int y);
 
   public int getCreditsRequired(){
 
@@ -30,4 +30,5 @@ public abstract class Attack{
     return this.damage;
 
 }
+
 }

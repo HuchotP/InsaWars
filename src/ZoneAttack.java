@@ -14,6 +14,7 @@ public class ZoneAttack extends Attack{
 
   }
 
+  @Override
   public boolean attack(){
 
     Character c1 = manager.getCharacter(manager.getTurn());
@@ -28,6 +29,11 @@ public class ZoneAttack extends Attack{
   }else{
     return false;
   }
+  }
+
+  @Override
+  public void paint(GameWindow gw, int x, int y) {
+    gw.getWorld()[x][y].paintZone();
   }
 
 }
