@@ -3,7 +3,7 @@ import java.lang.Math;
 public class Character{
 
   private int credits;
-  private int maxcredits = 999; //test
+  private int maxcredits = 7; //test
   private double life;
   private double maxlife;
   private int strength;
@@ -24,8 +24,8 @@ public class Character{
 
   public Character(double life, int strength, int intel, int speed, int luck, String name){
 
-    this.maxcredits= 999;
-    this.credits = 999;
+    this.maxcredits= 7;
+    this.credits = this.maxcredits;
     this.maxlife = life;
     this.life = this.maxlife;
     System.out.println(name + " " + life + " " + maxlife);
@@ -159,7 +159,7 @@ public boolean attack(int n){
       System.out.println(hasAttacked);
       this.credits -= attacks[n].getCreditsRequired();
       System.out.println(attacks[n].getCreditsRequired());
-      return  true;
+      return true;
 
     }
   }
@@ -189,10 +189,15 @@ public boolean move(int newX, int newY){
 
   if ( Math.abs(this.getX() - newX) + Math.abs((this.getY()- newY) ) < 20){
 
-    if( this.credits>10 && !(newX== ennemy.getX() && newY== ennemy.getY()) && this.hasMoved == false ){
+    if( this.credits >= Math.abs(this.getX() - newX) + Math.abs((this.getY()- newY) ) && !(newX== ennemy.getX() && newY== ennemy.getY()) && this.hasMoved == false ){
       manager.changeWorld(newX, newY);
+      this.credits -= (Math.abs(this.getX() - newX) + Math.abs((this.getY()- newY)));
       this.setX(newX);
       this.setY(newY);
+
+      GameWindow gw = manager.getGw();
+      gw.getActive().updateCredits();
+
       this.hasMoved = true;
       if(this.hasAttacked == true) {
         this.canAttack = false;
@@ -208,5 +213,11 @@ public boolean move(int newX, int newY){
   }
 }
 return false;
+}
+
+public void checkCredits() {
+  if(this.credits == 0) {
+    manager.nextTurn();
+  }
 }
 }

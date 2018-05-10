@@ -15,11 +15,13 @@ public class CharacterWindow extends JFrame {
 
 	private String name;
 	private JTextField nameField;
-	private int credits = 30;
+	private int credits = 100;
 	private JLabel credsLabel;
 	private JLabel[] attribute;
 	private String[] attributeStr = {"Vie", "Force", "Intelligence", "Rapidité", "Chance"};
 	private int[] vals;
+	private int[][] bornes = { {100,300} , {10,50} , {10,50} , {0,10} , {0,10} };
+	private int[] increments = {2,1,1,1,1};
 	private JLabel[] valLabels;
 	private JProgressBar[] bars;
 	private JButton[][] attributeButtons;
@@ -128,14 +130,15 @@ public class CharacterWindow extends JFrame {
 			attribute[i].setAlignmentX(JComponent.CENTER_ALIGNMENT);
 			attributesPanel.add(attribute[i]);
 
+			vals[i] = bornes[i][0];
 			valLabels[i] = new JLabel(Integer.toString(vals[i]));
 			valLabels[i].setAlignmentX(JComponent.CENTER_ALIGNMENT);
 			attributesPanel.add(valLabels[i]);
 
 
 			bars[i] = new JProgressBar();
-			bars[i].setMinimum(0);
-			bars[i].setMaximum(10);
+			bars[i].setMinimum(bornes[i][0]);
+			bars[i].setMaximum(bornes[i][1]);
 			bars[i].setBackground(new Color(153, 13, 13));
 			bars[i].setForeground(new Color(255,255,255));
 			attributesPanel.add(bars[i]);
@@ -188,15 +191,17 @@ public class CharacterWindow extends JFrame {
 	}
 
 	private void modifyBar(int i, boolean signe) {
-		int increment = 0;
-
+		int increment;
+		int changement;
 		if(signe) {
-			increment = 1;
+			changement = 1;
+			increment = this.increments[i];
 		} else {
-			increment = -1;
+			changement = -1;
+			increment = -this.increments[i];
 		}
 
-		if(updateCredits(increment, bars[i])) {
+		if(updateCredits(changement, bars[i])) {
 			bars[i].setValue(bars[i].getValue() + increment);
 
 		}

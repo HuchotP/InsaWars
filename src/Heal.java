@@ -18,7 +18,7 @@ public class Heal extends Attack{
   @Override
   public boolean attack(){
       Character c1 = manager.getCharacter(manager.getTurn());
-      if ( c1.getCredits()>this.creditsRequired && c1.getLife() != c1.getMaxLife()){
+      if ( c1.getCredits()>=this.creditsRequired && c1.getLife() != c1.getMaxLife()){
 
         if(this.damage >= c1.getMaxLife() - c1.getLife()) {
           c1.healCharacter(c1.getMaxLife() - c1.getLife());

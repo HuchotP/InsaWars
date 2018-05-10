@@ -62,6 +62,10 @@ public class GameManager {
     this.gw = gw;
   }
 
+  public GameWindow getGw() {
+    return this.gw;
+  }
+
   public Character getCharacter(int n){
 
     return chara[n];

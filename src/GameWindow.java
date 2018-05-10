@@ -66,8 +66,8 @@ public class GameWindow extends JFrame{
 
     world[0][0].rePaintWorld();
 
-    worldContainer.setMinimumSize(new Dimension(600,600));
-    worldContainer.setMaximumSize(new Dimension(600,600));
+    worldContainer.setMinimumSize(new Dimension(550,550));
+    worldContainer.setMaximumSize(new Dimension(550,550));
     globalBox.add(worldContainer);
 
     JPanel charaUI = new JPanel();
@@ -115,13 +115,21 @@ public class GameWindow extends JFrame{
 
   }
 
+  public ActiveInterface getActive() {
+    if(manager.getTurn() == 0) {
+      return active1;
+    }
+
+    return active2;
+  }
+
   public void updateLife() {
     active1.updateLife();
     active2.updateLife();
 
     passive1.updateLife();
     passive2.updateLife();
-    
+
   }
 
   public void switchInterface() {
@@ -131,6 +139,8 @@ public class GameWindow extends JFrame{
 
     cl1.next(card1);
     cl2.next(card2);
+
+    getActive().updateCredits();
 
   }
 

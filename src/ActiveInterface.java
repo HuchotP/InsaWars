@@ -94,6 +94,7 @@ public class ActiveInterface extends JPanel {
             int currentIndex = (Integer)((JButton)arg0.getSource()).getClientProperty("index");
             if(ch.attack(currentIndex)) {
               System.out.println("Attaque réussie");
+              ch.checkCredits();
             }
             updateCredits();
             gw.updateLife();

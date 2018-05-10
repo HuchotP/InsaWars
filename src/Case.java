@@ -34,9 +34,13 @@ public class Case extends JLabel{
 
         int chx = manager.getCharacter(manager.getTurn()).getX();
         int chy = manager.getCharacter(manager.getTurn()).getY();
+
+        int totalDistance = Math.abs(chx-x) + Math.abs(chy-y);
+
+        int credits = manager.getCharacter(manager.getTurn()).getCredits();
         Case[][] world = gw.getWorld();
 
-        if(gw.getState() == GameWindow.STATE_SELECT_MOVING){
+        if((gw.getState() == GameWindow.STATE_SELECT_MOVING) && credits >= totalDistance){
 
 
           for(int i = chx+1 ; i <= x ; i++) {
@@ -159,6 +163,7 @@ world[x][i].setIcon(defaultCase);
   }**/
 
       rePaintWorld();
+      manager.getCharacter(manager.getTurn()).checkCredits();
       System.out.println(manager.getCharacter(manager.getTurn()).getX() + " " + manager.getCharacter(manager.getTurn()).getY());
     }else{
 
