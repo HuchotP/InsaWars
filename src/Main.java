@@ -5,12 +5,12 @@ public class Main {
 		GameManager manager = new GameManager().getManager();
 
 		//Character ch1 = createCharacter(1);
-		Character ch1 = new Character(10,10,10,10,10, "Joueur 1");
+		Character ch1 = new Character(300,10,10,10,10, "Joueur 1");
 
 		System.out.println(ch1.getName());
 
 		//Character ch2 = createCharacter(2);
-		Character ch2 = new Character(10,10,10,10,10, "Joueur 2");
+		Character ch2 = new Character(300,10,10,10,10, "Joueur 2");
 
 		manager.setCh1(ch1);
 		manager.setCh2(ch2);
@@ -19,6 +19,8 @@ public class Main {
 
 
 		GameWindow game = new GameWindow();
+
+		manager.setGw(game);
 
 		//test
 	}

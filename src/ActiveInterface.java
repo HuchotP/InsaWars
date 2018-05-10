@@ -11,6 +11,7 @@ public class ActiveInterface extends JPanel {
   private int credits;
   private JLabel creditsLabel;
   private JButton[] attackButtons;
+  private JButton nextTurn;
 
   private Character ch;
   private GameWindow gw;
@@ -61,6 +62,7 @@ public class ActiveInterface extends JPanel {
     attackPanel.setLayout(attackGrid);
 
     for(int i = 0 ; i < attackButtons.length ; i++) {
+
       attackButtons[i] = new JButton(ch.getAttack(i).getName());
       attackButtons[i].putClientProperty("index", i);
       attackPanel.add(attackButtons[i]);
@@ -102,46 +104,36 @@ public class ActiveInterface extends JPanel {
 
     }
 
-    /*attackButtons[0].addMouseListener(new MouseAdapter() {
+    nextTurn = new JButton("Finir tour");
 
-      public void mouseEntered(MouseEvent arg0) {
+    nextTurn.addActionListener(new ActionListener() {
 
-        Case[][] world = gw.getWorld();
-        int x = (manager.getCharacter(0)).getX();
-        int y = (manager.getCharacter(0)).getY();
-        world[x][y].paintZone();
+      public void actionPerformed(ActionEvent arg0) {
+
+        manager.nextTurn();
+
       }
 
     });
-
-    attackButtons[1].addMouseListener(new MouseAdapter() {
-
-      public void mouseEntered(MouseEvent arg0) {
-
-        Case[][] world = gw.getWorld();
-        int x = (manager.getCharacter(0)).getX();
-        int y = (manager.getCharacter(0)).getY();
-        world[x][y].paintFireball();
-      }
-
-    });*/
-
 
     actionBox.add(creditsPanel);
     actionBox.add(attackPanel);
     this.add(actionBox);
 
-
+    this.add(nextTurn);
 
   }
 
   public void updateCredits() {
+    System.out.println(ch.getCredits());
     this.creditsLabel.setText(Integer.toString(ch.getCredits()));
   }
 
   public void updateLife() {
     this.lifeBar.setValue((int) Math.ceil(ch.getLife()));
     this.lifeValue.setText(Double.toString(ch.getLife()));
+
+    System.out.println(ch.getLife());
   }
 
 }

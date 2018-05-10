@@ -2,6 +2,8 @@ public class GameManager {
 
   private Character[] chara = new Character[2];
 
+  private GameWindow gw;
+
   private int[][] world = new int[10][10]; /** the world is represented by a 2D array of int, 0 = no player, 1 = player 1, 2 = player 2. Position is calculated in the same way of graphical interface**/
 
   private int turn = 0; //0 = player 1, 1 = player 2
@@ -16,6 +18,7 @@ public class GameManager {
 
       chara[0] = null;
       chara[1] = null;
+      gw = null;
 
       manager = this;
     }
@@ -55,6 +58,10 @@ public class GameManager {
 
   }
 
+  public void setGw(GameWindow gw) {
+    this.gw = gw;
+  }
+
   public Character getCharacter(int n){
 
     return chara[n];
@@ -69,16 +76,18 @@ public class GameManager {
 
 
   public void nextTurn(){
-
     turn = (turn+1)%2;
+    System.out.println(turn);
     chara[0].resetCredits();
     chara[1].resetCredits();
+    this.gw.switchInterface();
 
     if(chara[0].getLife() == 0 || chara[1].getLife() == 0){
 
       this.gameFinished = true;
 
     }
+
   }
     public boolean isFinished(){
 
@@ -94,7 +103,6 @@ public class GameManager {
   }
 
   public int getOppositeTurn(){
-
     return (turn+1)%2;
   }
 
@@ -106,7 +114,7 @@ public class GameManager {
     int y2 = getCharacter(1).getY();
 
     for(int i = 0; i < world.length; i++) {
-      
+
       for(int j = 0; j < world[0].length; j++){
 
         if(i == x1 && j == y1) {

@@ -13,8 +13,14 @@ public class GameWindow extends JFrame{
   private int mouseX;
   private int mouseY;
 
+  private JPanel card1;
+  private JPanel card2;
+
   private ActiveInterface active1;
   private ActiveInterface active2;
+
+  private PassiveInterface passive1;
+  private PassiveInterface passive2;
 
   public static final int STATE_SELECT_MOVING =0;
   public static final int STATE_ATTACK1 = 1;
@@ -71,11 +77,29 @@ public class GameWindow extends JFrame{
     GridLayout charaGrid = new GridLayout(1,2);
     charaUI.setLayout(charaGrid);
 
+    card1 = new JPanel(new CardLayout());
+    card2 = new JPanel(new CardLayout());
+
     active1 = new ActiveInterface(manager.getCharacter(0), this);
     active2 = new ActiveInterface(manager.getCharacter(1), this);
 
-    charaUI.add(active1);
-    charaUI.add(active2);
+    passive1 = new PassiveInterface(manager.getCharacter(0), this);
+    passive2 = new PassiveInterface(manager.getCharacter(1), this);
+
+    card1.add(active1, "ACTIVE");
+    card1.add(passive1, "PASSIVE");
+
+    card2.add(active2, "ACTIVE");
+    card2.add(passive2, "PASSIVE");
+
+    CardLayout cl1 = (CardLayout)(card1.getLayout());
+    CardLayout cl2 = (CardLayout)(card2.getLayout());
+
+    cl1.show(card1, "ACTIVE");
+    cl2.show(card2, "PASSIVE");
+
+    charaUI.add(card1);
+    charaUI.add(card2);
 
     globalBox.add(charaUI);
 
@@ -94,6 +118,20 @@ public class GameWindow extends JFrame{
   public void updateLife() {
     active1.updateLife();
     active2.updateLife();
+
+    passive1.updateLife();
+    passive2.updateLife();
+    
+  }
+
+  public void switchInterface() {
+
+    CardLayout cl1 = (CardLayout)(card1.getLayout());
+    CardLayout cl2 = (CardLayout)(card2.getLayout());
+
+    cl1.next(card1);
+    cl2.next(card2);
+
   }
 
 }

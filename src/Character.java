@@ -24,10 +24,11 @@ public class Character{
 
   public Character(double life, int strength, int intel, int speed, int luck, String name){
 
-    this.maxcredits= this.speed*2;
+    this.maxcredits= 999;
     this.credits = 999;
     this.maxlife = life;
     this.life = this.maxlife;
+    System.out.println(name + " " + life + " " + maxlife);
     this.strength = strength;
     this.intel = intel;
     this.speed = speed;
@@ -51,7 +52,6 @@ public class Character{
   }
 
   public int getCredits(){
-    System.out.println(credits);
     return credits;
   }
 
@@ -138,12 +138,11 @@ public class Character{
 
 
   public void takeDamage(double damage, double dodgerate){
-    if((int)(Math.random()*100) < this.luck*dodgerate){
+    if((int)(Math.random()*100) > this.luck*dodgerate){
       this.life= this.life - damage;
       System.out.println("Dommages pris");
     }
 
-    this.life= this.life - damage;
   }
 
   /*public void attack(int n){
@@ -155,10 +154,14 @@ public class Character{
 public boolean attack(int n){
 
   if(this.canAttack == true){
-    if(attacks[n].attack() == true)
-    this.hasAttacked = true;
-    this.credits -= attacks[n].getCreditsRequired();
-    return  true;
+    if(attacks[n].attack() == true) {
+      this.hasAttacked = true;
+      System.out.println(hasAttacked);
+      this.credits -= attacks[n].getCreditsRequired();
+      System.out.println(attacks[n].getCreditsRequired());
+      return  true;
+
+    }
   }
   return false;
 }
@@ -180,33 +183,30 @@ public void resetCredits(){
 }
 public boolean move(int newX, int newY){
 
+
+  System.out.println(hasMoved);
   Character ennemy = manager.getCharacter(manager.getOppositeTurn());
 
-  if ( Math.abs(this.getX() - newX) + Math.abs((this.getY()- newY))< 20 ){
+  if ( Math.abs(this.getX() - newX) + Math.abs((this.getY()- newY) ) < 20){
 
-    if( this.credits>10 && newX!= ennemy.getX() && newY!= ennemy.getY() && this.hasMoved == false ){
+    if( this.credits>10 && !(newX== ennemy.getX() && newY== ennemy.getY()) && this.hasMoved == false ){
       manager.changeWorld(newX, newY);
       this.setX(newX);
       this.setY(newY);
       this.hasMoved = true;
-      if(this.hasAttacked == true)
-      this.canAttack = false;
-      return true;
-    }else{
-      // A ENLEVER --- TEST
-      manager.changeWorld(newX, newY);
-      this.setX(newX);
-      this.setY(newY);
-      // A ENLEVER --- TEST
-      return true; // always true for testing but will be false later
-    }
-  }else {
-    // A ENLEVER --- TEST
-    manager.changeWorld(newX, newY);
-    this.setX(newX);
-    this.setY(newY);
-    // A ENLEVER --- TEST
-    return true; // always true for testing but will be false later
+      if(this.hasAttacked == true) {
+        this.canAttack = false;
+        return true;
+      } else {
+
+          return true; // always true for testing but will be false later
+
+        }
+      }else {
+
+      return false; // always true for testing but will be false later
   }
+}
+return false;
 }
 }
