@@ -8,9 +8,9 @@ public class GameManager {
 
   private int turn = 0; //0 = player 1, 1 = player 2
 
-  public static GameManager manager;
+  private static GameManager manager;
 
-  private boolean gameFinished = false;
+  private int gameFinished = -1; // -1 : game not finished, 0 = player1 won, 1 = player 2 won
 
   public GameManager(){
 
@@ -86,14 +86,71 @@ public class GameManager {
     chara[1].resetCredits();
     this.gw.switchInterface();
 
-    if(chara[0].getLife() == 0 || chara[1].getLife() == 0){
+    for(int i =0; i <2; i++){
 
-      this.gameFinished = true;
+        if(chara[i].getLife() <= 0){
+
+          this.gameFinished = i;
+          gw.setVisible(false);
+          newGame(i+1);
+
+        }
+
+    }
+  }
+    public void newGame(int n){
+
+
+      EndGame end = new EndGame(n);
+
+      do {
+  			try {
+  				Thread.sleep(1);
+  			} catch(InterruptedException e) {
+
+  			}
+  		} while(end.isVisible());
+
+      int status = end.getStatus();
+
+      if(status == 0){
+
+        chara[0].resetLife();
+        chara[1].resetCredits();
+        chara[1].resetLife();
+        chara[0].resetCredits();
+
+        chara[0].setX(0);
+        chara[0].setY(5);
+
+        chara[1].setX(9);
+        chara[1].setY(5);
+
+        gw = new GameWindow();
+
+
+
+    }
+    if(status == 1){
+
+
+      setCh1(Main.createCharacter(1));
+      setCh2(Main.createCharacter(2));
+
+      chara[0].setX(0);
+      chara[0].setY(5);
+
+      chara[1].setX(9);
+      chara[1].setY(5);
+
+      gw = new GameWindow();
 
     }
 
   }
-    public boolean isFinished(){
+
+
+    public int isFinished(){
 
       return this.gameFinished;
 

@@ -5,11 +5,16 @@ import java.awt.event.*;
 
 public class Case extends JLabel{
 
-  private ImageIcon defaultCase = new ImageIcon("DefaultCase.png");
-  private ImageIcon blueCase = new ImageIcon("MouseCase.png");
-  private ImageIcon player1 = new ImageIcon("Player1.png");
-  private ImageIcon player2 = new ImageIcon("Player2.png");
-  private ImageIcon momo = new ImageIcon("Momo.png");
+  private ImageIcon defaultCase = new ImageIcon("img/DefaultCase.png");
+  private ImageIcon blueCase = new ImageIcon("img/MouseCase.png");
+  private ImageIcon player1 = new ImageIcon("img/Player1.png");
+  private ImageIcon player2 = new ImageIcon("img/Player2.png");
+  private ImageIcon player1selected = new ImageIcon("img/Player1Selected.png");
+  private ImageIcon player1healed = new ImageIcon("img/Player1Healed.png");
+  private ImageIcon player2selected = new ImageIcon("img/Player2Selected.png");
+  private ImageIcon player2healed = new ImageIcon("img/Player2Healed.png");
+  private ImageIcon momo = new ImageIcon("img/Momo.png");
+
   private GameWindow gw;
   public GameManager manager = new GameManager().getManager();
 
@@ -237,10 +242,10 @@ world[x][i].setIcon(defaultCase);
             world[x+i][y+k].setIcon(blueCase);
             break;
             case 1:
-            world[x+i][y+k].setIcon(player1); // PIERRE : ici
+            world[x+i][y+k].setIcon(player1selected); // PIERRE : ici
             break;
             case 2:
-            world[x+i][y+k].setIcon(player2); // PIERRE : ici
+            world[x+i][y+k].setIcon(player2selected); // PIERRE : ici
             break;
 
           }
@@ -271,10 +276,10 @@ world[x][i].setIcon(defaultCase);
           world[x][i].setIcon(blueCase);
           break;
           case 1:
-          world[x][i].setIcon(player1); // PIERRE : ici
+          world[x][i].setIcon(player1selected); // PIERRE : ici
           break;
           case 2:
-          world[x][i].setIcon(player2); // PIERRE : ici
+          world[x][i].setIcon(player2selected); // PIERRE : ici
           break;
 
         }
@@ -295,10 +300,10 @@ world[x][i].setIcon(defaultCase);
           world[i][y].setIcon(blueCase);
           break;
           case 1:
-          world[i][y].setIcon(player1); // PIERRE : ici
+          world[i][y].setIcon(player1selected); // PIERRE : ici
           break;
           case 2:
-          world[i][y].setIcon(player2); // PIERRE : ici
+          world[i][y].setIcon(player2selected); // PIERRE : ici
           break;
 
         }
@@ -330,10 +335,10 @@ world[x][i].setIcon(defaultCase);
           world[x][i].setIcon(blueCase);
           break;
           case 1:
-          world[x][i].setIcon(player1); // PIERRE : ici
+          world[x][i].setIcon(player1selected); // PIERRE : ici
           break;
           case 2:
-          world[x][i].setIcon(player2); // PIERRE : ici
+          world[x][i].setIcon(player2selected); // PIERRE : ici
           break;
 
         }
@@ -354,10 +359,10 @@ world[x][i].setIcon(defaultCase);
           world[i][y].setIcon(blueCase);
           break;
           case 1:
-          world[i][y].setIcon(player1); // PIERRE : ici
+          world[i][y].setIcon(player1selected); // PIERRE : ici
           break;
           case 2:
-          world[i][y].setIcon(player2); // PIERRE : ici
+          world[i][y].setIcon(player2selected); // PIERRE : ici
           break;
 
         }
@@ -380,7 +385,16 @@ world[x][i].setIcon(defaultCase);
     int x = (Integer) this.getClientProperty("x");
     int y = (Integer) this.getClientProperty("y");
 
-    world[x][y].setIcon(momo); // PIERRE : icône modifié pour soin
+    switch(manager.getTurn()){
+
+      case 0:
+        world[x][y].setIcon(player1healed);
+        break;
+      case 1:
+        world[x][y].setIcon(player2healed);
+        break;
+
+    } 
   }
 
   private void printInt2DArray(int[][] t) {

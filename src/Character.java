@@ -220,4 +220,11 @@ public void checkCredits() {
     manager.nextTurn();
   }
 }
+
+public void resetLife(){
+
+  this.life = this.maxlife;
+
+}
+
 }
