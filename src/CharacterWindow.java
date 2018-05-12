@@ -89,7 +89,6 @@ public class CharacterWindow extends JFrame {
 		JPanel attributesPanel = new JPanel();
 		GridLayout attributesGrid = new GridLayout(5,6);
 		attributesPanel.setLayout(attributesGrid);
-		//attributesGrid[0].setPreferredSize(50);
 
 
 		attribute = new JLabel[5];
@@ -184,11 +183,15 @@ public class CharacterWindow extends JFrame {
 				close();
 			}
 		});
+		
 		globalBox.add(Box.createVerticalStrut(50));
 		globalBox.add(createButton);
 		this.add(globalBox);
 		this.setVisible(true);
 	}
+
+
+
 
 	private void modifyBar(int i, boolean signe) {
 		int increment;

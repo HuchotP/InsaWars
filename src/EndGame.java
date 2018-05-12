@@ -1,56 +1,75 @@
 import java.awt.*;
 import javax.swing.*;
+import javax.swing.border.EmptyBorder;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class EndGame extends JFrame{
+public class EndGame extends JFrame {
 
-  GameManager manager = new GameManager().getManager();
+  //GameManager manager = new GameManager().getManager();
   private int status = -1;
+  private JButton sameCharacter;
+  private JButton differentCharacter;
+  private JButton stop;
 
-  public EndGame(int n){
+  public EndGame(int n) {
 
-      this.setSize(300,300);
-      Box box = Box.createVerticalBox();
-      JPanel pan = new JPanel();
-      pan.setLayout(new GridLayout(1,3));
+    this.setTitle("Fin du match");
+    this.setSize(300,150);
+    Box box = Box.createVerticalBox();
+    JPanel pan = new JPanel();
+    //pan.setLayout(box);
 
-      JLabel whowon = new JLabel("Le Joueur " + n + " a gagné la partie");
-      JButton sameCharacter = new JButton("Rejouer avec les mêmes personnages");
-      JButton differentCharacter = new JButton("Jouer avec des personnages différents");
+    JLabel whowon = new JLabel("Le Joueur " + n + " a gagné la partie");
+    whowon.setAlignmentX(JComponent.CENTER_ALIGNMENT);
+    sameCharacter = new JButton("Rejouer avec les mêmes personnages");
+    differentCharacter = new JButton("Jouer avec des personnages différents");
+    stop = new JButton("Arrêter de jouer");
 
-      pan.add(whowon);
-      pan.add(sameCharacter);
-      pan.add(differentCharacter);
-      this.add(pan);
-      this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-      this.setVisible(true);
-
-
-      sameCharacter.addActionListener(new ActionListener() {
-
-				public void actionPerformed(ActionEvent e) {
-
-            status = 0;
-            setVisible(false);
-
-          }
+    pan.add(whowon);
+    pan.add(sameCharacter);
+    pan.add(differentCharacter);
+    pan.add(stop);
+    this.add(pan);
+    this.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
+    this.setVisible(true);
 
 
-      });
+    sameCharacter.addActionListener(new ActionListener() {
 
-      differentCharacter.addActionListener(new ActionListener() {
+      public void actionPerformed(ActionEvent e) {
 
-				public void actionPerformed(ActionEvent e) {
+        status = 0;
+        setVisible(false);
 
-            status = 1;
-            setVisible(false);
-
-          }
+      }
 
 
-      });
+    });
+
+    differentCharacter.addActionListener(new ActionListener() {
+
+      public void actionPerformed(ActionEvent e) {
+
+        status = 1;
+        setVisible(false);
+
+      }
+
+
+    });
+
+    stop.addActionListener(new ActionListener() {
+
+      public void actionPerformed(ActionEvent e) {
+
+        status = -1;
+        setVisible(false);
+
+      }
+
+    });
 
 
   }

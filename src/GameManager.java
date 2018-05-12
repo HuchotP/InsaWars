@@ -92,7 +92,6 @@ public class GameManager {
 
           this.gameFinished = i;
           gw.setVisible(false);
-          newGame(i+1);
 
         }
 
@@ -100,18 +99,7 @@ public class GameManager {
   }
     public void newGame(int n){
 
-
-      EndGame end = new EndGame(n);
-
-      do {
-  			try {
-  				Thread.sleep(1);
-  			} catch(InterruptedException e) {
-
-  			}
-  		} while(end.isVisible());
-
-      int status = end.getStatus();
+      int status = n;
 
       if(status == 0){
 
@@ -120,13 +108,14 @@ public class GameManager {
         chara[1].resetLife();
         chara[0].resetCredits();
 
-        chara[0].setX(0);
-        chara[0].setY(5);
+        chara[0].setX(5);
+        chara[0].setY(1);
 
-        chara[1].setX(9);
-        chara[1].setY(5);
+        chara[1].setX(5);
+        chara[1].setY(8);
 
         gw = new GameWindow();
+        this.turn = 0;
 
 
 
@@ -137,14 +126,19 @@ public class GameManager {
       setCh1(Main.createCharacter(1));
       setCh2(Main.createCharacter(2));
 
-      chara[0].setX(0);
-      chara[0].setY(5);
+      chara[0].setX(5);
+      chara[0].setY(1);
 
-      chara[1].setX(9);
-      chara[1].setY(5);
+      chara[1].setX(5);
+      chara[1].setY(8);
 
       gw = new GameWindow();
+      this.turn = 0;
 
+    }
+
+    if(status== -1) {
+      
     }
 
   }
