@@ -7,13 +7,13 @@ public class Main {
 		GameManager manager = new GameManager().getManager();
 
 
-		//Character ch1 = createCharacter(1);
-		Character ch1 = new Character(300,10,10,10,10, "Joueur 1");
+		Character ch1 = createCharacter(1);
+		//Character ch1 = new Character(300,10,10,10,10, "Joueur 1");
 
 		System.out.println(ch1.getName());
 
-		//Character ch2 = createCharacter(2);
-		Character ch2 = new Character(1,10,10,10,10, "Joueur 2");
+		Character ch2 = createCharacter(2);
+		//Character ch2 = new Character(1,10,10,10,10, "Joueur 2");
 
 		manager.setCh1(ch1);
 		manager.setCh2(ch2);
@@ -37,7 +37,7 @@ public class Main {
 				}
 			} while(game.isVisible());
 
-			EndGame test = new EndGame(2);
+			EndGame test = new EndGame(manager.isFinished());
 
 			do {
 				try {
@@ -48,8 +48,6 @@ public class Main {
 				}
 			} while(test.isVisible());
 			status = test.getStatus();
-
-			System.out.println(status);
 
 
 			manager.newGame(test.getStatus());

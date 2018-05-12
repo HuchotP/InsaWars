@@ -158,7 +158,11 @@ public boolean attack(int n){
       this.hasAttacked = true;
       System.out.println(hasAttacked);
       this.credits -= attacks[n].getCreditsRequired();
-      System.out.println(attacks[n].getCreditsRequired());
+
+      if(manager.getCharacter(manager.getOppositeTurn()).getLife() <= 0) {
+        manager.nextTurn();
+      }
+
       return true;
 
     }
@@ -204,7 +208,7 @@ public boolean move(int newX, int newY){
         return true;
       } else {
 
-          return true; // always true for testing but will be false later
+          return false; // always true for testing but will be false later
 
         }
       }else {
