@@ -394,7 +394,7 @@ world[x][i].setIcon(defaultCase);
         world[x][y].setIcon(player2healed);
         break;
 
-    } 
+    }
   }
 
   private void printInt2DArray(int[][] t) {
