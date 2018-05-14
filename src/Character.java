@@ -24,7 +24,7 @@ public class Character{
 
   public Character(double life, int strength, int intel, int speed, int luck, String name){
 
-    this.maxcredits= 7;
+    this.maxcredits= 7+ (int) 0.3*speed;
     this.credits = this.maxcredits;
     this.maxlife = life;
     this.life = this.maxlife;
@@ -191,7 +191,7 @@ public boolean move(int newX, int newY){
   System.out.println(hasMoved);
   Character ennemy = manager.getCharacter(manager.getOppositeTurn());
 
-  if ( Math.abs(this.getX() - newX) + Math.abs((this.getY()- newY) ) < 20){
+  if ( Math.abs(this.getX() - newX) + Math.abs((this.getY()- newY) ) < this.credits ){
 
     if( this.credits >= Math.abs(this.getX() - newX) + Math.abs((this.getY()- newY) ) && !(newX== ennemy.getX() && newY== ennemy.getY()) && this.hasMoved == false ){
       manager.changeWorld(newX, newY);
@@ -205,8 +205,9 @@ public boolean move(int newX, int newY){
       this.hasMoved = true;
       if(this.hasAttacked == true) {
         this.canAttack = false;
-        return true;
-      } else {
+      }
+      return true;
+    }else {
 
           return false; // always true for testing but will be false later
 
@@ -215,9 +216,10 @@ public boolean move(int newX, int newY){
 
       return false; // always true for testing but will be false later
   }
+
 }
-return false;
-}
+
+
 
 public void checkCredits() {
   if(this.credits == 0) {
