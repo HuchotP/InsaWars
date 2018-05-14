@@ -5,27 +5,35 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 
+// Fenêtre de création du personnage
+
 public class CharacterWindow extends JFrame {
 
-	private int life;
-	private int strength;
-	private int intel;
-	private int speed;
-	private int luck;
+	private int life; // Vie
+	private int strength; // Force
+	private int intel; // Intelligence
+	private int speed; // Rapidité
+	private int luck; // Chance
 
-	private String name;
-	private JTextField nameField;
-	private int credits = 100;
-	private JLabel credsLabel;
-	private JLabel[] attribute;
-	private String[] attributeStr = {"Vie", "Force", "Intelligence", "Rapidité", "Chance"};
-	private int[] vals;
-	private int[][] bornes = { {100,300} , {10,50} , {10,50} , {0,10} , {0,10} };
-	private int[] increments = {2,1,1,1,1};
-	private JLabel[] valLabels;
-	private JProgressBar[] bars;
-	private JButton[][] attributeButtons;
-	private JButton createButton;
+	private String name; // Nom du personnage
+	private JTextField nameField; // Boîte de texte pour entrer le nom du personnage
+	private int credits = 100; // Crédits disponibles pour la création
+	private JLabel credsLabel; // JLabel affichant le nombre de crédits disponibles
+
+	// Tous les tableaux suivants sont liés (pour un entier i donné, chaque élément i de chaque tableau correspond à la même "entité")
+
+	private JLabel[] attribute; // JLabels affichant le nom des attributs
+	private String[] attributeStr = {"Vie", "Force", "Intelligence", "Rapidit\u00e9", "Chance"}; // nom des attributs
+	private int[] vals; // Valeur de chaque attribut
+	private JLabel[] valLabels; // JLabels affichant les valeurs de chaque attribut
+	private int[][] bornes = { {100,300} , {10,50} , {10,50} , {0,10} , {0,10} }; // Valeurs min et max pour chaque attribut
+	private int[] increments = {2,1,1,1,1}; // Incrément par crédit consommé
+	private JProgressBar[] bars; // Barres de progression permettant d'avoir une visualisation graphique
+	private JButton[][] attributeButtons; // boutons +/-
+
+	private JButton createButton; // bouton de création du personnage
+
+	// GETTERS & SETTERS
 
 	public int getLife() {
 		return life;
@@ -67,6 +75,8 @@ public class CharacterWindow extends JFrame {
 		this.luck = luck;
 	}
 
+	// Les deux suivantes sont en @Override car l'objet parent JFrame possède déjà des fonctions set/getName() qui nous sont inutiles
+
 	@Override
 	public String getName() {
 		return name;
@@ -77,34 +87,44 @@ public class CharacterWindow extends JFrame {
 		this.name = name;
 	}
 
+	// CONSTRUCTEUR
+
 	public CharacterWindow(String windowName) {
 
+		// Mise en place de la fenêtre (titre, dimensions, redimensionnement et évènement "bouton croix appuyé")
+
+		this.setTitle(windowName);
 		this.setSize(470,320);
 		this.setResizable(true);
-		this.setTitle(windowName);
 		this.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
+
+		// Création de la boîte qui contiendra toute l'interface (boite globale)
 
 		Box globalBox = Box.createVerticalBox();
 
+		// Création du panneau des attributs
+
 		JPanel attributesPanel = new JPanel();
-		GridLayout attributesGrid = new GridLayout(5,6);
+		GridLayout attributesGrid = new GridLayout(5,6); // Le GridLayout est le plus adapté ici
 		attributesPanel.setLayout(attributesGrid);
 
+		// Instanciation des tableaux
 
 		attribute = new JLabel[5];
-
 		valLabels = new JLabel[5];
 		vals = new int[5];
-
 		bars = new JProgressBar[5];
-
 		attributeButtons = new JButton[5][2];
+
+		// Ajout du titre du jeu
 
 		JLabel title = new JLabel("INSAWARS");
 		title.setAlignmentX(JComponent.CENTER_ALIGNMENT);
 		globalBox.add(title);
 
-		globalBox.add(Box.createVerticalGlue());
+		globalBox.add(Box.createVerticalGlue()); // la glue sert à espacer deux éléments
+
+		// Ajout du label indiquant la boîte d'entrée du nom du guerrier
 
 		JLabel name = new JLabel("Nom du guerrier");
 		name.setAlignmentX(JComponent.CENTER_ALIGNMENT);
@@ -112,16 +132,22 @@ public class CharacterWindow extends JFrame {
 
 		globalBox.add(Box.createVerticalGlue());
 
+		// Création du champ d'entrée du nom (1 ligne)
+
 		nameField = new JTextField(1);
-		nameField.setAlignmentX(JComponent.CENTER_ALIGNMENT);
+		nameField.setAlignmentX(JComponent.CENTER_ALIGNMENT); // centrage du texte interne
 		nameField.setHorizontalAlignment(JLabel.CENTER);
 		globalBox.add(nameField);
+
 		globalBox.add(Box.createVerticalGlue());
 
-		credsLabel = new JLabel("Crédits : " + Integer.toString(credits));
+		// Ajout du label indiquant le nombre de crédits restants
+
+		credsLabel = new JLabel("Cr\u00e9dits : " + Integer.toString(credits));
 		credsLabel.setAlignmentX(JComponent.CENTER_ALIGNMENT);
 		globalBox.add(credsLabel);
 
+		// Mise en place du panneau des attributs
 
 		for(int i = 0; i < attribute.length; i++) {
 
@@ -183,7 +209,7 @@ public class CharacterWindow extends JFrame {
 				close();
 			}
 		});
-		
+
 		globalBox.add(Box.createVerticalStrut(50));
 		globalBox.add(createButton);
 		this.add(globalBox);
@@ -223,7 +249,7 @@ public class CharacterWindow extends JFrame {
 
 		if((this.credits > 0) && ((bar.getValue() > bar.getMinimum() && i == -1) || (bar.getValue() < bar.getMaximum() && i == 1)) || (this.credits == 0 && i == -1)) {
 			this.credits -= i;
-			this.credsLabel.setText("Crédits : " + this.credits);
+			this.credsLabel.setText("Cr\u00e9dits : " + this.credits);
 
 			if(this.credits == 0) {
 				this.createButton.setEnabled(true);

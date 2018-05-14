@@ -24,7 +24,7 @@ public class Character{
 
   public Character(double life, int strength, int intel, int speed, int luck, String name){
 
-    this.maxcredits= 7+ (int) 0.3*speed;
+    this.maxcredits= 7 + (int) 0.3*speed;
     this.credits = this.maxcredits;
     this.maxlife = life;
     this.life = this.maxlife;
