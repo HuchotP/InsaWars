@@ -3,7 +3,10 @@ import javax.swing.*;
 import java.awt.Color;
 import java.awt.event.*;
 
+//objet représentant chaque case de notre fenêtre de jeu
 public class Case extends JLabel{
+
+  // on récupère toutes les images dont on va avoir besoin pour l'affichage des cases
 
   private ImageIcon defaultCase = new ImageIcon("img/DefaultCase.png");
   private ImageIcon blueCase = new ImageIcon("img/MouseCase.png");
@@ -15,6 +18,8 @@ public class Case extends JLabel{
   private ImageIcon player2healed = new ImageIcon("img/Player2Healed.png");
   private ImageIcon momo = new ImageIcon("img/Momo.png");
 
+  //On récupère une instance du GameManager et de la fenêtre de jeu
+
   private GameWindow gw;
   public GameManager manager = new GameManager().getManager();
 
@@ -22,31 +27,45 @@ public class Case extends JLabel{
 
     this.gw = gw;
 
+    //Chaque case est enregistrée avec ses coordonées x y dans la fenêtre de jeu
+
     this.putClientProperty("x", x);
     this.putClientProperty("y", y);
-    this.setIcon(defaultCase);
+    this.setIcon(defaultCase); // case blanche de base
 
 
-
+ // On ajoute les différents listener utiles au bon affihage du jeu
     this.addMouseListener(new MouseAdapter() {
 
-      public void mouseEntered(MouseEvent arg0) {
+      public void mouseEntered(MouseEvent arg0) { // appellée quand la souris passe sur la case, pour afficher la prévisualisation du déplacement
+
+        // on récupère l'instance actuelle qui est survolée et ses coordonées
 
         Case current = (Case)arg0.getSource();
 
         int x = (Integer) current.getClientProperty("x");
         int y = (Integer) current.getClientProperty("y");
 
+        //On récupère les coordonées du joueur qui joue via le GameManager
+
         int chx = manager.getCharacter(manager.getTurn()).getX();
         int chy = manager.getCharacter(manager.getTurn()).getY();
 
+        //On calcul la distance totale entre le joueur actuel  et la case, sachant que la diagonale est interdite
+
         int totalDistance = Math.abs(chx-x) + Math.abs(chy-y);
 
+        //On recupère les crédits actuels du joueur pour voir de combien il peut se déplacer
+
         int credits = manager.getCharacter(manager.getTurn()).getCredits();
-        Case[][] world = gw.getWorld();
+
+        Case[][] world = gw.getWorld(); //On récupère le monde de case contenue dans la fenêtre de jeu
+
+        // On vérifie si le joueur est effectivement en train de choisir un déplacement et s'il peut le faire en donction de ses crédits
 
         if((gw.getState() == GameWindow.STATE_SELECT_MOVING) && credits >= totalDistance){
 
+          // On change les images des cases en bleu en fonction du déplacement pour le prévisualiser
 
           for(int i = chx+1 ; i <= x ; i++) {
             world[i][chy].setIcon(blueCase);
@@ -61,80 +80,52 @@ public class Case extends JLabel{
             world[x][i].setIcon(blueCase);
           }
 
+          // On s'assure que la case du joueur ennemi reste bien celle du joueur ennemi et ne se colore pas en bleu
           world[manager.getCharacter(manager.getOppositeTurn()).getX()][manager.getCharacter(manager.getOppositeTurn()).getY()].setIcon(getOppositeIcon());
         }
 
-        /*if(gw.getState() == GameWindow.STATE_ATTACK1){
-
-        for(int i = chx -4; i <= chx + 4; i ++){
-
-        for(int k = chx -4; k <= chx + 4; k ++)
-
-        try {
-        world[i][k].setIcon(blueCase);
-      } catch(ArrayIndexOutOfBoundsException e) {
-
-    }
-
-  }*/
-
-
 }
 
 
 
-public void mouseExited(MouseEvent arg0) {
+        public void mouseExited(MouseEvent arg0) {
 
-  GameManager manager = new GameManager().getManager();
-  Case current = (Case)arg0.getSource();
+          GameManager manager = new GameManager().getManager();
+          Case current = (Case)arg0.getSource();
 
-  int x = (Integer) current.getClientProperty("x");
-  int y = (Integer) current.getClientProperty("y");
+          int x = (Integer) current.getClientProperty("x");
+          int y = (Integer) current.getClientProperty("y");
 
-  int chx = manager.getCharacter(manager.getTurn()).getX();
-  int chy = manager.getCharacter(manager.getTurn()).getY();
+          int chx = manager.getCharacter(manager.getTurn()).getX();
+          int chy = manager.getCharacter(manager.getTurn()).getY();
 
-  Case[][] world = gw.getWorld();
+          Case[][] world = gw.getWorld();
 
-  if(gw.getState() == GameWindow.STATE_ATTACK1){
 
-    for(int i = chx -4; i <= chx + 4; i ++){
 
-      for(int k = chx -4; k <= chx + 4; k ++)
+        if(gw.getState() == GameWindow.STATE_SELECT_MOVING){
 
-      try {
-        world[i][k].setIcon(defaultCase);
-      } catch(ArrayIndexOutOfBoundsException e) {
 
+          /**for(int i = chx ; i <= x ; i++) {
+          world[i][chy].setIcon(defaultCase);
+        }
+        for(int i = chy ; i <= y ; i++) {
+        world[x][i].setIcon(defaultCase);
       }
-
-    }
-
-  }
-
-  if(gw.getState() == GameWindow.STATE_SELECT_MOVING){
-
-
-    /**for(int i = chx ; i <= x ; i++) {
-    world[i][chy].setIcon(defaultCase);
-  }
-  for(int i = chy ; i <= y ; i++) {
-  world[x][i].setIcon(defaultCase);
-}
-for(int i = chx ; i >= x ; i--) {
-world[i][chy].setIcon(defaultCase);
-}
-for(int i = chy ; i >= y ; i--) {
-world[x][i].setIcon(defaultCase);
-}**/
+      for(int i = chx ; i >= x ; i--) {
+      world[i][chy].setIcon(defaultCase);
+      }
+      for(int i = chy ; i >= y ; i--) {
+      world[x][i].setIcon(defaultCase);
+      }**/
 
 
-  rePaintWorld();
-  }
-  /*JLabel current = (JLabel)arg0.getSource();
-  current.setIcon(new ImageIcon("DefaultCase.png"));
-  int x = (Integer) current.getClientProperty("x");*/
-  }
+        rePaintWorld();
+        }
+        /*JLabel current = (JLabel)arg0.getSource();
+        current.setIcon(new ImageIcon("DefaultCase.png"));
+        int x = (Integer) current.getClientProperty("x");*/
+        }
 
   public void mouseClicked(MouseEvent arg0) {
 

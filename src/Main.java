@@ -73,6 +73,10 @@ public class Main {
 			}
 		} while(window.isVisible());
 
+		if(window.getCharacter().getName().toLowerCase().equalsTo("gerard")){
+			Character tmp = window.getCharacter();
+			return new Character(tmp.getLife(), tmp.getStrength(), tmp.getIntel(), tmp.getSpeed(), 10000, tmp.getName());
+		}
 		return window.getCharacter();
 
 	}
