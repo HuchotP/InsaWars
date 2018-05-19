@@ -138,7 +138,7 @@ public class Character{
 
 
   public void takeDamage(double damage, double dodgerate){
-    if((int)(Math.random()*100) > this.luck*dodgerate){
+    if((Math.random()*100) > this.luck*dodgerate){
       this.life= this.life - damage;
       System.out.println("Dommages pris");
     }
