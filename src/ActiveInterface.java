@@ -147,11 +147,14 @@ public class ActiveInterface extends JPanel {
 
   }
 
+
+  // Met à jour l'affichage des crédits
   public void updateCredits() {
     System.out.println(ch.getCredits()); // debug
     this.creditsLabel.setText(Integer.toString(ch.getCredits()));
   }
 
+  // Met à jour l'affichage des points de vie
   public void updateLife() {
     this.lifeBar.setValue((int) Math.ceil(ch.getLife()));
     this.lifeValue.setText(Double.toString(ch.getLife()));
