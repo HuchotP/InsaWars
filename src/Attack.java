@@ -1,12 +1,12 @@
 
 
-public abstract class Attack{
+public abstract class Attack{ //classe abstraite utilisée pour rassembler toutes les attaques dans un seul tableau
 
+  // les attributs communs à toutes les attaques
   protected String name;
-  protected int type;
   protected double damage;
-  protected double dodgerate;
-  protected int creditsRequired;
+  protected double dodgerate; //Nombre qui représente la capacité de l'attaque à être évitée, plus le nombre est élevé moins l'attaque est facilement évitable
+  protected int creditsRequired; //nombre de crédits requis pour cette attaque
 
   public String getName(){
 
@@ -14,7 +14,9 @@ public abstract class Attack{
 
   }
 
-  public abstract boolean attack();
+  //On définit les méthodes abstraites communes
+  
+  public abstract boolean attack(); //On définit les méthodes abstraites communes
 
   public abstract void paint(GameWindow gw, int x, int y);
 
