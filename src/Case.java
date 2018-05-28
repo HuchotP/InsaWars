@@ -114,7 +114,7 @@ public class Case extends JLabel{
 
             //On vérifie si le jouer a assez de crédits pour continuer à jouer
             manager.getCharacter(manager.getTurn()).checkCredits();
-
+          }
 
         }
 
@@ -122,6 +122,7 @@ public class Case extends JLabel{
 
 
       }
+
 
   public void rePaintWorld(){ //méthode utilisée pour afficher le monde dans son état "normal"
 

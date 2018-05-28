@@ -147,19 +147,24 @@ public class CharacterWindow extends JFrame {
 		credsLabel.setAlignmentX(JComponent.CENTER_ALIGNMENT);
 		globalBox.add(credsLabel);
 
-		// Mise en place du panneau des attributs
+		// Mise en place du panneau des attributs (ligne par ligne)
 
 		for(int i = 0; i < attribute.length; i++) {
+
+			// Ajout du label permettant d'identifier l'attribut
 
 			attribute[i] = new JLabel(attributeStr[i]);
 			attribute[i].setAlignmentX(JComponent.CENTER_ALIGNMENT);
 			attributesPanel.add(attribute[i]);
+
+			// Ajout du label permettant de visualiser la valeur actuelle de l'attribut
 
 			vals[i] = bornes[i][0];
 			valLabels[i] = new JLabel(Integer.toString(vals[i]));
 			valLabels[i].setAlignmentX(JComponent.CENTER_ALIGNMENT);
 			attributesPanel.add(valLabels[i]);
 
+			// Ajout de la barre permettant une visualisation graphique de l'attribut
 
 			bars[i] = new JProgressBar();
 			bars[i].setMinimum(bornes[i][0]);
@@ -167,6 +172,8 @@ public class CharacterWindow extends JFrame {
 			bars[i].setBackground(new Color(153, 13, 13));
 			bars[i].setForeground(new Color(255,255,255));
 			attributesPanel.add(bars[i]);
+
+			// Ajout du bouton "moins" et création du listener
 
 			attributeButtons[i][0] = new JButton("-");
 			attributeButtons[i][0].setBackground(new Color(255,255,255));
@@ -181,6 +188,8 @@ public class CharacterWindow extends JFrame {
 				}
 			});
 
+			// Création du bouton "plus" et création du listener
+
 			attributeButtons[i][1] = new JButton("+");
 			attributeButtons[i][1].setBackground(new Color(255,255,255));
 			attributeButtons[i][1].putClientProperty("index", i);
@@ -193,11 +202,17 @@ public class CharacterWindow extends JFrame {
 				}
 			});
 
+			// Ajout des boutons au panneau
+
 			attributesPanel.add(attributeButtons[i][0]);
 			attributesPanel.add(attributeButtons[i][1]);
 		}
 
+		// Ajout final du panneau d'attributs
+
 		globalBox.add(attributesPanel);
+
+		// Création du bouton de validation et du listener
 
 		createButton = new JButton("Valider");
 		createButton.setEnabled(this.credits == 0);
@@ -210,7 +225,9 @@ public class CharacterWindow extends JFrame {
 			}
 		});
 
-		globalBox.add(Box.createVerticalStrut(50));
+		// Ajout du bouton de confirmation et fin de la création de fenêtre
+
+		globalBox.add(Box.createVerticalStrut(50)); // Crée un écart de 50 pixels au dessus du bouton de confirmation
 		globalBox.add(createButton);
 		this.add(globalBox);
 		this.setVisible(true);
@@ -218,25 +235,31 @@ public class CharacterWindow extends JFrame {
 
 
 
+	// Cette méthode est appelée lorsqu'on appuie sur plus ou moins
 
 	private void modifyBar(int i, boolean signe) {
 		int increment;
 		int changement;
-		if(signe) {
+		if(signe) { // si c'est le bouton "plus"
 			changement = 1;
 			increment = this.increments[i];
-		} else {
+		} else { // si c'est le bouton "moins"
 			changement = -1;
 			increment = -this.increments[i];
 		}
 
+
+		// On vérifie si la modification est possible
+
 		if(updateCredits(changement, bars[i])) {
-			bars[i].setValue(bars[i].getValue() + increment);
+			bars[i].setValue(bars[i].getValue() + increment); // et on modifie la valeur de la barre
 
 		}
 
 
 	}
+
+	// Méthode de mise à jour du label contenant la valeur actuelle de l'attribut
 
 	private void updateLabel(int i) {
 
@@ -244,6 +267,11 @@ public class CharacterWindow extends JFrame {
 		valLabels[i].setText(Integer.toString(vals[i]));
 
 	}
+
+	// Méthode à triple utilité :
+	// 1 - vérifier si le solde de crédits est suffisant pour modifier un attribut (retourne true si oui, false sinon)
+	// 2 - vérifier si la modification est possible au niveau des bornes des attributs
+	// 3 - mettre à jour le solde de crédits
 
 	public boolean updateCredits(int i, JProgressBar bar) {
 
@@ -264,6 +292,8 @@ public class CharacterWindow extends JFrame {
 		return false;
 
 	}
+
+	// Méthode appelée quand on appuie sur le bouton "Valider"
 
 	private void close() {
 		this.life = this.bars[0].getValue();
