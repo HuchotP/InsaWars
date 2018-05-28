@@ -1,30 +1,37 @@
+
+// import la bibliothèque lang
 import java.lang.Math;
 
 public class Character{
 
-  private int credits;
-  private int maxcredits = 7; //test
-  private double life;
-  private double maxlife;
-  private int strength;
-  private int intel;
-  private int speed;
-  private int luck;
-  private String name;
-  private Attack[] attacks = new Attack[4];
+  private int credits; // Chaque personnage a un nombre de crédit
+  private int maxcredits = 7; // Le personnage possède initialement 7 crédits à chaque nouveau tour
+  private double life;// Chaque personnage a un nombre de points de vie
+  private double maxlife;// Le personnage possède le maximum de sa vie au début du jeu. Cette valeur ne peut être dépassée même avec des attaques de soin
+  private int strength; // Le personnage a un attribut Force de valeur personnalisable sur la fenêtre de création de personnage
+  private int intel; // Le personnage a un attribut Intelligence de valeur personnalisable sur la fenêtre de création de personnage
+  private int speed; // Le personnage a un attribut Vitesse de valeur personnalisable sur la fenêtre de création de personnage qui influera sur le nombre de crédits disponibles à chaque tours
+  private int luck; // Le personnage a un attribut Chance de valeur personnalisable sur la fenêtre de création de personnage
+  private String name;  // Le personnage a un nom personnalisable sur la fenêtre de création de personnage
+  private Attack[] attacks = new Attack[4];  // Le personnage possède une liste de 4 attaques à sa disposition, rangées dans un tableau d'objets
 
-  private int x;
-  private int y;
+  private int x; // La coordonée d'abscisse de la position du personnage
+  private int y; // La coordonée d'ordonnée de la position du personnage
 
-  private boolean hasAttacked = false;
-  private boolean canAttack = true;
-  private boolean hasMoved = false;
+  private boolean hasAttacked = false;  // Au commencement du jeu et à chaque nouveau tour, le personnage n'a pas encore attaqué
+  private boolean canAttack = true; //Au commencement du jeu et à chaque nouveau tour, le personnage a la possibilité d'attaquer
+  private boolean hasMoved = false; //Au commencement du jeu et à chaque nouveau tour, le personnage n'a pas encore bougé
 
   private static GameManager manager;
 
+// Constructeur
   public Character(double life, int strength, int intel, int speed, int luck, String name){
 
+<<<<<<< HEAD
+    this.maxcredits= 7+ (int) 0.3*speed; // La valeur des crédits disponibles est fixée selon une valeur standard et peut augmenter selon l'attribut Vitesse du personnage
+=======
     this.maxcredits= 7 + (int) 0.3*speed;
+>>>>>>> 91d23ab479b1923fa361ee287b558b826aa25329
     this.credits = this.maxcredits;
     this.maxlife = life;
     this.life = this.maxlife;
@@ -35,11 +42,12 @@ public class Character{
     this.luck = luck;
     this.name = name;
 
-    attacks[0] = new ZoneAttack(this);
-    attacks[1] = new FireBall(this);
-    attacks[2] = new LocatedAttack(this);
-    attacks[3] = new Heal(this);
+    attacks[0] = new ZoneAttack(this); // Le joueur peut faire une attaque de zone
+    attacks[1] = new FireBall(this); // Le joueur peut lancer une boule de feu
+    attacks[2] = new LocatedAttack(this); // Le joueur peut faire une attaque de mélée
+    attacks[3] = new Heal(this); // Le joueur peut se soigner
 
+    // Definition d'un nouveau GameManager
     manager = new GameManager().getManager();
   }
 
@@ -51,6 +59,10 @@ public class Character{
     return life;
   }
 
+  /**
+  * Returns value of Credits
+  * @return
+  */
   public int getCredits(){
     return credits;
   }
@@ -108,6 +120,10 @@ public class Character{
     return name;
   }
 
+  /**
+  * Returns value of Abscisse position
+  * @return
+  */
   public int getX(){
 
     return this.x;
@@ -132,34 +148,36 @@ public class Character{
 
   }
 
+
+// Méthode permettant de sélectionner une attaque dans le tableau d'attaques 
   public Attack getAttack(int n) {
     return this.attacks[n];
   }
 
-
+// Methode retirant un nombre de points de vie correspondant à des points de dégats pris en entrée
   public void takeDamage(double damage, double dodgerate){
+<<<<<<< HEAD
+    if((int)(Math.random()*100) > this.luck*dodgerate){ // L'attaque n'a lieu que si la chance du personnage attaqué est inférieure à celle nécessaire pour l'esquiver
+=======
     if((Math.random()*100) > this.luck*dodgerate){
+>>>>>>> 91d23ab479b1923fa361ee287b558b826aa25329
       this.life= this.life - damage;
       System.out.println("Dommages pris");
     }
 
   }
 
-  /*public void attack(int n){
 
-  attacks[n].attack();
-}*/
-
-
+// Methode permettant au joueur d'attaquer
 public boolean attack(int n){
 
-  if(this.canAttack == true){
+  if(this.canAttack == true){ // Verrifie que le joueur peut attaquer ( si il n'a pas déjà attaqué puis s'est déplacé dans le même tour)
     if(attacks[n].attack() == true) {
-      this.hasAttacked = true;
+      this.hasAttacked = true; // Considère que le joueur a effectué une action de type attaque
       System.out.println(hasAttacked);
-      this.credits -= attacks[n].getCreditsRequired();
+      this.credits -= attacks[n].getCreditsRequired(); // Retire au joueur le nombre de crédits utilisés pour effectuer l'attaque
 
-      if(manager.getCharacter(manager.getOppositeTurn()).getLife() <= 0) {
+      if(manager.getCharacter(manager.getOppositeTurn()).getLife() <= 0) { // Verrifie que l'adversaire est toujours en vie pour continuer. Sinon le jeu prend fin
         manager.nextTurn();
       }
 
@@ -171,62 +189,67 @@ public boolean attack(int n){
 }
 
 
-
+// Méthode permettant de soigner le joueur d'un nombre de points de vie pris en entrée
 public void healCharacter( double healing ){
   this.life= this.life+ healing;
 
 }
 
+// Méthode permettant de réinitialiser les différents paramètres d'action du personnage
 public void resetCredits(){
 
-  this.credits = this.maxcredits;
-  this.hasMoved = false;
-  this.hasAttacked = false;
+  this.credits = this.maxcredits; // Le nombre de crédit maximal par tour est fourni au joueur
+  this.hasMoved = false; // On considère que le joueur n'a pas effectué d'action de type déplacement au démarrage du nouveau tour
+  this.hasAttacked = false;// On considère que le joueur n'a pas effectué d'action de type attaque au démarrage du nouveau tour
   this.canAttack = true;
 
 }
+
+// Méthode permettant au joueur de se déplacer vers la nouvelle case désignée par ses coordonnées newX et newY
 public boolean move(int newX, int newY){
 
 
   System.out.println(hasMoved);
-  Character ennemy = manager.getCharacter(manager.getOppositeTurn());
+  Character ennemy = manager.getCharacter(manager.getOppositeTurn()); // On désigne l'adversaire au travers du Game Manager
 
-  if ( Math.abs(this.getX() - newX) + Math.abs((this.getY()- newY) ) < this.credits ){
+  if ( Math.abs(this.getX() - newX) + Math.abs((this.getY()- newY) ) < this.credits ){  // On verrifie que le joueur a suffisemment de crédits pour se déplacer jusqu
 
-    if( this.credits >= Math.abs(this.getX() - newX) + Math.abs((this.getY()- newY) ) && !(newX== ennemy.getX() && newY== ennemy.getY()) && this.hasMoved == false ){
+    if( this.credits >= Math.abs(this.getX() - newX) + Math.abs((this.getY()- newY) ) && !(newX== ennemy.getX() && newY== ennemy.getY()) && this.hasMoved == false ){ // Verrifie que l'adversaire ne se situe pas sur la nouvlle case
       manager.changeWorld(newX, newY);
-      this.credits -= (Math.abs(this.getX() - newX) + Math.abs((this.getY()- newY)));
+      this.credits -= (Math.abs(this.getX() - newX) + Math.abs((this.getY()- newY))); // Retire au joueur le nombre de crédits nécessaires pour le déplacement
       this.setX(newX);
       this.setY(newY);
 
       GameWindow gw = manager.getGw();
       gw.getActive().updateCredits();
 
-      this.hasMoved = true;
+      this.hasMoved = true;  // On considère que le joueur a effectué une action de type déplacement pendant ce tour
       if(this.hasAttacked == true) {
-        this.canAttack = false;
+        this.canAttack = false; // Si le joueur a bougé puis attaqué, il ne peut plus bouger.
       }
       return true;
     }else {
 
-          return false; // always true for testing but will be false later
+          return false; // Le joueur ne s'est pas déplacé, l'adversaire se situait sur la nouvelle case
 
         }
       }else {
 
-      return false; // always true for testing but will be false later
+      return false; // Le joueur ne s'est pas déplacé, le nombre de crédit nécessaires n'était pas suffisant
   }
 
 }
 
 
-
+// Méthode permettant de finir automatiquement le tour du joueur si ce dernier n'a plus de crédits
 public void checkCredits() {
   if(this.credits == 0) {
     manager.nextTurn();
   }
 }
 
+
+// Méthode permettant d'attribuer la valeur maximale de points de vie au joueur
 public void resetLife(){
 
   this.life = this.maxlife;
