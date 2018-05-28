@@ -160,6 +160,7 @@ public class Character{
     }
 
   }
+}
 
 
 // Methode permettant au joueur d'attaquer
