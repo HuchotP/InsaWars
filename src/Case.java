@@ -62,7 +62,7 @@ public class Case extends JLabel{
 
         // On vérifie si le joueur est effectivement en train de choisir un déplacement et s'il peut le faire en donction de ses crédits
 
-        if((gw.getState() == GameWindow.STATE_SELECT_MOVING) && credits >= totalDistance){
+        if(credits >= totalDistance){
 
           // On change les images des cases en bleu en fonction du déplacement pour le prévisualiser
 

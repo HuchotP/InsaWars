@@ -3,9 +3,11 @@ import javax.swing.*;
 import java.awt.Color;
 import java.awt.event.*;
 
+// INTERFACE DE JEU
+
 public class GameWindow extends JFrame{
 
-  private GameManager manager = new GameManager().getManager();
+  private GameManager manager = new GameManager().getManager(); // on récupère le GameManager pour avoir accès à certaines variables du jeu
 
   private Case[][] world;
   private int currentX;
@@ -13,24 +15,22 @@ public class GameWindow extends JFrame{
   private int mouseX;
   private int mouseY;
 
+  // JPanels qui contiendront les boutons de jeu et la barre de vie
+
   private JPanel card1;
   private JPanel card2;
+
+  // Interfaces "actives" contenant la barre de vie et les boutons de jeu
 
   private ActiveInterface active1;
   private ActiveInterface active2;
 
+  // Interfaces "passives" ne montrant que la barre de vie
+
   private PassiveInterface passive1;
   private PassiveInterface passive2;
 
-  public static final int STATE_SELECT_MOVING =0;
-  public static final int STATE_ATTACK1 = 1;
-  public static final int STATE_ATTACK2 = 2;
-  public static final int STATE_ATTACK3 = 3;
-  public static final int STATE_ATTACK4 = 4;
-  public static final int STATE_NOTHING = -1;
-
-  private int currentState = STATE_SELECT_MOVING; //phase de test
-
+  // La méthode retourne le tableau de cases modélisant le plateau
 
   public Case[][] getWorld() {
     return world;
@@ -38,7 +38,7 @@ public class GameWindow extends JFrame{
 
   public GameWindow(){
 
-    this.setSize(640,900);
+    this.setSize(640,900); // définition de la taille
 
     world = new Case[10][10];
 
@@ -106,12 +106,6 @@ public class GameWindow extends JFrame{
     this.add(globalBox);
     this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     this.setVisible(true);
-
-  }
-
-  public int getState(){
-
-    return this.currentState;
 
   }
 
