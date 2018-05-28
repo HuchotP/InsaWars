@@ -27,7 +27,11 @@ public class Character{
 // Constructeur
   public Character(double life, int strength, int intel, int speed, int luck, String name){
 
+<<<<<<< HEAD
     this.maxcredits= 7+ (int) 0.3*speed; // La valeur des crédits disponibles est fixée selon une valeur standard et peut augmenter selon l'attribut Vitesse du personnage
+=======
+    this.maxcredits= 7 + (int) 0.3*speed;
+>>>>>>> 91d23ab479b1923fa361ee287b558b826aa25329
     this.credits = this.maxcredits;
     this.maxlife = life;
     this.life = this.maxlife;
@@ -152,7 +156,11 @@ public class Character{
 
 // Methode retirant un nombre de points de vie correspondant à des points de dégats pris en entrée
   public void takeDamage(double damage, double dodgerate){
+<<<<<<< HEAD
     if((int)(Math.random()*100) > this.luck*dodgerate){ // L'attaque n'a lieu que si la chance du personnage attaqué est inférieure à celle nécessaire pour l'esquiver
+=======
+    if((Math.random()*100) > this.luck*dodgerate){
+>>>>>>> 91d23ab479b1923fa361ee287b558b826aa25329
       this.life= this.life - damage;
       System.out.println("Dommages pris");
     }

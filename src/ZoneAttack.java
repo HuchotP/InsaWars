@@ -12,7 +12,7 @@ public class ZoneAttack extends Attack{ // la classe ZoneAttack ( L'attaque de m
 
     this.name = "Zone";  // indique le nom de l'attaque
     this.damage = 1*c.getStrength() + 1*c.getIntel(); // indique les dégats infligés à l'adversaire, en fonction de l'attribut Intelligence de l'attaquant
-    this.dodgerate= 1/15; // indique la probabilité pour l'adversaire d'esquiver l'attaque
+    this.dodgerate= 1.0/15; // indique la probabilité pour l'adversaire d'esquiver l'attaque
     this.creditsRequired= 4;  // indique le nombre de crédits nécessaire pour l'attaquant afin d'effectuer l'attaque
 
   }

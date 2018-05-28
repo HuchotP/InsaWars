@@ -5,27 +5,35 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 
+// Fenêtre de création du personnage
+
 public class CharacterWindow extends JFrame {
 
-	private int life;
-	private int strength;
-	private int intel;
-	private int speed;
-	private int luck;
+	private int life; // Vie
+	private int strength; // Force
+	private int intel; // Intelligence
+	private int speed; // Rapidité
+	private int luck; // Chance
 
-	private String name;
-	private JTextField nameField;
-	private int credits = 100;
-	private JLabel credsLabel;
-	private JLabel[] attribute;
-	private String[] attributeStr = {"Vie", "Force", "Intelligence", "Rapidité", "Chance"};
-	private int[] vals;
-	private int[][] bornes = { {100,300} , {10,50} , {10,50} , {0,10} , {0,10} };
-	private int[] increments = {2,1,1,1,1};
-	private JLabel[] valLabels;
-	private JProgressBar[] bars;
-	private JButton[][] attributeButtons;
-	private JButton createButton;
+	private String name; // Nom du personnage
+	private JTextField nameField; // Boîte de texte pour entrer le nom du personnage
+	private int credits = 100; // Crédits disponibles pour la création
+	private JLabel credsLabel; // JLabel affichant le nombre de crédits disponibles
+
+	// Tous les tableaux suivants sont liés (pour un entier i donné, chaque élément i de chaque tableau correspond à la même "entité")
+
+	private JLabel[] attribute; // JLabels affichant le nom des attributs
+	private String[] attributeStr = {"Vie", "Force", "Intelligence", "Rapidit\u00e9", "Chance"}; // nom des attributs
+	private int[] vals; // Valeur de chaque attribut
+	private JLabel[] valLabels; // JLabels affichant les valeurs de chaque attribut
+	private int[][] bornes = { {100,300} , {10,50} , {10,50} , {0,10} , {0,10} }; // Valeurs min et max pour chaque attribut
+	private int[] increments = {2,1,1,1,1}; // Incrément par crédit consommé
+	private JProgressBar[] bars; // Barres de progression permettant d'avoir une visualisation graphique
+	private JButton[][] attributeButtons; // boutons +/-
+
+	private JButton createButton; // bouton de création du personnage
+
+	// GETTERS & SETTERS
 
 	public int getLife() {
 		return life;
@@ -67,6 +75,8 @@ public class CharacterWindow extends JFrame {
 		this.luck = luck;
 	}
 
+	// Les deux suivantes sont en @Override car l'objet parent JFrame possède déjà des fonctions set/getName() qui nous sont inutiles
+
 	@Override
 	public String getName() {
 		return name;
@@ -77,34 +87,44 @@ public class CharacterWindow extends JFrame {
 		this.name = name;
 	}
 
+	// CONSTRUCTEUR
+
 	public CharacterWindow(String windowName) {
 
+		// Mise en place de la fenêtre (titre, dimensions, redimensionnement et évènement "bouton croix appuyé")
+
+		this.setTitle(windowName);
 		this.setSize(470,320);
 		this.setResizable(true);
-		this.setTitle(windowName);
 		this.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
+
+		// Création de la boîte qui contiendra toute l'interface (boite globale)
 
 		Box globalBox = Box.createVerticalBox();
 
+		// Création du panneau des attributs
+
 		JPanel attributesPanel = new JPanel();
-		GridLayout attributesGrid = new GridLayout(5,6);
+		GridLayout attributesGrid = new GridLayout(5,6); // Le GridLayout est le plus adapté ici
 		attributesPanel.setLayout(attributesGrid);
 
+		// Instanciation des tableaux
 
 		attribute = new JLabel[5];
-
 		valLabels = new JLabel[5];
 		vals = new int[5];
-
 		bars = new JProgressBar[5];
-
 		attributeButtons = new JButton[5][2];
+
+		// Ajout du titre du jeu
 
 		JLabel title = new JLabel("INSAWARS");
 		title.setAlignmentX(JComponent.CENTER_ALIGNMENT);
 		globalBox.add(title);
 
-		globalBox.add(Box.createVerticalGlue());
+		globalBox.add(Box.createVerticalGlue()); // la glue sert à espacer deux éléments
+
+		// Ajout du label indiquant la boîte d'entrée du nom du guerrier
 
 		JLabel name = new JLabel("Nom du guerrier");
 		name.setAlignmentX(JComponent.CENTER_ALIGNMENT);
@@ -112,28 +132,39 @@ public class CharacterWindow extends JFrame {
 
 		globalBox.add(Box.createVerticalGlue());
 
+		// Création du champ d'entrée du nom (1 ligne)
+
 		nameField = new JTextField(1);
-		nameField.setAlignmentX(JComponent.CENTER_ALIGNMENT);
+		nameField.setAlignmentX(JComponent.CENTER_ALIGNMENT); // centrage du texte interne
 		nameField.setHorizontalAlignment(JLabel.CENTER);
 		globalBox.add(nameField);
+
 		globalBox.add(Box.createVerticalGlue());
 
-		credsLabel = new JLabel("Crédits : " + Integer.toString(credits));
+		// Ajout du label indiquant le nombre de crédits restants
+
+		credsLabel = new JLabel("Cr\u00e9dits : " + Integer.toString(credits));
 		credsLabel.setAlignmentX(JComponent.CENTER_ALIGNMENT);
 		globalBox.add(credsLabel);
 
+		// Mise en place du panneau des attributs (ligne par ligne)
 
 		for(int i = 0; i < attribute.length; i++) {
+
+			// Ajout du label permettant d'identifier l'attribut
 
 			attribute[i] = new JLabel(attributeStr[i]);
 			attribute[i].setAlignmentX(JComponent.CENTER_ALIGNMENT);
 			attributesPanel.add(attribute[i]);
+
+			// Ajout du label permettant de visualiser la valeur actuelle de l'attribut
 
 			vals[i] = bornes[i][0];
 			valLabels[i] = new JLabel(Integer.toString(vals[i]));
 			valLabels[i].setAlignmentX(JComponent.CENTER_ALIGNMENT);
 			attributesPanel.add(valLabels[i]);
 
+			// Ajout de la barre permettant une visualisation graphique de l'attribut
 
 			bars[i] = new JProgressBar();
 			bars[i].setMinimum(bornes[i][0]);
@@ -141,6 +172,8 @@ public class CharacterWindow extends JFrame {
 			bars[i].setBackground(new Color(153, 13, 13));
 			bars[i].setForeground(new Color(255,255,255));
 			attributesPanel.add(bars[i]);
+
+			// Ajout du bouton "moins" et création du listener
 
 			attributeButtons[i][0] = new JButton("-");
 			attributeButtons[i][0].setBackground(new Color(255,255,255));
@@ -155,6 +188,8 @@ public class CharacterWindow extends JFrame {
 				}
 			});
 
+			// Création du bouton "plus" et création du listener
+
 			attributeButtons[i][1] = new JButton("+");
 			attributeButtons[i][1].setBackground(new Color(255,255,255));
 			attributeButtons[i][1].putClientProperty("index", i);
@@ -167,11 +202,17 @@ public class CharacterWindow extends JFrame {
 				}
 			});
 
+			// Ajout des boutons au panneau
+
 			attributesPanel.add(attributeButtons[i][0]);
 			attributesPanel.add(attributeButtons[i][1]);
 		}
 
+		// Ajout final du panneau d'attributs
+
 		globalBox.add(attributesPanel);
+
+		// Création du bouton de validation et du listener
 
 		createButton = new JButton("Valider");
 		createButton.setEnabled(this.credits == 0);
@@ -183,8 +224,10 @@ public class CharacterWindow extends JFrame {
 				close();
 			}
 		});
-		
-		globalBox.add(Box.createVerticalStrut(50));
+
+		// Ajout du bouton de confirmation et fin de la création de fenêtre
+
+		globalBox.add(Box.createVerticalStrut(50)); // Crée un écart de 50 pixels au dessus du bouton de confirmation
 		globalBox.add(createButton);
 		this.add(globalBox);
 		this.setVisible(true);
@@ -192,25 +235,31 @@ public class CharacterWindow extends JFrame {
 
 
 
+	// Cette méthode est appelée lorsqu'on appuie sur plus ou moins
 
 	private void modifyBar(int i, boolean signe) {
 		int increment;
 		int changement;
-		if(signe) {
+		if(signe) { // si c'est le bouton "plus"
 			changement = 1;
 			increment = this.increments[i];
-		} else {
+		} else { // si c'est le bouton "moins"
 			changement = -1;
 			increment = -this.increments[i];
 		}
 
+
+		// On vérifie si la modification est possible
+
 		if(updateCredits(changement, bars[i])) {
-			bars[i].setValue(bars[i].getValue() + increment);
+			bars[i].setValue(bars[i].getValue() + increment); // et on modifie la valeur de la barre
 
 		}
 
 
 	}
+
+	// Méthode de mise à jour du label contenant la valeur actuelle de l'attribut
 
 	private void updateLabel(int i) {
 
@@ -219,11 +268,16 @@ public class CharacterWindow extends JFrame {
 
 	}
 
+	// Méthode à triple utilité :
+	// 1 - vérifier si le solde de crédits est suffisant pour modifier un attribut (retourne true si oui, false sinon)
+	// 2 - vérifier si la modification est possible au niveau des bornes des attributs
+	// 3 - mettre à jour le solde de crédits
+
 	public boolean updateCredits(int i, JProgressBar bar) {
 
 		if((this.credits > 0) && ((bar.getValue() > bar.getMinimum() && i == -1) || (bar.getValue() < bar.getMaximum() && i == 1)) || (this.credits == 0 && i == -1)) {
 			this.credits -= i;
-			this.credsLabel.setText("Crédits : " + this.credits);
+			this.credsLabel.setText("Cr\u00e9dits : " + this.credits);
 
 			if(this.credits == 0) {
 				this.createButton.setEnabled(true);
@@ -238,6 +292,8 @@ public class CharacterWindow extends JFrame {
 		return false;
 
 	}
+
+	// Méthode appelée quand on appuie sur le bouton "Valider"
 
 	private void close() {
 		this.life = this.bars[0].getValue();
